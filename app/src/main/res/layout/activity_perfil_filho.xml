@@ -24,30 +24,21 @@
         android:layout_marginBottom="315dp"
         android:text="Button" />
 
-        <Button
-            android:id="@+id/botao1"
-            android:layout_width="90dp"
-            android:layout_height="35dp"
-            android:text="Botão 1"
-            android:textSize="10sp"/>
-        <Button
-            android:id="@+id/botao3"
-            android:layout_width="90dp"
-            android:layout_height="35dp"
-            android:text="Botão 2"
-            android:layout_toRightOf="@+id/botao1"
-            android:textSize="10sp"
-            android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/botao1"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:text="Botão 1"
+        android:textSize="10sp"/>
 
-
-<GridLayout
-    android:id="@+id/tableLayoutFrame2"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:scrollbars="horizontal"
-    android:shrinkColumns="0">
-
-</GridLayout>
+    <Button
+        android:id="@+id/botao3"
+        android:layout_width="90dp"
+        android:layout_height="35dp"
+        android:text="Botão 2"
+        android:layout_toRightOf="@+id/botao1"
+        android:textSize="10sp"
+        android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
 

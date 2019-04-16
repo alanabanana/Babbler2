@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ifpr.tccdaalana.CadastroRespActivity">
+    tools:context="com.example.ifpr.tccdaalana.CadastroRespActivity"
+    android:background="@android:color/background_light">
 
     <TextView
         android:id="@+id/cadastroText"
@@ -15,6 +16,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="Cadastro do Responsável"
+        android:textColor="@android:color/background_dark"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,6 +36,7 @@
         android:hint="Ex.: batata@hotmail.com"
         android:inputType="textPersonName"
         android:textSize="24sp"
+        android:textColor="@android:color/background_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
@@ -50,6 +53,7 @@
         android:layout_marginTop="8dp"
         android:text="Email:"
         android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
         app:layout_constraintBottom_toTopOf="@+id/cEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.074"
@@ -67,6 +71,7 @@
         android:layout_marginBottom="8dp"
         android:ems="10"
         android:hint="..."
+        android:textColor="@android:color/background_dark"
         android:inputType="textPassword"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -85,6 +90,7 @@
         android:layout_marginEnd="8dp"
         android:text="Senha:"
         android:textSize="20sp"
+        android:textColor="@android:color/background_dark"
         app:layout_constraintBottom_toTopOf="@+id/cSenha"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.074"
@@ -97,19 +103,15 @@
         android:layout_width="wrap_content"
         android:layout_height="26dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
         android:text="Confirmar Senha:"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/cConfirmarSenha"
+        android:textColor="@android:color/background_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cSenha"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/cSenha" />
 
     <Button
         android:id="@+id/button_entra"
@@ -124,6 +126,7 @@
         android:onClick="confirmaCadastroPai"
         android:text="ENTER"
         android:textSize="24sp"
+        android:textColor="@android:color/background_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -132,20 +135,22 @@
 
     <EditText
         android:id="@+id/cConfirmarSenha"
-        android:layout_width="320dp"
-        android:layout_height="40dp"
+        android:layout_width="316dp"
+        android:layout_height="34dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="296dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="320dp"
         android:ems="10"
+        android:hint="... "
         android:inputType="textPassword"
-        android:textSize="24sp"
+        android:textSize="22sp"
+        android:textColor="@android:color/background_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.341"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cadastroText"
+        app:layout_constraintTop_toBottomOf="@+id/senhaText2"
         app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>

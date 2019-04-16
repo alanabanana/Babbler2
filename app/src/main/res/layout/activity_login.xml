@@ -9,12 +9,10 @@
     <TextView
         android:id="@+id/textEmail"
         android:layout_width="373dp"
-        android:layout_height="42dp"
+        android:layout_height="24dp"
         android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:text="Email ou Apelido:"
         android:textAllCaps="true"
@@ -36,13 +34,13 @@
         android:ems="10"
         android:hint="seu.email@aqui.com"
         android:inputType="textPersonName"
-        android:textSize="22sp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textEmail"
-        app:layout_constraintVertical_bias="0.012" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/editTextSenha"
@@ -104,8 +102,8 @@
 
     <Button
         android:id="@+id/buttonEntrar"
-        android:layout_width="135dp"
-        android:layout_height="121dp"
+        android:layout_width="97dp"
+        android:layout_height="98dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -115,18 +113,17 @@
         android:onClick="confirmaLogin"
         android:text="Enter"
         android:textAllCaps="true"
-        android:textSize="22sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.671" />
+        app:layout_constraintVertical_bias="0.692" />
 
     <Button
         android:id="@+id/buttonCadastraR"
-        android:layout_width="146dp"
-        android:layout_height="122dp"
+        android:layout_width="114dp"
+        android:layout_height="112dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -135,7 +132,7 @@
         android:gravity="center"
         android:onClick="cadastroResponsavel"
         android:text="Cadastro de Responsável"
-        android:textSize="22sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.143"
@@ -145,8 +142,8 @@
 
     <Button
         android:id="@+id/buttonCadastraD"
-        android:layout_width="157dp"
-        android:layout_height="132dp"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -155,11 +152,11 @@
         android:gravity="center"
         android:onClick="cadastroDependente"
         android:text="Cadastro de Dependente"
-        android:textSize="22sp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.926" />
+        app:layout_constraintVertical_bias="0.91" />
 </android.support.constraint.ConstraintLayout>

@@ -15,19 +15,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.CompactMenu">
         <activity android:name=".LoginActivity">
-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".CadastroRespActivity"/>
         <activity android:name=".PerfilPaiActivity" />
         <activity android:name=".CadastroDpActivity" />
         <activity android:name=".PerfilFilhoActivity" />
         <activity android:name=".AdicionarBotaoActivity" />
-        <activity android:name=".EditarBotaoActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-        </activity>
+        <activity android:name=".EditarBotaoActivity"/>
         <activity android:name=".RelatorioActivity"></activity>
     </application>
 

@@ -49,10 +49,29 @@ public class AdicionarBotaoActivity extends Activity {
         ImageButton imagemButtonEscolhido = (ImageButton) findViewById(R.id.imageButtonEscolhido);
         if (nomeImagem.equals("chocolate")) {
             imagemButtonEscolhido.setBackgroundResource(R.drawable.chocolate);
-        } else if (nomeImagem.equals("cachorroQuente")) {
-        } else if (nomeImagem.equals("Hamburguer")){
+        }else if (nomeImagem.equals("cachorroQuente")) {
+        }else if (nomeImagem.equals("Hamburguer")){
         }else if (nomeImagem.equals("Pizza")){
-        } else if (nomeImagem.equals("batataFrita")){
+        }else if (nomeImagem.equals("batataFrita")) {
+        }else if (nomeImagem.equals("bacon")){
+        }else if (nomeImagem.equals("apple")) {
+        }else if (nomeImagem.equals("grapes")){
+        }else if (nomeImagem.equals("orange")){
+        }else if (nomeImagem.equals("strawberry")){
+        }else if (nomeImagem.equals("watermelon")){
+        }else if (nomeImagem.equals("pineapple")){
+        }else if (nomeImagem.equals("cherrie")){
+        }else if (nomeImagem.equals("lemon")){
+        }else if (nomeImagem.equals("banana")){
+        }else if (nomeImagem.equals("pear")){
+        }else if (nomeImagem.equals("corn")){
+        }else if (nomeImagem.equals("avocado")){
+        }else if (nomeImagem.equals("sushi")){
+        }else if (nomeImagem.equals("cauliflower")){
+        }else if (nomeImagem.equals("pumpkin")){
+        }else if (nomeImagem.equals("tomato")){
+        }else if (nomeImagem.equals("cheese")){
+
         }
     }
 

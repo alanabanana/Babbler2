@@ -56,6 +56,25 @@ public class DBController {
         }
     }
 
+    public int insertIntoAtividades(Context context, String nome, String imagem, String audio, String email_resp, String resp_email) throws IOException {
+        if (!checkNetworkConnection(context)) {
+            Toast.makeText(context, "Falha na Conexão com a Internet!", Toast.LENGTH_LONG).show();
+            return 0;
+        }
+        checkThreadPolicy();
+        String values = "nome="+nome+"&"+"imagem="+imagem+"&"+"audio="+audio+"&"+"email_resp="+email_resp+"&"+"resp_email="+resp_email;
+        URL url = new URL(URL_WEB_SERVICE + "ws_insert/ws_insert_atividades.php?"+values);
+        HttpURLConnection con = (HttpURLConnection) url.openConnection();
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(con.getInputStream()));
+        String response = bufferedReader.readLine();
+        if (response.equals("false")) {
+            Toast.makeText(context, "Erro no Banco de Dados!", Toast.LENGTH_LONG).show();
+            return 0;
+        } else {
+            return 1;
+        }
+    }
+
     public JSONArray selectAllFromResponsavel(Context context) throws JSONException, IOException {
         if (!checkNetworkConnection(context)) {
             return null;
@@ -91,6 +110,7 @@ public class DBController {
             return 1;
         }
     }
+
     public JSONArray selectAllFromDependente(Context context) throws JSONException, IOException {
         if (!checkNetworkConnection(context)) {
             return null;
@@ -107,7 +127,6 @@ public class DBController {
         JSONArray jsonArray = new JSONArray(sb.toString().trim());
         return jsonArray;
     }
-
 
     private boolean checkNetworkConnection(Context context) {
         ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);

@@ -19,7 +19,8 @@
             android:layout_columnSpan="2"
             android:gravity="center_horizontal"
             android:text="Imagens para Comida:"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:layout_column="1" />
 
         <ImageButton
             android:id="@+id/chocolateButton"
@@ -36,7 +37,7 @@
             android:layout_height="205sp"
             android:layout_row="1"
             android:layout_column="1"
-            android:background="@drawable/hotDog"
+            android:background="@drawable/hot_dog"
             android:onClick="escolheuCachorroQuente"/>
 
         <ImageButton
@@ -231,7 +232,7 @@
             android:layout_row="12"
             android:layout_column="1"
             android:background="@drawable/steak"
-            android:onClick="escolheuCarne"/>
+            android:onClick="escolheuCarne" />
         <ImageButton
             android:id="@+id/turkeyButton"
             android:layout_width="205sp"
@@ -278,7 +279,7 @@
             android:layout_height="205sp"
             android:layout_row="15"
             android:layout_column="1"
-            android:background="@drawable/iceCream"
+            android:background="@drawable/ice_cream"
             android:onClick="escolheuSorvete"/>
         <ImageButton
             android:id="@+id/breadButton"
@@ -383,7 +384,7 @@
             android:layout_height="205sp"
             android:layout_row="22"
             android:layout_column="1"
-            android:background="@drawable/maisSad"
+            android:background="@drawable/mais_sad"
             android:onClick="escolheuMaisSad"/>
         <ImageButton
             android:id="@+id/creepyButton"
@@ -479,7 +480,7 @@
             android:layout_height="205sp"
             android:layout_row="28"
             android:layout_column="1"
-            android:background="@drawable/muitoAngry"
+            android:background="@drawable/muito_angry"
             android:onClick="escolheuFurioso"/>
         <ImageButton
             android:id="@+id/calorButton"
@@ -648,7 +649,7 @@
             android:layout_height="205sp"
             android:layout_row="40"
             android:layout_column="0"
-            android:background="@drawable/oneHundred"
+            android:background="@drawable/one_hundred"
             android:onClick="escolheuCem"/>
         <ImageButton
             android:id="@+id/casaButton"
@@ -696,7 +697,7 @@
             android:layout_height="205sp"
             android:layout_row="43"
             android:layout_column="0"
-            android:background="@drawable/toiletPaper"
+            android:background="@drawable/toilet_paper"
             android:onClick="escolheuPapelHigienico"/>
         <ImageButton
             android:id="@+id/escovaDeDenteButton"
@@ -712,7 +713,7 @@
             android:layout_height="205sp"
             android:layout_row="44"
             android:layout_column="0"
-            android:background="@drawable/hairDryer"
+            android:background="@drawable/hair_dryer"
             android:onClick="escolheuSecador"/>
         <TextView
             android:id="@+id/textBrinquedos"
@@ -730,7 +731,7 @@
             android:layout_height="205sp"
             android:layout_row="46"
             android:layout_column="0"
-            android:background="@drawable/teddyBear"
+            android:background="@drawable/teddy_bear"
             android:onClick="escolheuUrsinho"/>
         <ImageButton
             android:id="@+id/bolaButton"
@@ -770,7 +771,7 @@
             android:layout_height="205sp"
             android:layout_row="48"
             android:layout_column="1"
-            android:background="@drawable/gameConsole"
+            android:background="@drawable/game_console"
             android:onClick="escolheuGameConsole"/>
         <ImageButton
             android:id="@+id/roboButton"
@@ -858,7 +859,7 @@
             android:layout_height="205sp"
             android:layout_row="54"
             android:layout_column="0"
-            android:background="@drawable/sandCastle"
+            android:background="@drawable/sand_castle"
             android:onClick="escolheuCasteloDeAreia"/>
         <ImageButton
             android:id="@+id/dinossauroButton"
@@ -931,7 +932,7 @@
             android:layout_height="205sp"
             android:layout_row="59"
             android:layout_column="0"
-            android:background="@drawable/pencilCase"
+            android:background="@drawable/pencil_case"
             android:onClick="escolheuPenal"/>
         <ImageButton
             android:id="@+id/ideiaButton"
@@ -1101,7 +1102,7 @@
             android:layout_row="70"
             android:layout_column="1"
             android:background="@drawable/shark"
-            android:onClick="escolheuTubarão"/>
+            android:onClick="escolheuTubarao"/>
         <ImageButton
             android:id="@+id/gatoButton"
             android:layout_width="205sp"

@@ -31,7 +31,7 @@ public class ImagemActivity extends Activity {
 
     public void escolheuHamburguer(View v) {
         Bundle bundle = new Bundle();
-        bundle.putString("Imagem", "Hamburguer");
+        bundle.putString("Imagem", "hamburguer");
         Intent intent = new Intent(this, AdicionarBotaoActivity.class);
         intent.putExtras(bundle);
         startActivity(intent);
@@ -47,7 +47,7 @@ public class ImagemActivity extends Activity {
 
     public void escolheuBatataFrita(View v) {
         Bundle bundle = new Bundle();
-        bundle.putString("Imagem", "batataFrita");
+        bundle.putString("Imagem", "fries");
         Intent intent = new Intent(this, AdicionarBotaoActivity.class);
         intent.putExtras(bundle);
         startActivity(intent);
@@ -713,13 +713,7 @@ public class ImagemActivity extends Activity {
         intent.putExtras(bundle);
         startActivity(intent);
     }
-    public void escolheuBicicleta (View v) {
-        Bundle bundle = new Bundle();
-        bundle.putString("Imagem", "tricycle");
-        Intent intent = new Intent(this, AdicionarBotaoActivity.class);
-        intent.putExtras(bundle);
-        startActivity(intent);
-    }
+
     public void escolheuDinossauro (View v) {
         Bundle bundle = new Bundle();
         bundle.putString("Imagem", "dinosaur");
@@ -909,7 +903,7 @@ public class ImagemActivity extends Activity {
         intent.putExtras(bundle);
         startActivity(intent);
     }
-    public void escolheuTubarão (View v) {
+    public void escolheuTubarao (View v) {
         Bundle bundle = new Bundle();
         bundle.putString("Imagem", "shark");
         Intent intent = new Intent(this, AdicionarBotaoActivity.class);

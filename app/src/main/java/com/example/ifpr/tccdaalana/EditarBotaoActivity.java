@@ -20,5 +20,17 @@ public class EditarBotaoActivity extends Activity {
 
     }
 
+
+    public void editarBotaoEmOutraTela (View v ){
+        Intent intent = new Intent(this, AdicionarBotaoActivity.class);
+        startActivity(intent);
+    }
+
+    public void adicionarBotaoEmOutraTela (View v ){
+        Intent intent = new Intent(this, AdicionarBotaoActivity.class);
+        startActivity(intent);
+    }
+
+
 }
 

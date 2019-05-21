@@ -23,9 +23,11 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".CadastroRespActivity"/>
+        <activity android:name=".CadastroRespActivity"
+            android:theme="@style/Theme.Design.NoActionBar"/>
+        <activity android:name=".CadastroDpActivity"
+            android:theme="@style/Theme.Design.NoActionBar"/>
         <activity android:name=".PerfilPaiActivity"/>
-        <activity android:name=".CadastroDpActivity" />
         <activity android:name=".PerfilFilhoActivity" />
         <activity android:name=".AdicionarBotaoActivity" />
         <activity android:name=".EditarBotaoActivity"/>

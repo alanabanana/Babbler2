@@ -2,7 +2,9 @@ package com.example.ifpr.tccdaalana;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -21,6 +23,19 @@ public class LoginActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        SharedPreferences login = getApplicationContext().getSharedPreferences("Login", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = login.edit();
+        String email = login.getString("email", null);
+        String email_dep = login.getString("email_dep", null);
+        if (email != null){
+            Intent intent = new Intent(this, PerfilPaiActivity.class);
+            startActivity(intent);
+        }
+        else if (email_dep != null){
+            Intent intent = new Intent(this, PerfilFilhoActivity.class);
+            startActivity(intent);
+        }
+
     }
 
     public void confirmaLogin (View v) throws JSONException, IOException {
@@ -29,13 +44,26 @@ public class LoginActivity extends Activity {
         EditText editTextSenha = findViewById(R.id.editTextSenha);
         String senhaDigitada = editTextSenha.getText().toString();
 
+
         boolean encontrouResponsavel = buscaResponsavel(emailApelidoDigitado, senhaDigitada);
         if (encontrouResponsavel == true) {
+            SharedPreferences login = getApplicationContext().getSharedPreferences("Login", MODE_PRIVATE);
+            SharedPreferences.Editor editor = login.edit();
+            editor.putString("email", emailApelidoDigitado);
+            editor.putString("senha", senhaDigitada);
+            editor.commit();
+
             Intent intent = new Intent(this, PerfilPaiActivity.class);
             startActivity(intent);
         } else {
             boolean encontrouDependente = buscaDependente(emailApelidoDigitado, senhaDigitada);
             if (encontrouDependente == true) {
+                SharedPreferences login = getApplicationContext().getSharedPreferences("Login", MODE_PRIVATE);
+                SharedPreferences.Editor editor = login.edit();
+                editor.putString("email_dep", emailApelidoDigitado);
+                editor.putString("senha", senhaDigitada);
+                editor.commit();
+
                 Intent intent = new Intent(this, PerfilFilhoActivity.class);
                 startActivity(intent);
             } else {
@@ -52,6 +80,7 @@ public class LoginActivity extends Activity {
             String apelido = jsonObject.getString("Apelido");
             String emailResponsavel = jsonObject.getString("Responsavel_email");
             String senha = jsonObject.getString("Senha");
+
             if (emailResponsavel.equals(emailApelidoDigitado) && senha.equals(senhaDigitada)) {
                 return true;
             }

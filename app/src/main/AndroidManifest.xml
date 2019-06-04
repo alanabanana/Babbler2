@@ -23,6 +23,9 @@
             </intent-filter>
 
         </activity>
+        <activity android:name=".ImagemActivity"
+            android:theme="@style/Theme.Design.NoActionBar"/>
+
         <activity android:name=".CadastroRespActivity"
             android:theme="@style/Theme.Design.NoActionBar"/>
         <activity android:name=".CadastroDpActivity"

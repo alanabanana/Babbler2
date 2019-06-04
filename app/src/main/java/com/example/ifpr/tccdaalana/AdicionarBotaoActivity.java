@@ -1,6 +1,7 @@
 package com.example.ifpr.tccdaalana;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -21,21 +22,25 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 
+import android.app.Application;
+import android.content.Context;
 import bancodedados.DBController;
 
 public class AdicionarBotaoActivity extends Activity {
+//    private Context context;
+//    private MyApp my_instance;
 
     ImageButton buttonStart;
     ImageButton buttonStop;
     MediaRecorder mediaRecorder;
     DBController dbController = new DBController();
-    File outputDir = getApplicationContext().getCacheDir();
+    File outputDir;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adicionar_botao);
-
+        File outputDir = getApplicationContext().getCacheDir();
 
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
@@ -55,13 +60,18 @@ public class AdicionarBotaoActivity extends Activity {
         buttonStart.setEnabled(false);
         buttonStop.setEnabled(true);
         //CODIGO PARA REALIZAR GRAVACAO
-        mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-        mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
-        mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
-        mediaRecorder.setOutputFile(outputDir + "/teste.3gpp");
-        mediaRecorder.prepare();
-        mediaRecorder.start();
-        salvarAudio();
+//        mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+//        mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+//        mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
+//        mediaRecorder.setOutputFile(outputDir + "/teste.3gpp");
+//        mediaRecorder.prepare();
+//        mediaRecorder.start();
+//        salvarAudio();
+    }
+
+    private Context MyApp(Context context) {
+        context = context;
+        return context;
     }
 
     private void salvarAudio() {

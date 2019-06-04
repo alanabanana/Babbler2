@@ -1,44 +1,502 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/botao2"
-        android:layout_width="288dp"
-        android:layout_height="250dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="89dp"
-        android:layout_marginLeft="89dp"
-        android:layout_marginTop="166dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginRight="34dp"
-        android:layout_marginBottom="315dp"
-        android:text="Button" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/botao1"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:text="Botão 1"
-        android:textSize="10sp"/>
+        <Button
+            android:id="@+id/sairButton"
+            android:layout_width="90dp"
+            android:layout_height="85dp"
+            android:background="@drawable/botao_redondo"
+            android:onClick="sairLogin" />
 
-    <Button
-        android:id="@+id/botao3"
-        android:layout_width="90dp"
-        android:layout_height="35dp"
-        android:text="Botão 2"
-        android:layout_toRightOf="@+id/botao1"
-        android:textSize="10sp"
-        android:layout_centerHorizontal="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF5722"
+            android:orientation="vertical"
+            android:paddingBottom="3dp">
 
-</RelativeLayout>
+            <TextView
+                android:id="@+id/textSentimentos"
+                android:layout_width="match_parent"
+                android:layout_height="99dp"
+                android:gravity="center_vertical|center"
+                android:text="Sentimentos"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/euTeAmoButton"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:background="@drawable/inlove"
+                android:onClick="escolheuRaposa" />
+
+            <TextView
+                android:id="@+id/textEuTeAmo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text="EU TE AMO"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/ButtonRindo"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:background="@drawable/laughing"
+                android:onClick="escolheuRaposa" />
+
+            <TextView
+                android:id="@+id/textEstouFeliz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center"
+                android:text="ESTOU FELIZ"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/ButtonTriste"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:background="@drawable/sad"
+                android:onClick="escolheuRaposa" />
+
+            <TextView
+                android:id="@+id/textEstouTriste"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:gravity="center_vertical|center"
+                android:text="ESTOU TRISTE"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/ButtonAngry"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:background="@drawable/muito_angry"
+                android:onClick="escolheuRaposa" />
+
+            <TextView
+                android:id="@+id/textEstouComRaiva"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:gravity="center_vertical|center"
+                android:text="ESTOU COM RAIVA"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/ButtonMedo"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:background="@drawable/creepy"
+                android:onClick="escolheuRaposa" />
+
+            <TextView
+                android:id="@+id/textEstouComMedo"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|center"
+                android:text="ESTOU COM MEDO"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/ButtonDesapontado"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:background="@drawable/dissapointment"
+                android:onClick="escolheuRaposa" />
+
+            <TextView
+                android:id="@+id/textEstouDesapontado"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|center"
+                android:text="ESTOU DESAPONTADO"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/ButtonChorando"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:background="@drawable/crying"
+                android:onClick="escolheuRaposa" />
+
+            <TextView
+                android:id="@+id/textEstouChorando"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|center"
+                android:text="EU ESTOU CHORANDO"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/ButtonComCalor"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:background="@drawable/hot"
+                android:onClick="escolheuRaposa" />
+
+            <TextView
+                android:id="@+id/textEstouComCalor"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|center"
+                android:text="EU ESTOU COM CALOR"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/ButtonSemPalavras"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:background="@drawable/muted"
+                android:onClick="escolheuRaposa" />
+
+            <TextView
+                android:id="@+id/textEstouSemPalavras"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|center"
+                android:text="EU ESTOU SEM PALAVRAS"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <ImageButton
+                android:id="@+id/ButtonComSono"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:background="@drawable/sleepy"
+                android:onClick="escolheuRaposa" />
+
+            <TextView
+                android:id="@+id/textEstouComSono"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|center"
+                android:text="EU ESTOU COM SONO"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FE234F"
+            android:paddingTop="3dp">
+
+            <TextView
+                android:id="@+id/textComida"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical|center"
+                android:layout_height="99dp"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:text="Comidas" />
+
+            <ImageButton
+                android:id="@+id/chocolateButton"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/chocolate" />
+
+            <TextView
+                android:id="@+id/textChocolate"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|center"
+                android:text="EU QUERO COMER CHOCOLATE"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/paoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bread" />
+
+            <TextView
+                android:id="@+id/textPao"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|center"
+                android:text="EU QUERO COMER PÃO"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/batataFritaButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/fries" />
+
+            <TextView
+                android:id="@+id/textBatataFrita"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|center"
+                android:text="EU QUERO COMER BATATA FRITA"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/queijoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/cheese" />
+
+            <TextView
+                android:id="@+id/textQueijo"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|center"
+                android:text="EU QUERO COMER QUEIJO"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/carneButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/steak" />
+
+            <TextView
+                android:id="@+id/textCarne"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|center"
+                android:text="EU QUERO COMER CARNE"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/hambButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/hamburguer" />
+
+            <TextView
+                android:id="@+id/textHamburguer"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|center"
+                android:text="EU QUERO COMER HAMBURGUER"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/macarraoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/spaguetti" />
+
+            <TextView
+                android:id="@+id/textMacarrao"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|center"
+                android:text="EU QUERO COMER MACARRÃO"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/uvaButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/grapes" />
+
+            <TextView
+                android:id="@+id/textUva"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|center"
+                android:text="EU QUERO COMER UVA"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/melanciaButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/watermelon" />
+
+            <TextView
+                android:id="@+id/textMelancia"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|center"
+                android:text="EU QUERO COMER MELANCIA"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/aguaButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/water" />
+
+            <TextView
+                android:id="@+id/textAgua"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|center"
+                android:text="EU QUERO BEBER ÁGUA"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/refriButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/can" />
+
+            <TextView
+                android:id="@+id/textRefri"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|center"
+                android:text="EU QUERO BEBER REFRIGERANTE"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/leiteButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/milk" />
+
+            <TextView
+                android:id="@+id/textLeite"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical|center"
+                android:text="EU QUERO BEBER LEITE"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dda0dd"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textCasa"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:gravity="center_vertical|center"
+            android:text="Casa"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/queroIrParaCasaButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/house" />
+
+        <TextView
+            android:id="@+id/textEuQueroIrParaCasa"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center_vertical|center"
+            android:text="EU QUERO IR PARA A MINHA CASA"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/queroDeitarButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bed" />
+
+        <TextView
+            android:id="@+id/textEuQueroDeitar"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center_vertical|center"
+            android:text="EU QUERO DEITAR"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/queroTomarBanhoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/shower" />
+
+        <TextView
+            android:id="@+id/textEuQueroTomarBanho"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center_vertical|center"
+            android:text="EU QUERO TOMAR BANHO"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
 

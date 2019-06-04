@@ -34,7 +34,8 @@
                 android:text="Sentimentos"
                 android:textColor="#FFFFFF"
                 android:textSize="50sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                />
 
             <ImageButton
                 android:id="@+id/euTeAmoButton"
@@ -42,7 +43,7 @@
                 android:layout_height="150sp"
                 android:layout_gravity="center"
                 android:background="@drawable/inlove"
-                android:onClick="escolheuRaposa" />
+                android:onClick="euTeAmo" />
 
             <TextView
                 android:id="@+id/textEuTeAmo"
@@ -60,7 +61,7 @@
                 android:layout_height="150sp"
                 android:layout_gravity="center"
                 android:background="@drawable/laughing"
-                android:onClick="escolheuRaposa" />
+                android:onClick="euEstouFeliz" />
 
             <TextView
                 android:id="@+id/textEstouFeliz"
@@ -78,7 +79,7 @@
                 android:layout_height="150sp"
                 android:layout_gravity="center"
                 android:background="@drawable/sad"
-                android:onClick="escolheuRaposa" />
+                android:onClick="euEstouTriste" />
 
             <TextView
                 android:id="@+id/textEstouTriste"
@@ -96,7 +97,7 @@
                 android:layout_height="150sp"
                 android:layout_gravity="center"
                 android:background="@drawable/muito_angry"
-                android:onClick="escolheuRaposa" />
+                android:onClick="euEstouComRaiva" />
 
             <TextView
                 android:id="@+id/textEstouComRaiva"
@@ -114,7 +115,7 @@
                 android:layout_height="150sp"
                 android:layout_gravity="center"
                 android:background="@drawable/creepy"
-                android:onClick="escolheuRaposa" />
+                android:onClick="euEstouComMedo" />
 
             <TextView
                 android:id="@+id/textEstouComMedo"
@@ -132,7 +133,7 @@
                 android:layout_height="150sp"
                 android:layout_gravity="center"
                 android:background="@drawable/dissapointment"
-                android:onClick="escolheuRaposa" />
+                android:onClick="euEstouDesapontado" />
 
             <TextView
                 android:id="@+id/textEstouDesapontado"
@@ -150,7 +151,7 @@
                 android:layout_height="150sp"
                 android:layout_gravity="center"
                 android:background="@drawable/crying"
-                android:onClick="escolheuRaposa" />
+                android:onClick="euEstouChorando" />
 
             <TextView
                 android:id="@+id/textEstouChorando"
@@ -168,7 +169,7 @@
                 android:layout_height="150sp"
                 android:layout_gravity="center"
                 android:background="@drawable/hot"
-                android:onClick="escolheuRaposa" />
+                android:onClick="euEstouComCalor" />
 
             <TextView
                 android:id="@+id/textEstouComCalor"
@@ -186,7 +187,7 @@
                 android:layout_height="150sp"
                 android:layout_gravity="center"
                 android:background="@drawable/muted"
-                android:onClick="escolheuRaposa" />
+                android:onClick="euEstouSemPalavras" />
 
             <TextView
                 android:id="@+id/textEstouSemPalavras"
@@ -205,7 +206,7 @@
                 android:layout_height="150sp"
                 android:layout_gravity="center"
                 android:background="@drawable/sleepy"
-                android:onClick="escolheuRaposa" />
+                android:onClick="euEstouComSono" />
 
             <TextView
                 android:id="@+id/textEstouComSono"
@@ -242,7 +243,8 @@
                 android:layout_width="150sp"
                 android:layout_height="150sp"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/chocolate" />
+                app:srcCompat="@drawable/chocolate"
+                android:onClick="euQueroChocolate"/>
 
             <TextView
                 android:id="@+id/textChocolate"
@@ -256,9 +258,11 @@
 
             <ImageButton
                 android:id="@+id/paoButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/bread" />
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/bread"
+                android:onClick="euQueroComerPao"/>
 
             <TextView
                 android:id="@+id/textPao"
@@ -272,9 +276,11 @@
 
             <ImageButton
                 android:id="@+id/batataFritaButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/fries" />
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/fries"
+                android:onClick="euQueroComerBatataFrita"/>
 
             <TextView
                 android:id="@+id/textBatataFrita"
@@ -288,9 +294,11 @@
 
             <ImageButton
                 android:id="@+id/queijoButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/cheese" />
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/cheese"
+                android:onClick="euQueroComerQueijo"/>
 
             <TextView
                 android:id="@+id/textQueijo"
@@ -304,9 +312,11 @@
 
             <ImageButton
                 android:id="@+id/carneButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/steak" />
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/steak"
+                android:onClick="euQueroComerCarne"/>
 
             <TextView
                 android:id="@+id/textCarne"
@@ -320,9 +330,11 @@
 
             <ImageButton
                 android:id="@+id/hambButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/hamburguer" />
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/hamburguer"
+                android:onClick="euQueroComerHamburguer"/>
 
             <TextView
                 android:id="@+id/textHamburguer"
@@ -336,9 +348,11 @@
 
             <ImageButton
                 android:id="@+id/macarraoButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/spaguetti" />
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/spaguetti"
+                android:onClick="euQueroComerMacarrao"/>
 
             <TextView
                 android:id="@+id/textMacarrao"
@@ -352,9 +366,11 @@
 
             <ImageButton
                 android:id="@+id/uvaButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/grapes" />
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/grapes"
+                android:onClick="euQueroComerUva"/>
 
             <TextView
                 android:id="@+id/textUva"
@@ -368,9 +384,11 @@
 
             <ImageButton
                 android:id="@+id/melanciaButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/watermelon" />
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/watermelon"
+                android:onClick="euQueroComerMelancia"/>
 
             <TextView
                 android:id="@+id/textMelancia"
@@ -384,9 +402,11 @@
 
             <ImageButton
                 android:id="@+id/aguaButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/water" />
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/water"
+                android:onClick="euQueroBeberAgua"/>
 
             <TextView
                 android:id="@+id/textAgua"
@@ -400,9 +420,11 @@
 
             <ImageButton
                 android:id="@+id/refriButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/can" />
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/can"
+                android:onClick="euQueroBeberRefri"/>
 
             <TextView
                 android:id="@+id/textRefri"
@@ -416,9 +438,11 @@
 
             <ImageButton
                 android:id="@+id/leiteButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/milk" />
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/milk"
+                android:onClick="euQueroBeberLeite"/>
 
             <TextView
                 android:id="@+id/textLeite"
@@ -446,57 +470,10 @@
             android:text="Casa"
             android:textColor="#FFFFFF"
             android:textSize="50sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            />
 
-        <ImageButton
-            android:id="@+id/queroIrParaCasaButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/house" />
-
-        <TextView
-            android:id="@+id/textEuQueroIrParaCasa"
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:gravity="center_vertical|center"
-            android:text="EU QUERO IR PARA A MINHA CASA"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <ImageButton
-            android:id="@+id/queroDeitarButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/bed" />
-
-        <TextView
-            android:id="@+id/textEuQueroDeitar"
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:gravity="center_vertical|center"
-            android:text="EU QUERO DEITAR"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <ImageButton
-            android:id="@+id/queroTomarBanhoButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/shower" />
-
-        <TextView
-            android:id="@+id/textEuQueroTomarBanho"
-            android:layout_width="match_parent"
-            android:layout_height="25dp"
-            android:gravity="center_vertical|center"
-            android:text="EU QUERO TOMAR BANHO"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp"
-            android:textStyle="bold" />
         </LinearLayout>
-
     </LinearLayout>
 </ScrollView>
 

@@ -20,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.102" />
+        app:layout_constraintVertical_bias="0.092" />
 
     <EditText
         android:id="@+id/audioNameEditText"
@@ -36,15 +36,15 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.162" />
+        app:layout_constraintVertical_bias="0.167" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="98dp"
-        android:layout_height="91dp"
+        android:layout_width="189dp"
+        android:layout_height="87dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -71,11 +71,12 @@
         android:onClick="comecarGravacao"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintHorizontal_bias="0.277"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.326"
-        app:srcCompat="@android:drawable/presence_audio_away" />
+        app:srcCompat="@android:drawable/presence_audio_away"
+        tools:srcCompat="@android:drawable/presence_audio_away" />
 
     <ImageButton
         android:id="@+id/StopAudio"
@@ -93,7 +94,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.326"
-        app:srcCompat="@android:drawable/ic_media_pause" />
+        app:srcCompat="@android:drawable/ic_media_pause"
+        tools:srcCompat="@android:drawable/ic_media_pause" />
 
     <TextView
         android:id="@+id/textView2"
@@ -110,7 +112,7 @@
         app:layout_constraintHorizontal_bias="0.321"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.263" />
+        app:layout_constraintVertical_bias="0.248" />
 
     <ImageButton
         android:id="@+id/imageButtonEscolhido"
@@ -123,11 +125,12 @@
         android:onClick="addImagem"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintHorizontal_bias="0.144"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.642"
-        app:srcCompat="@drawable/imagem" />
+        app:layout_constraintVertical_bias="0.668"
+        app:srcCompat="@drawable/imagem"
+        tools:srcCompat="@drawable/imagem" />
 
     <TextView
         android:id="@+id/textAddBotao"

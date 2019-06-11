@@ -44,8 +44,8 @@
 
         <EditText
             android:id="@+id/cEmail"
-            android:layout_width="318dp"
-            android:layout_height="32dp"
+            android:layout_width="317dp"
+            android:layout_height="54dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
@@ -57,10 +57,10 @@
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.606"
+            app:layout_constraintHorizontal_bias="0.47"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.247" />
+            app:layout_constraintVertical_bias="0.178" />
 
         <TextView
             android:id="@+id/emailText"
@@ -94,10 +94,9 @@
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.526"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.498" />
+            app:layout_constraintVertical_bias="0.553" />
 
         <TextView
             android:id="@+id/senhaText"
@@ -137,8 +136,8 @@
 
         <EditText
             android:id="@+id/cConfirmarSenha"
-            android:layout_width="316dp"
-            android:layout_height="34dp"
+            android:layout_width="319dp"
+            android:layout_height="53dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
@@ -150,10 +149,10 @@
             android:textSize="22sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.485"
+            app:layout_constraintHorizontal_bias="0.562"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/senhaText2"
-            app:layout_constraintVertical_bias="0.034" />
+            app:layout_constraintVertical_bias="0.0" />
 
     </android.support.constraint.ConstraintLayout>
 

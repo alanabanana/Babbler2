@@ -5,15 +5,22 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import bancodedados.DBController;
+
 public class SentimentoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sentimento);
     }
+
     public void euTeAmo (View v){
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_te_amo);
         mediaPlayer.start();
+        //dbController.insertIntoRelatorio(emailDep, emailResp, "Eu Te Amo", Utils.getDate(), Utils.getTime());
     }
     public void euEstouFeliz (View v){
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_estou_feliz);

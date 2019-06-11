@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:background="#FF5722"
+      android:paddingBottom="3dp">
+
+      <TextView
+          android:id="@+id/textSentimentos"
+          android:layout_width="match_parent"
+          android:layout_height="99dp"
+          android:gravity="center_vertical|center"
+          android:text="Sentimentos"
+          android:textColor="#FFFFFF"
+          android:textSize="50sp"
+          android:textStyle="bold"
+          />
+
+      <ImageButton
+          android:id="@+id/euTeAmoButton"
+          android:layout_width="150sp"
+          android:layout_height="150sp"
+          android:layout_gravity="center"
+          android:background="@drawable/inlove"
+          android:onClick="euTeAmo" />
+
+      <TextView
+          android:id="@+id/textEuTeAmo"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical|center"
+          android:text="EU TE AMO"
+          android:textColor="#FFFFFF"
+          android:textSize="25sp"
+          android:textStyle="bold" />
+
+      <ImageButton
+          android:id="@+id/ButtonRindo"
+          android:layout_width="150sp"
+          android:layout_height="150sp"
+          android:layout_gravity="center"
+          android:background="@drawable/laughing"
+          android:onClick="euEstouFeliz" />
+
+      <TextView
+          android:id="@+id/textEstouFeliz"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:gravity="center_vertical|center"
+          android:text="ESTOU FELIZ"
+          android:textColor="#FFFFFF"
+          android:textSize="25sp"
+          android:textStyle="bold" />
+
+      <ImageButton
+          android:id="@+id/ButtonTriste"
+          android:layout_width="150sp"
+          android:layout_height="150sp"
+          android:layout_gravity="center"
+          android:background="@drawable/sad"
+          android:onClick="euEstouTriste" />
+
+      <TextView
+          android:id="@+id/textEstouTriste"
+          android:layout_width="match_parent"
+          android:layout_height="38dp"
+          android:gravity="center_vertical|center"
+          android:text="ESTOU TRISTE"
+          android:textColor="#FFFFFF"
+          android:textSize="25sp"
+          android:textStyle="bold" />
+
+      <ImageButton
+          android:id="@+id/ButtonAngry"
+          android:layout_width="150sp"
+          android:layout_height="150sp"
+          android:layout_gravity="center"
+          android:background="@drawable/muito_angry"
+          android:onClick="euEstouComRaiva" />
+
+      <TextView
+          android:id="@+id/textEstouComRaiva"
+          android:layout_width="match_parent"
+          android:layout_height="36dp"
+          android:gravity="center_vertical|center"
+          android:text="ESTOU COM RAIVA"
+          android:textColor="#FFFFFF"
+          android:textSize="25sp"
+          android:textStyle="bold" />
+
+      <ImageButton
+          android:id="@+id/ButtonMedo"
+          android:layout_width="150sp"
+          android:layout_height="150sp"
+          android:layout_gravity="center"
+          android:background="@drawable/creepy"
+          android:onClick="euEstouComMedo" />
+
+      <TextView
+          android:id="@+id/textEstouComMedo"
+          android:layout_width="match_parent"
+          android:layout_height="25dp"
+          android:gravity="center_vertical|center"
+          android:text="ESTOU COM MEDO"
+          android:textColor="#FFFFFF"
+          android:textSize="25sp"
+          android:textStyle="bold" />
+
+      <ImageButton
+          android:id="@+id/ButtonDesapontado"
+          android:layout_width="150sp"
+          android:layout_height="150sp"
+          android:layout_gravity="center"
+          android:background="@drawable/dissapointment"
+          android:onClick="euEstouDesapontado" />
+
+      <TextView
+          android:id="@+id/textEstouDesapontado"
+          android:layout_width="match_parent"
+          android:layout_height="25dp"
+          android:gravity="center_vertical|center"
+          android:text="ESTOU DESAPONTADO"
+          android:textColor="#FFFFFF"
+          android:textSize="25sp"
+          android:textStyle="bold" />
+
+      <ImageButton
+          android:id="@+id/ButtonChorando"
+          android:layout_width="150sp"
+          android:layout_height="150sp"
+          android:layout_gravity="center"
+          android:background="@drawable/crying"
+          android:onClick="euEstouChorando" />
+
+      <TextView
+          android:id="@+id/textEstouChorando"
+          android:layout_width="match_parent"
+          android:layout_height="25dp"
+          android:gravity="center_vertical|center"
+          android:text="EU ESTOU CHORANDO"
+          android:textColor="#FFFFFF"
+          android:textSize="25sp"
+          android:textStyle="bold" />
+
+      <ImageButton
+          android:id="@+id/ButtonComCalor"
+          android:layout_width="150sp"
+          android:layout_height="150sp"
+          android:layout_gravity="center"
+          android:background="@drawable/hot"
+          android:onClick="euEstouComCalor" />
+
+      <TextView
+          android:id="@+id/textEstouComCalor"
+          android:layout_width="match_parent"
+          android:layout_height="25dp"
+          android:gravity="center_vertical|center"
+          android:text="EU ESTOU COM CALOR"
+          android:textColor="#FFFFFF"
+          android:textSize="25sp"
+          android:textStyle="bold" />
+
+      <ImageButton
+          android:id="@+id/ButtonSemPalavras"
+          android:layout_width="150sp"
+          android:layout_height="150sp"
+          android:layout_gravity="center"
+          android:background="@drawable/muted"
+          android:onClick="euEstouSemPalavras" />
+
+      <TextView
+          android:id="@+id/textEstouSemPalavras"
+          android:layout_width="match_parent"
+          android:layout_height="25dp"
+          android:gravity="center_vertical|center"
+          android:text="EU ESTOU SEM PALAVRAS"
+          android:textColor="#FFFFFF"
+          android:textSize="25sp"
+          android:textStyle="bold" />
+
+
+      <ImageButton
+          android:id="@+id/ButtonComSono"
+          android:layout_width="150sp"
+          android:layout_height="150sp"
+          android:layout_gravity="center"
+          android:background="@drawable/sleepy"
+          android:onClick="euEstouComSono" />
+
+      <TextView
+          android:id="@+id/textEstouComSono"
+          android:layout_width="match_parent"
+          android:layout_height="25dp"
+          android:gravity="center_vertical|center"
+          android:text="EU ESTOU COM SONO"
+          android:textColor="#FFFFFF"
+          android:textSize="25sp"
+          android:textStyle="bold" />
+  </LinearLayout>
+</ScrollView>

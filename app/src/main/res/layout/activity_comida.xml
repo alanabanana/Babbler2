@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FE234F"
+    android:paddingTop="3dp">
+    <TextView
+        android:id="@+id/textComida"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical|center"
+        android:layout_height="99dp"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:text="Comidas" />
+
+    <ImageButton
+        android:id="@+id/chocolateButton"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/chocolate"
+        android:onClick="euQueroChocolate"/>
+
+    <TextView
+        android:id="@+id/textChocolate"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center_vertical|center"
+        android:text="EU QUERO COMER CHOCOLATE"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/paoButton"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/bread"
+        android:onClick="euQueroComerPao"/>
+
+    <TextView
+        android:id="@+id/textPao"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center_vertical|center"
+        android:text="EU QUERO COMER PÃO"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/batataFritaButton"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/fries"
+        android:onClick="euQueroComerBatataFrita"/>
+
+    <TextView
+        android:id="@+id/textBatataFrita"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center_vertical|center"
+        android:text="EU QUERO COMER BATATA FRITA"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/queijoButton"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/cheese"
+        android:onClick="euQueroComerQueijo"/>
+
+    <TextView
+        android:id="@+id/textQueijo"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center_vertical|center"
+        android:text="EU QUERO COMER QUEIJO"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/carneButton"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/steak"
+        android:onClick="euQueroComerCarne"/>
+
+    <TextView
+        android:id="@+id/textCarne"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center_vertical|center"
+        android:text="EU QUERO COMER CARNE"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/hambButton"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_gravity="center"
+        android:onClick="euQueroComerHamburguer"
+        app:srcCompat="@drawable/hamburguer" />
+
+    <TextView
+        android:id="@+id/textHamburguer"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center_vertical|center"
+        android:text="EU QUERO COMER HAMBURGUER"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/macarraoButton"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/spaguetti"
+        android:onClick="euQueroComerMacarrao"/>
+
+    <TextView
+        android:id="@+id/textMacarrao"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center_vertical|center"
+        android:text="EU QUERO COMER MACARRÃO"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/uvaButton"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/grapes"
+        android:onClick="euQueroComerUva"/>
+
+    <TextView
+        android:id="@+id/textUva"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center_vertical|center"
+        android:text="EU QUERO COMER UVA"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/melanciaButton"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/watermelon"
+        android:onClick="euQueroComerMelancia"/>
+
+    <TextView
+        android:id="@+id/textMelancia"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center_vertical|center"
+        android:text="EU QUERO COMER MELANCIA"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/aguaButton"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/water"
+        android:onClick="euQueroBeberAgua"/>
+
+    <TextView
+        android:id="@+id/textAgua"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center_vertical|center"
+        android:text="EU QUERO BEBER ÁGUA"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/refriButton"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/can"
+        android:onClick="euQueroBeberRefri"/>
+
+    <TextView
+        android:id="@+id/textRefri"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center_vertical|center"
+        android:text="EU QUERO BEBER REFRIGERANTE"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/leiteButton"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/milk"
+        android:onClick="euQueroBeberLeite"/>
+
+    <TextView
+        android:id="@+id/textLeite"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center_vertical|center"
+        android:text="EU QUERO BEBER LEITE"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+ </LinearLayout>
+</ScrollView>

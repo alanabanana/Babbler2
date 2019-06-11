@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#20b2aa"
+        android:paddingBottom="3dp">
+        <TextView
+            android:id="@+id/textCasa"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:gravity="center_vertical|center"
+            android:text="Casa"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            />
+
+        <ImageButton
+            android:id="@+id/camaButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/bed"
+            android:onClick="euQueroDeitar" />
+
+        <ImageButton
+            android:id="@+id/quartoButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/bed"
+            android:onClick="euQueroDeitar" />
+        <ImageButton
+            android:id="@+id/banheiroButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/bed"
+            android:onClick="euQueroDeitar" />
+        <ImageButton
+            android:id="@+id/copaButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/bed"
+            android:onClick="euQueroDeitar" />
+        <ImageButton
+            android:id="@+id/cozinhaButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/bed"
+            android:onClick="euQueroDeitar" />
+        <ImageButton
+            android:id="@+id/garagemButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/bed"
+            android:onClick="euQueroDeitar" />
+        <ImageButton
+            android:id="@+id/jardimButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/bed"
+            android:onClick="euQueroDeitar" />
+        <ImageButton
+            android:id="@+id/minhaCasaButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/bed"
+            android:onClick="euQueroDeitar" />
+        <ImageButton
+            android:id="@+id/salaButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/bed"
+            android:onClick="euQueroDeitar" />
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

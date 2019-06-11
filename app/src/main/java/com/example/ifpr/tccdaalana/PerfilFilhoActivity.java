@@ -20,8 +20,7 @@ public class PerfilFilhoActivity extends Activity {
         setContentView(R.layout.activity_perfil_filho);
     }
 
-
-    public void sairLogin(View v){
+    public void sairLogin(View v) {
         SharedPreferences login = getApplicationContext().getSharedPreferences("Login", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = login.edit();
         editor.remove("email_dep");
@@ -32,98 +31,68 @@ public class PerfilFilhoActivity extends Activity {
         startActivity(intent);
     }
 
-    public void euTeAmo (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_te_amo);
-        mediaPlayer.start();
+   public void TelaComida(View v){
+        Intent intent = new Intent(this, ComidaActivity.class);
+        startActivity(intent);
+   }
+    public void TelaCasa(View v){
+        Intent intent = new Intent(this,CasaActivity.class);
+        startActivity(intent);
     }
-    public void euEstouFeliz (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_estou_feliz);
-        mediaPlayer.start();
+    public void TelaComunicacao(View v){
+        Intent intent = new Intent(this, ComunicaçãoActivity.class);
+        startActivity(intent);
     }
-    public void euEstouTriste (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_estou_triste);
-        mediaPlayer.start();
+    public void TelaCorpo(View v){
+        Intent intent = new Intent(this, CorpoActivity.class);
+        startActivity(intent);
     }
-    public void euEstouComRaiva (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_estou_com_raiva);
-        mediaPlayer.start();
+    public void TelaDiversao(View v){
+        Intent intent = new Intent(this,DiversaoActivity.class);
+        startActivity(intent);
     }
-    public void euEstouComMedo (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_estou_com_medo);
-        mediaPlayer.start();
+    public void TelaDor(View v){
+        Intent intent = new Intent(this,DorActivity.class);
+        startActivity(intent);
     }
-    public void euEstouDesapontado (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_estou_desapontada);
-        mediaPlayer.start();
+    public void TelaEscola(View v){
+        Intent intent = new Intent(this,EscolaActivity.class);
+        startActivity(intent);
     }
-    public void euEstouChorando (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_estou_chorando);
-        mediaPlayer.start();
+    public void TelaFamilia(View v){
+        Intent intent = new Intent(this,FamiliaActivity.class);
+        startActivity(intent);
     }
-    public void euEstouComCalor (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_estou_com_calor);
-        mediaPlayer.start();
+    public void TelaLetras(View v){
+        Intent intent = new Intent(this,LetrasActivity.class);
+        startActivity(intent);
     }
-    public void euEstouSemPalavras (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_estou_sem_palavras);
-        mediaPlayer.start();
+    public void TelaNumeros(View v){
+        Intent intent = new Intent(this,NumerosActivity.class
+        );
+        startActivity(intent);
     }
-    public void euEstouComSono (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_estou_com_sono);
-        mediaPlayer.start();
+    public void TelaNecessidades(View v){
+        Intent intent = new Intent(this, NecessidadeActivity.class);
+        startActivity(intent);
     }
-    public void euQueroChocolate (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_chocolate);
-        mediaPlayer.start();
+    public void TelaPablavrasBasicas(View v){
+        Intent intent = new Intent(this,PalavrasBasicasActivity.class);
+        startActivity(intent);
     }
-    public void euQueroComerPao (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_pao);
-        mediaPlayer.start();
+    public void TelaRoupas(View v){
+        Intent intent = new Intent(this, RoupasActivity.class);
+        startActivity(intent);
     }
-    public void euQueroComerBatataFrita (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_batata_frita);
-        mediaPlayer.start();
+    public void TelaSentidos(View v){
+        Intent intent = new Intent(this,SentidosActivity.class);
+        startActivity(intent);
     }
-    public void euQueroComerQueijo (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_queijo);
-        mediaPlayer.start();
+    public void TelaSentimentos (View v){
+        Intent intent = new Intent(this, SentimentoActivity.class);
+        startActivity(intent);
     }
-    public void euQueroComerCarne (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_carne);
-        mediaPlayer.start();
-    }
-    public void euQueroComerHamburguer (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_hamburguer);
-        mediaPlayer.start();
-    }
-    public void euQueroComerUva (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_uva);
-        mediaPlayer.start();
-    }
-    public void euQueroComerMacarrao (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_macarrao);
-        mediaPlayer.start();
-    }
-    public void euQueroComerMelancia (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_melancia);
-        mediaPlayer.start();
-    }
-    public void euQueroComerOvo (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_ovo);
-        mediaPlayer.start();
-    }
-    public void euQueroBeberAgua (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_beber_agua);
-        mediaPlayer.start();
-    }
-    public void euQueroBeberRefri (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_beber_refrigerante);
-        mediaPlayer.start();
-    }
-    public void euQueroBeberLeite (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_beber_leite);
-        mediaPlayer.start();
-    }
+
 }
 
 

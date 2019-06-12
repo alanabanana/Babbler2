@@ -131,17 +131,18 @@
           android:textSize="50dp"
           android:textStyle="bold"
           android:onClick="TelaNecessidades"/>
+
       <Button
           android:id="@+id/numerosButton"
           android:layout_width="match_parent"
           android:layout_height="119dp"
           android:background="#c872f8"
           android:gravity="center|center_horizontal"
+          android:onClick="TelaNumeros"
           android:text="Números"
           android:textColor="#FFFFFF"
           android:textSize="50dp"
-          android:textStyle="bold"
-          android:onClick="TelaNumeros"/>
+          android:textStyle="bold" />
       <Button
           android:id="@+id/palavrasBasicasButton"
           android:layout_width="match_parent"

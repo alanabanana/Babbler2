@@ -68,8 +68,7 @@ public class PerfilFilhoActivity extends Activity {
         startActivity(intent);
     }
     public void TelaNumeros(View v){
-        Intent intent = new Intent(this,NumerosActivity.class
-        );
+        Intent intent = new Intent(this,NumerosActivity.class);
         startActivity(intent);
     }
     public void TelaNecessidades(View v){

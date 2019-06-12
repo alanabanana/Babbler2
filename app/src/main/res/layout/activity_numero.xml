@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#FF5722"
+        android:background="#c872f8"
         android:paddingBottom="3dp">
         <TextView
             android:id="@+id/textNumero"
@@ -26,15 +26,158 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/inlove"
-            android:onClick="euTeAmo" />
+            android:background="@drawable/one"
+            android:onClick="um" />
 
         <TextView
-            android:id="@+id/textEuTeAmo"
+            android:id="@+id/textUm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
-            android:text="EU TE AMO"
+            android:text="UM"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/doisButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/two"
+            android:onClick="dois" />
+
+        <TextView
+            android:id="@+id/textDois"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Dois"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/tresButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/three"
+            android:onClick="um" />
+
+        <TextView
+            android:id="@+id/textTres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Três"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/fourButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/four"
+            android:onClick="um" />
+
+        <TextView
+            android:id="@+id/textQuatro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Quatro"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/cincoButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/five"
+            android:onClick="um" />
+
+        <TextView
+            android:id="@+id/textCinco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Cinco"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/seisButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/six"
+            android:onClick="um" />
+
+        <TextView
+            android:id="@+id/textSeis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Seis"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+
+        <ImageButton
+            android:id="@+id/oitoButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/eight"
+            android:onClick="um" />
+
+        <TextView
+            android:id="@+id/textOito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Oito"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/nineButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/nine"
+            android:onClick="um" />
+
+        <TextView
+            android:id="@+id/textNine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Nove"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/dezButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/ten"
+            android:onClick="um" />
+
+        <TextView
+            android:id="@+id/textDez"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Dez"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />

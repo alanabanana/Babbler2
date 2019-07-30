@@ -27,6 +27,15 @@
             android:layout_gravity="center"
             android:background="@drawable/bed"
             android:onClick="euQueroDeitar" />
+        <TextView
+            android:id="@+id/textCama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="EU QUERO DEITAR NA MINHA CAMA"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <ImageButton
             android:id="@+id/quartoButton"
@@ -36,65 +45,299 @@
             android:background="@drawable/bed"
             android:onClick="euQueroDeitar" />
 
+        <TextView
+            android:id="@+id/textQuarto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="QUARTO"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
         <ImageButton
             android:id="@+id/banheiroButton"
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/bed"
-            android:onClick="euQueroDeitar" />
+            android:onClick="banheiro" />
+
+        <TextView
+            android:id="@+id/textBanheiro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="BANHEIRO"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/copaButton"
+            android:id="@+id/mesaJantarButton"
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/bed"
-            android:onClick="euQueroDeitar" />
+            android:onClick="mesa" />
+
+        <TextView
+            android:id="@+id/textMesa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="MESA"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
         <ImageButton
             android:id="@+id/cozinhaButton"
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/bed"
-            android:onClick="euQueroDeitar" />
+            android:onClick="cozinha" />
+
+        <TextView
+            android:id="@+id/textCozinha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="COZINHA"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
         <ImageButton
             android:id="@+id/garagemButton"
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/bed"
-            android:onClick="euQueroDeitar" />
+            android:onClick="garagem" />
+
+        <TextView
+            android:id="@+id/textGaragem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="GARAGEM"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
         <ImageButton
             android:id="@+id/jardimButton"
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/bed"
-            android:onClick="euQueroDeitar" />
-        <ImageButton
-            android:id="@+id/minhaCasaButton"
-            android:layout_width="150sp"
-            android:layout_height="150sp"
-            android:layout_gravity="center"
-            android:background="@drawable/bed"
-            android:onClick="euQueroDeitar" />
+            android:onClick="jardim" />
+
+        <TextView
+            android:id="@+id/textJardim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="JARDIM"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
         <ImageButton
             android:id="@+id/salaButton"
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/bed"
-            android:onClick="euQueroDeitar" />
+            android:onClick="sala" />
 
+        <TextView
+            android:id="@+id/textSala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="SALA"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
+        <ImageButton
+            android:id="@+id/minhaCasaButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/bed"
+            android:onClick="minhaCasa" />
 
+        <TextView
+            android:id="@+id/textMinhaCasa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="MINHA CASA"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
+        <Button
+            android:id="@+id/comidaCasaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#FE234F"
+            android:gravity="center|center_horizontal"
+            android:text="Comida"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCasaComida"/>
 
+        <Button
+            android:id="@+id/corpoCasaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#ffa619"
+            android:gravity="center|center_horizontal"
+            android:onClick="TelaCasaCorpo"
+            android:text="Corpo"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold" />
 
+        <Button
+            android:id="@+id/comunicacaoCasaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#73ff6b"
+            android:gravity="center|center_horizontal"
+            android:text="Comunicação"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCasaComunicacao"/>
 
+        <Button
+            android:id="@+id/diversaoCasaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#f55c7c"
+            android:gravity="center|center_horizontal"
+            android:onClick="TelaCasaDiversao"
+            android:text="Diversão"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/dorCasaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#7a6ef6"
+            android:gravity="center|center_horizontal"
+            android:text="Dor"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCasaDor"/>
+        <Button
+            android:id="@+id/escolaCasaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#f8c290 "
+            android:gravity="center|center_horizontal"
+            android:text="Escola"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCasaEscola"/>
+        <Button
+            android:id="@+id/familiaCasaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#fce34a"
+            android:gravity="center|center_horizontal"
+            android:text="Família"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCasaFamilia"/>
+        <Button
+            android:id="@+id/letrasCasaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#04f088"
+            android:gravity="center|center_horizontal"
+            android:text="Letras"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCasaLetras"/>
+        <Button
+            android:id="@+id/necessidadesCasaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#fa6691"
+            android:gravity="center|center_horizontal"
+            android:text="Necessidades"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCasaNecessidades"/>
 
-
-
+        <Button
+            android:id="@+id/numerosCasaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#c872f8"
+            android:gravity="center|center_horizontal"
+            android:onClick="TelaCasaNumeros"
+            android:text="Números"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/palavrasBasicasCasaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#741a07"
+            android:gravity="center|center_horizontal"
+            android:text="Palavras Básicas"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCasaPablavrasBasicas"/>
+        <Button
+            android:id="@+id/roupasCasaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#f7c702"
+            android:gravity="center|center_horizontal"
+            android:text="Roupas"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCasaRoupas"/>
+        <Button
+            android:id="@+id/sentidosCasaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#7281c0"
+            android:gravity="center|center_horizontal"
+            android:text="Sentidos"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCasaSentidos"/>
+        <Button
+            android:id="@+id/sentimentosCasaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#FF5722"
+            android:gravity="center|center_horizontal"
+            android:text="Sentidos"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCasaSentidos"/>
     </LinearLayout>
 </ScrollView>

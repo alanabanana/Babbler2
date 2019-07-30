@@ -1,6 +1,327 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f55c7c"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textDiversao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal"
+            android:text="Diversão"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"/>
+        <ImageButton
+            android:id="@+id/criancaButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/kids"
+            android:onClick="brincarAmigo" />
+        <TextView
+            android:id="@+id/textKids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="EU QUERO BRINCAR COM O MEU AMIGO"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/skateButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/skateboard"
+            android:onClick="andarSkate" />
+        <TextView
+            android:id="@+id/textCama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="EU QUERO ANDAR DE SKATE"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/cubosButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/cubes"
+            android:onClick="cubos" />
+        <TextView
+            android:id="@+id/textCubos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="EU QUERO BRINCAR DE CUBOS"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/carrinButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/car"
+            android:onClick="brincarCarrinho" />
+        <TextView
+            android:id="@+id/textCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="EU QUERO BRINCAR DE CARRINHO"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/dollButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/doll"
+            android:onClick="brincarBoneca" />
+        <TextView
+            android:id="@+id/textDoll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="EU QUERO BRINCAR DE BONECA"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/dinosButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/dinosaur"
+            android:onClick="brincarDinossauro" />
+        <TextView
+            android:id="@+id/textDino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="EU QUERO BRINCAR DE DINOSSAURO"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/keyboardButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/keyboard"
+            android:onClick="tocarTeclado" />
+        <TextView
+            android:id="@+id/textKeyBoard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="EU QUERO TOCAR TECLADO"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/gameButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/gameConsole"
+            android:onClick="videoGame" />
+        <TextView
+            android:id="@+id/textGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="EU QUERO JOGAR VÍDEO GAME"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/balancoButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/swing"
+            android:onClick="balanço" />
+        <TextView
+            android:id="@+id/textBalanco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="EU QUERO BRINCAR NO BALANÇO"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/casaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#20b2aa"
+            android:gravity="center|center_horizontal"
+            android:text="Casa"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaDiversaoCasa"/>
+        <Button
+            android:id="@+id/comidaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#FE234F"
+            android:gravity="center|center_horizontal"
+            android:text="Comida"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaDiversaoComida"/>
+
+        <Button
+            android:id="@+id/corpoButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#ffa619"
+            android:gravity="center|center_horizontal"
+            android:onClick="TelaDiversaoCorpo"
+            android:text="Corpo"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/comunicacaoButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#73ff6b"
+            android:gravity="center|center_horizontal"
+            android:text="Comunicação"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaDiversaoComunicacao"/>
+
+        <Button
+            android:id="@+id/dorButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#7a6ef6"
+            android:gravity="center|center_horizontal"
+            android:text="Dor"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaDiversaoDor"/>
+        <Button
+            android:id="@+id/escolaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#f8c290 "
+            android:gravity="center|center_horizontal"
+            android:text="Escola"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaDiversaoEscola"/>
+        <Button
+            android:id="@+id/familiaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#fce34a"
+            android:gravity="center|center_horizontal"
+            android:text="Família"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaDiversaoFamilia"/>
+        <Button
+            android:id="@+id/letrasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#04f088"
+            android:gravity="center|center_horizontal"
+            android:text="Letras"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaDiversaoLetras"/>
+        <Button
+            android:id="@+id/necessidadesButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#fa6691"
+            android:gravity="center|center_horizontal"
+            android:text="Necessidades"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaDiversaoNecessidades"/>
+
+        <Button
+            android:id="@+id/numerosButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#c872f8"
+            android:gravity="center|center_horizontal"
+            android:onClick="TelaDiversaoNumeros"
+            android:text="Números"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/palavrasBasicasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#741a07"
+            android:gravity="center|center_horizontal"
+            android:text="Palavras Básicas"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaDiversaoPablavrasBasicas"/>
+        <Button
+            android:id="@+id/roupasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#f7c702"
+            android:gravity="center|center_horizontal"
+            android:text="Roupas"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaDiversaoRoupas"/>
+        <Button
+            android:id="@+id/sentidosButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#7281c0"
+            android:gravity="center|center_horizontal"
+            android:text="Sentidos"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaDiversaoSentidos"/>
+        <Button
+            android:id="@+id/sentimentosButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#FF5722"
+            android:gravity="center|center_horizontal"
+            android:text="Sentidos"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaDiversaoSentimentos"/>
+    </LinearLayout>
+</ScrollView>

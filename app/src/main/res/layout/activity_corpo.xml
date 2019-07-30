@@ -21,6 +21,229 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"/>
+        <ImageButton
+            android:id="@+id/orelhaButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/ear"
+            android:onClick="orelha" />
+        <TextView
+            android:id="@+id/textOrelha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="ORELHA"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/olhoButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/eye"
+            android:onClick="olho" />
+        <TextView
+            android:id="@+id/textOlho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="OLHO"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/narizButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/nose"
+            android:onClick="nariz" />
+        <TextView
+            android:id="@+id/textNariz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="NARIZ"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/brainButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/brain"
+            android:onClick="brain" />
+        <TextView
+            android:id="@+id/textBrain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="CÉREBRO"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/casaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#20b2aa"
+            android:gravity="center|center_horizontal"
+            android:text="Casa"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCorpoCasa"/>
+        <Button
+            android:id="@+id/comidaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#FE234F"
+            android:gravity="center|center_horizontal"
+            android:text="Comida"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCorpoComida"/>
+
+
+        <Button
+            android:id="@+id/comunicacaoButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#73ff6b"
+            android:gravity="center|center_horizontal"
+            android:text="Comunicação"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCorpoComunicacao"/>
+
+        <Button
+            android:id="@+id/diversaoButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#f55c7c"
+            android:gravity="center|center_horizontal"
+            android:onClick="TelaCorpoDiversao"
+            android:text="Diversão"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/dorButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#7a6ef6"
+            android:gravity="center|center_horizontal"
+            android:text="Dor"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCorpoDor"/>
+        <Button
+            android:id="@+id/escolaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#f8c290 "
+            android:gravity="center|center_horizontal"
+            android:text="Escola"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCorpoEscola"/>
+        <Button
+            android:id="@+id/familiaButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#fce34a"
+            android:gravity="center|center_horizontal"
+            android:text="Família"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCorpoFamilia"/>
+        <Button
+            android:id="@+id/letrasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#04f088"
+            android:gravity="center|center_horizontal"
+            android:text="Letras"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCorpoLetras"/>
+        <Button
+            android:id="@+id/necessidadesButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#fa6691"
+            android:gravity="center|center_horizontal"
+            android:text="Necessidades"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCorpoNecessidades"/>
+
+        <Button
+            android:id="@+id/numerosButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#c872f8"
+            android:gravity="center|center_horizontal"
+            android:onClick="TelaCorpoNumeros"
+            android:text="Números"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/palavrasBasicasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#741a07"
+            android:gravity="center|center_horizontal"
+            android:text="Palavras Básicas"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCorpoPablavrasBasicas"/>
+        <Button
+            android:id="@+id/roupasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#f7c702"
+            android:gravity="center|center_horizontal"
+            android:text="Roupas"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCorpoRoupas"/>
+        <Button
+            android:id="@+id/sentidosButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#7281c0"
+            android:gravity="center|center_horizontal"
+            android:text="Sentidos"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCorpoSentidos"/>
+        <Button
+            android:id="@+id/sentimentosButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#FF5722"
+            android:gravity="center|center_horizontal"
+            android:text="Sentidos"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaCorpoSentimentos"/>
     </LinearLayout>
 </ScrollView>
 

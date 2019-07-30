@@ -34,7 +34,23 @@
         <activity android:name=".PerfilFilhoActivity" />
         <activity android:name=".AdicionarBotaoActivity" />
         <activity android:name=".EditarBotaoActivity"/>
-        <activity android:name=".RelatorioActivity"></activity>
-    </application>
+        <activity android:name=".RelatorioActivity"/>
+        <activity android:name=".CasaActivity"/>
+        <activity android:name=".ComidaActivity"/>
+        <activity android:name=".ComunicaçãoActivity"/>
+        <activity android:name=".DorActivity"/>
+        <activity android:name=".DiversaoActivity"/>
+        <activity android:name=".EscolaActivity"/>
+        <activity android:name=".FamiliaActivity"/>
+        <activity android:name=".LetrasActivity"/>
+        <activity android:name=".NecessidadeActivity"/>
+        <activity android:name=".NumerosActivity"/>
+        <activity android:name=".PalavrasBasicasActivity"/>
+        <activity android:name=".RoupasActivity"/>
+        <activity android:name=".SentidosActivity"/>
+        <activity android:name=".SentimentoActivity"/>
 
-</manifest>
+
+
+        </application>
+    </manifest>

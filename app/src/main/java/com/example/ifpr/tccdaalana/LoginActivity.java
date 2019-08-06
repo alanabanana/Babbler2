@@ -78,7 +78,7 @@ public class LoginActivity extends Activity {
         for (int i = 0; i < dependente.length(); i++) {
             JSONObject jsonObject = dependente.getJSONObject(i);
             String apelido = jsonObject.getString("Apelido");
-            String emailResponsavel = jsonObject.getString("Responsavel_email");
+            String emailResponsavel = jsonObject.getString("Responsável_email");
             String senha = jsonObject.getString("Senha");
 
             if (emailResponsavel.equals(emailApelidoDigitado) && senha.equals(senhaDigitada)) {

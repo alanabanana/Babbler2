@@ -75,44 +75,44 @@ public class SentimentoActivity extends AppCompatActivity {
     }
 
     public void euTeAmo (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_te_amo);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.te_amo);
         mediaPlayer.start();
         //dbController.insertIntoRelatorio(emailDep, emailResp, "Eu Te Amo", Utils.getDate(), Utils.getTime());
     }
     public void euEstouFeliz (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_estou_feliz);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estou_feliz);
         mediaPlayer.start();
     }
     public void euEstouTriste (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_estou_triste);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estou_triste);
         mediaPlayer.start();
     }
     public void euEstouComRaiva (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_estou_com_raiva);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estou_com_raiva);
         mediaPlayer.start();
     }
     public void euEstouComMedo (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_estou_com_medo);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estou_com_medo);
         mediaPlayer.start();
     }
     public void euEstouDesapontado (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_estou_desapontada);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estou_desapontado);
         mediaPlayer.start();
     }
     public void euEstouChorando (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_estou_chorando);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estou_chorando);
         mediaPlayer.start();
     }
     public void euEstouComCalor (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_estou_com_calor);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estou_com_calor);
         mediaPlayer.start();
     }
     public void euEstouSemPalavras (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_estou_sem_palavras);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estou_sem_palavras);
         mediaPlayer.start();
     }
     public void euEstouComSono (View v){
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_estou_com_sono);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estou_com_sono);
         mediaPlayer.start();
     }
 

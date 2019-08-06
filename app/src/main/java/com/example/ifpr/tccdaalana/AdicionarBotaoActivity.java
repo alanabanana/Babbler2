@@ -101,7 +101,7 @@ public class AdicionarBotaoActivity extends Activity {
         if (nomeImagem.equals("chocolate")) {
             imagemButtonEscolhido.setBackgroundResource(R.drawable.chocolate);
         }else if (nomeImagem.equals("cachorroQuente")) {
-            imagemButtonEscolhido.setBackgroundResource(R.drawable.hot_dog);
+            imagemButtonEscolhido.setBackgroundResource(R.drawable.hotdog);
         }else if (nomeImagem.equals("Hamburguer")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.hamburguer);
         }else if (nomeImagem.equals("pizza")){
@@ -161,7 +161,7 @@ public class AdicionarBotaoActivity extends Activity {
         }else if (nomeImagem.equals("water")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.water);
         }else if (nomeImagem.equals("iceCream")){
-            imagemButtonEscolhido.setBackgroundResource(R.drawable.ice_cream);
+            imagemButtonEscolhido.setBackgroundResource(R.drawable.icecream);
         }else if (nomeImagem.equals("bread ")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.bread);
         }else if (nomeImagem.equals("can")){
@@ -184,8 +184,8 @@ public class AdicionarBotaoActivity extends Activity {
             imagemButtonEscolhido.setBackgroundResource(R.drawable.sleep);
         }else if (nomeImagem.equals("shock")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.shock);
-        }else if (nomeImagem.equals("maisSad")){
-            imagemButtonEscolhido.setBackgroundResource(R.drawable.mais_sad);
+        }else if (nomeImagem.equals("maisad")){
+            imagemButtonEscolhido.setBackgroundResource(R.drawable.maisad);
         }else if (nomeImagem.equals("creepy")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.creepy);
         }else if (nomeImagem.equals("shocked")){
@@ -206,8 +206,8 @@ public class AdicionarBotaoActivity extends Activity {
             imagemButtonEscolhido.setBackgroundResource(R.drawable.sleepy);
         }else if (nomeImagem.equals("vomit")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.vomit);
-        }else if (nomeImagem.equals("muitoAngry")){
-            imagemButtonEscolhido.setBackgroundResource(R.drawable.muito_angry);
+        }else if (nomeImagem.equals("muitoangry")){
+            imagemButtonEscolhido.setBackgroundResource(R.drawable.muitoangry);
         }else if (nomeImagem.equals("hot")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.hot);
         }else if (nomeImagem.equals("one")){
@@ -246,8 +246,8 @@ public class AdicionarBotaoActivity extends Activity {
             imagemButtonEscolhido.setBackgroundResource(R.drawable.eighty);
         }else if (nomeImagem.equals("ninety")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.ninety);
-        }else if (nomeImagem.equals("oneHundred")){
-            imagemButtonEscolhido.setBackgroundResource(R.drawable.one_hundred);
+        }else if (nomeImagem.equals("onehundred")){
+            imagemButtonEscolhido.setBackgroundResource(R.drawable.onehundred);
         }else if (nomeImagem.equals("house")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.house);
         }else if (nomeImagem.equals("bed")){
@@ -258,14 +258,14 @@ public class AdicionarBotaoActivity extends Activity {
             imagemButtonEscolhido.setBackgroundResource(R.drawable.shower);
         }else if (nomeImagem.equals("bathtub")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.bathtub);
-        }else if (nomeImagem.equals("toiletPaper")){
-            imagemButtonEscolhido.setBackgroundResource(R.drawable.toilet_paper);
+        }else if (nomeImagem.equals("toiletpaper")){
+            imagemButtonEscolhido.setBackgroundResource(R.drawable.toiletpaper);
         }else if (nomeImagem.equals("toothbrush")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.toothbrush);
         }else if (nomeImagem.equals("hairDryer")){
-            imagemButtonEscolhido.setBackgroundResource(R.drawable.hair_dryer);
+            imagemButtonEscolhido.setBackgroundResource(R.drawable.hairdryer);
         }else if (nomeImagem.equals("teddear")){
-            imagemButtonEscolhido.setBackgroundResource(R.drawable.teddy_bear);
+            imagemButtonEscolhido.setBackgroundResource(R.drawable.teddybear);
         }else if (nomeImagem.equals("ball")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.ball);
         }else if (nomeImagem.equals("chess")){
@@ -275,7 +275,7 @@ public class AdicionarBotaoActivity extends Activity {
         }else if (nomeImagem.equals("gameboy")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.gameboy);
         }else if (nomeImagem.equals("gameConsole")){
-            imagemButtonEscolhido.setBackgroundResource(R.drawable.game_console);
+            imagemButtonEscolhido.setBackgroundResource(R.drawable.gameconsole);
         }else if (nomeImagem.equals("robot")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.robot);
         }else if (nomeImagem.equals("kids")){
@@ -297,7 +297,7 @@ public class AdicionarBotaoActivity extends Activity {
         }else if (nomeImagem.equals("doll")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.doll);
         }else if (nomeImagem.equals("sandCastle")){
-            imagemButtonEscolhido.setBackgroundResource(R.drawable.sand_castle);
+            imagemButtonEscolhido.setBackgroundResource(R.drawable.sandcastle);
         }else if (nomeImagem.equals("tricycle")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.tricycle);
         }else if (nomeImagem.equals("dinosaur")){
@@ -315,7 +315,7 @@ public class AdicionarBotaoActivity extends Activity {
         }else if (nomeImagem.equals("art")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.art);
         }else if (nomeImagem.equals("pencilCase")){
-            imagemButtonEscolhido.setBackgroundResource(R.drawable.pencil_case);
+            imagemButtonEscolhido.setBackgroundResource(R.drawable.pencilcase);
         }else if (nomeImagem.equals("think")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.think);
         }else if (nomeImagem.equals("crayon")){

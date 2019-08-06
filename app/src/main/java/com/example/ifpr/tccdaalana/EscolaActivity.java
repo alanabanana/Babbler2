@@ -12,6 +12,18 @@ public class EscolaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_escola);
     }
+    public void caderno (View v) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
+        mediaPlayer.start();
+    }
+    public void estojo (View v) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estojo);
+        mediaPlayer.start();
+    }
+    public void quadroBranco (View v) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.quadro_branco);
+        mediaPlayer.start();
+    }
     public void TelaEscolaComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);
         startActivity(intent);
@@ -68,8 +80,5 @@ public class EscolaActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SentimentoActivity.class);
         startActivity(intent);
     }
-public void quadroBranco (View v){
-    MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_chocolate);
-    mediaPlayer.start();
-}
+
 }

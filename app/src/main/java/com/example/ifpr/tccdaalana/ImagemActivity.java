@@ -314,7 +314,7 @@ public class ImagemActivity extends Activity {
     }
     public void escolheuMaisSad (View v) {
         Bundle bundle = new Bundle();
-        bundle.putString("Imagem", "maisSad");
+        bundle.putString("Imagem", "maisad");
         Intent intent = new Intent(this, AdicionarBotaoActivity.class);
         intent.putExtras(bundle);
         startActivity(intent);
@@ -391,7 +391,7 @@ public class ImagemActivity extends Activity {
     }
     public void escolheuFurioso (View v) {
         Bundle bundle = new Bundle();
-        bundle.putString("Imagem", "muitoAngry");
+        bundle.putString("Imagem", "muitoangry");
         Intent intent = new Intent(this, AdicionarBotaoActivity.class);
         intent.putExtras(bundle);
         startActivity(intent);
@@ -532,7 +532,7 @@ public class ImagemActivity extends Activity {
     }
     public void escolheuCem (View v) {
         Bundle bundle = new Bundle();
-        bundle.putString("Imagem", "oneHundred");
+        bundle.putString("Imagem", "onehundred");
         Intent intent = new Intent(this, AdicionarBotaoActivity.class);
         intent.putExtras(bundle);
         startActivity(intent);

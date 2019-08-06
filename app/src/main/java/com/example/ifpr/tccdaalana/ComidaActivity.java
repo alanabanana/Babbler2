@@ -13,67 +13,67 @@ public class ComidaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_comida);
     }
     public void euQueroChocolate(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_chocolate);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
         mediaPlayer.start();
     }
 
     public void euQueroComerPao(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_pao);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_pao);
         mediaPlayer.start();
     }
 
     public void euQueroComerBatataFrita(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_batata_frita);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_batata_frita);
         mediaPlayer.start();
     }
 
     public void euQueroComerQueijo(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_queijo);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_queijo);
         mediaPlayer.start();
     }
 
     public void euQueroComerCarne(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_carne);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_carne);
         mediaPlayer.start();
     }
 
     public void euQueroComerHamburguer(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_hamburguer);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_hamburguer);
         mediaPlayer.start();
     }
 
     public void euQueroComerUva(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_uva);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_uva);
         mediaPlayer.start();
     }
 
     public void euQueroComerMacarrao(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_macarrao);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_macarrao);
         mediaPlayer.start();
     }
 
     public void euQueroComerMelancia(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_melancia);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_melancia);
         mediaPlayer.start();
     }
 
     public void euQueroComerOvo(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_comer_ovo);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_ovo);
         mediaPlayer.start();
     }
 
     public void euQueroBeberAgua(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_beber_agua);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.beber_agua);
         mediaPlayer.start();
     }
 
     public void euQueroBeberRefri(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_beber_refrigerante);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.beber_refrigerante);
         mediaPlayer.start();
     }
 
     public void euQueroBeberLeite(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.eu_quero_beber_leite);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.beber_leite);
         mediaPlayer.start();
     }
     public void TelaComidaCasa(View v){

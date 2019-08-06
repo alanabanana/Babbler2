@@ -12,22 +12,22 @@ public class CorpoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_corpo);
     }
-    public void orelha (View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        mediaPlayer.start();
-    }
-    public void olho (View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        mediaPlayer.start();
-    }
-    public void nariz (View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        mediaPlayer.start();
-    }
-    public void brain (View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        mediaPlayer.start();
-    }
+   // public void orelha (View v) {
+     //   MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+       // mediaPlayer.start();
+    //}
+    //public void olho (View v) {
+     //   MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+      //  mediaPlayer.start();
+    //}
+    //public void nariz (View v) {
+      //  MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        //mediaPlayer.start();
+    //}
+    //public void brain (View v) {
+      //  MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        //mediaPlayer.start();
+    //}
     public void TelaCorpoComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);
         startActivity(intent);

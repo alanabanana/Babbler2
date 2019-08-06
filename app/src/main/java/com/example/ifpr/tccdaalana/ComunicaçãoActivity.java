@@ -13,7 +13,11 @@ public class ComunicaçãoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_comunicacao);
     }
     public void hello (View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.oi);
+        mediaPlayer.start();
+    }
+    public void bye (View v) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.tchau);
         mediaPlayer.start();
     }
     public void TelaComunicacaoComida(View v){

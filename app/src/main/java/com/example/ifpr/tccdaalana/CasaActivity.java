@@ -1,21 +1,22 @@
 package com.example.ifpr.tccdaalana;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class CasaActivity extends AppCompatActivity {
+public class CasaActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_casa);
     }
-    public void cama (View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cama);
-        mediaPlayer.start();
-    }
+   // public void cama (View v) {
+     //   MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cama);
+       // mediaPlayer.start();
+    //}
     public void banheiro(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.banheiro);
         mediaPlayer.start();
@@ -36,12 +37,12 @@ public class CasaActivity extends AppCompatActivity {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.jardim);
         mediaPlayer.start();
     }
-    public void minhaCasa(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.esta_e_a_minha_casa);
-        mediaPlayer.start();
-    }
+  //  public void minhaCasa(View v) {
+    //    MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.esta_e_a_minha_casa);
+      //  mediaPlayer.start();
+    //}
     public void sala(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.sala);
         mediaPlayer.start();
     }
     public void TelaCasaComida(View v){

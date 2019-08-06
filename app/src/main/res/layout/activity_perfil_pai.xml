@@ -73,6 +73,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.951"
-        app:srcCompat="@drawable/icon_mais_amarelo" />
+        app:srcCompat="@drawable/ic_add_icon" />
 
 </android.support.constraint.ConstraintLayout>

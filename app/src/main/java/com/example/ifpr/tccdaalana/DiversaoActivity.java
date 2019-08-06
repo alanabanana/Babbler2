@@ -13,39 +13,39 @@ public class DiversaoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_diversao);
     }
     public void brincarAmigo(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_amigo);
         mediaPlayer.start();
     }
     public void andarSkate (View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_balanco);
         mediaPlayer.start();
     }
     public void cubos(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_cubo);
         mediaPlayer.start();
     }
     public void brincarCarrinho(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_carrinho);
         mediaPlayer.start();
     }
-    public void brincarBoneca(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        mediaPlayer.start();
-    }
-    public void brincarDinossauro(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        mediaPlayer.start();
-    }
+   // public void brincarBoneca(View v) {
+     //   MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_boneca);
+       // mediaPlayer.start();
+    //}
+  //  public void brincarDinossauro(View v) {
+    //    MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_dinossauro);
+      //  mediaPlayer.start();
+    //}
     public void tocarTeclado(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.tocar_teclado);
         mediaPlayer.start();
     }
     public void videoGame(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.jogar_videogame);
         mediaPlayer.start();
     }
     public void balanço(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_balanco);
         mediaPlayer.start();
     }
     public void TelaDiversaoComida(View v){

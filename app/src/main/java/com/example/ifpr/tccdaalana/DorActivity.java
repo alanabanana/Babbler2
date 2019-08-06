@@ -12,22 +12,22 @@ public class DorActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dor);
     }
-    public void dorNoPeito (View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        mediaPlayer.start();
-    }
-    public void dorNaGarganta (View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        mediaPlayer.start();
-    }
-    public void dorDeBarriga (View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        mediaPlayer.start();
-    }
-    public void dorDeCabeca (View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        mediaPlayer.start();
-    }
+    //public void dorNoPeito (View v) {
+      //  MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        //mediaPlayer.start();
+    //}
+    //public void dorNaGarganta (View v) {
+     //   MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+      //  mediaPlayer.start();
+   // }
+   // public void dorDeBarriga (View v) {
+     //   MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+      //  mediaPlayer.start();
+    //}
+    //public void dorDeCabeca (View v) {
+     //   MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+      //  mediaPlayer.start();
+    //}
     public void TelaDorComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);
         startActivity(intent);

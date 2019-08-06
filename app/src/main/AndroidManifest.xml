@@ -49,8 +49,5 @@
         <activity android:name=".RoupasActivity"/>
         <activity android:name=".SentidosActivity"/>
         <activity android:name=".SentimentoActivity"/>
-
-
-
         </application>
     </manifest>

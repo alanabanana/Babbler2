@@ -25,7 +25,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/heartDisease"
+            android:background="@drawable/heartdisease"
             android:onClick="dorNoPeito" />
         <TextView
             android:id="@+id/textDorNoPeito"
@@ -48,7 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
-            android:text="ESTOU COM DOR NA GARGANTA"
+            android:text="ESTOU COM DOR DE GARGANTA"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -57,7 +57,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/dorDeBarriga"
+            android:background="@drawable/dordebarriga"
             android:onClick="dorDeBarriga" />
         <TextView
             android:id="@+id/textBarriga"

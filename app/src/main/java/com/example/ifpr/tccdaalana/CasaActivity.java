@@ -12,32 +12,32 @@ public class CasaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_casa);
     }
-    public void euQueroDeitar(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+    public void cama (View v) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cama);
         mediaPlayer.start();
     }
     public void banheiro(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.banheiro);
         mediaPlayer.start();
     }
     public void mesa(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.mesa);
         mediaPlayer.start();
     }
     public void cozinha (View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cozinha);
         mediaPlayer.start();
     }
     public void garagem(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.garagem);
         mediaPlayer.start();
     }
     public void jardim(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.jardim);
         mediaPlayer.start();
     }
     public void minhaCasa(View v) {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.esta_e_a_minha_casa);
         mediaPlayer.start();
     }
     public void sala(View v) {

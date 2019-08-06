@@ -137,7 +137,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/gameConsole"
+            android:background="@drawable/gameconsole"
             android:onClick="videoGame" />
         <TextView
             android:id="@+id/textGame"

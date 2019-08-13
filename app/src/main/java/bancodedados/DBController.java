@@ -14,6 +14,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.sql.Date;
+import java.sql.Time;
 
 public class DBController {
 
@@ -127,6 +129,42 @@ public class DBController {
         JSONArray jsonArray = new JSONArray(sb.toString().trim());
         return jsonArray;
     }
+    public int insertIntoRelatorio (Context context, String botao, String horario, Date data) throws IOException {
+        if (!checkNetworkConnection(context)) {
+            Toast.makeText(context, "Falha na Conexão com a Internet!", Toast.LENGTH_LONG).show();
+            return 0;
+        }
+        checkThreadPolicy();
+        String values = "botao="+botao+"horario="+horario+"&"+"data="+data;
+        URL url = new URL(URL_WEB_SERVICE + "ws_insert/ws_insert_relatorio.php?"+values);
+        HttpURLConnection con = (HttpURLConnection) url.openConnection();
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(con.getInputStream()));
+        String response = bufferedReader.readLine();
+        if (response.equals("false")) {
+            Toast.makeText(context, "Erro no Banco de Dados!", Toast.LENGTH_LONG).show();
+            return 0;
+        } else {
+            return 1;
+        }
+    }
+
+    public JSONArray selectAllFromRelatorio(Context context, String email_resp) throws JSONException, IOException {
+        if (!checkNetworkConnection(context)) {
+            return null;
+        }
+        checkThreadPolicy();
+        URL url = new URL(URL_WEB_SERVICE + "ws_read/ws_read_relatorio.php?email_responsavel="+email_resp);
+        HttpURLConnection con = (HttpURLConnection) url.openConnection();
+        StringBuilder sb = new StringBuilder();
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(con.getInputStream()));
+        String json;
+        while ((json = bufferedReader.readLine()) != null) {
+            sb.append(json + "\n");
+        }
+        JSONArray jsonArray = new JSONArray(sb.toString().trim());
+        return jsonArray;
+    }
+
 
     private boolean checkNetworkConnection(Context context) {
         ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);

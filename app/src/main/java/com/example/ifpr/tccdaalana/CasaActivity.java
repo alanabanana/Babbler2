@@ -7,7 +7,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import bancodedados.DBController;
+
 public class CasaActivity extends Activity {
+
+    private DBController dbController = new DBController();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +25,7 @@ public class CasaActivity extends Activity {
     public void banheiro(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.banheiro);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Banheiro", ,);
     }
     public void mesa(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.mesa);

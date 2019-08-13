@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffd700"
+        android:paddingBottom="3dp">
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/textIcone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Os ícones utilizados no app foram adquiridos no website FREPIC?!?!?"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textComidaIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ícones de Comida:"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textPaoIcon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="URL DO ICONE.... "
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>

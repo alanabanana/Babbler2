@@ -6,7 +6,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import bancodedados.DBController;
+
 public class ComunicaçãoActivity extends AppCompatActivity {
+
+    private DBController dbController = new DBController();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,10 +20,14 @@ public class ComunicaçãoActivity extends AppCompatActivity {
     public void hello (View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.oi);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Oi", ,);
+
     }
     public void bye (View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.tchau);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Tchau", ,);
+
     }
     public void TelaComunicacaoComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);

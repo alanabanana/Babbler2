@@ -6,7 +6,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import bancodedados.DBController;
+
 public class DiversaoActivity extends AppCompatActivity {
+
+    private DBController dbController = new DBController();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,38 +20,54 @@ public class DiversaoActivity extends AppCompatActivity {
     public void brincarAmigo(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_amigo);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "BrincarAmigo", ,);
+
     }
     public void andarSkate (View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_balanco);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Skate", ,);
+
     }
     public void cubos(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_cubo);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Cubos", ,);
     }
     public void brincarCarrinho(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_carrinho);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Carrinho", ,);
     }
-   // public void brincarBoneca(View v) {
-     //   MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_boneca);
-       // mediaPlayer.start();
-    //}
-  //  public void brincarDinossauro(View v) {
-    //    MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_dinossauro);
-      //  mediaPlayer.start();
-    //}
+   public void brincarBoneca(View v) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_boneca);
+        mediaPlayer.start();
+       dbController.insertIntoRelatorio(this, "Boneca", ,);
+
+   }
+    public void brincarDinossauro(View v) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_dinossauro);
+        mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Dinossauro", ,);
+
+    }
     public void tocarTeclado(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.tocar_teclado);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Teclado", ,);
+
     }
     public void videoGame(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.jogar_videogame);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Videogame", ,);
+
     }
     public void balanço(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_balanco);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "balanço", ,);
+
     }
     public void TelaDiversaoComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);

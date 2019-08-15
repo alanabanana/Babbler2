@@ -6,7 +6,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import bancodedados.DBController;
+
 public class ComidaActivity extends AppCompatActivity {
+
+    private DBController dbController = new DBController();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,66 +20,91 @@ public class ComidaActivity extends AppCompatActivity {
     public void euQueroChocolate(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Chocolate", ,);
+
     }
 
     public void euQueroComerPao(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_pao);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Pao", ,);
+
     }
 
     public void euQueroComerBatataFrita(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_batata_frita);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Fries", ,);
+
     }
 
     public void euQueroComerQueijo(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_queijo);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Queijo", ,);
+
     }
 
     public void euQueroComerCarne(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_carne);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Carne", ,);
+
     }
 
     public void euQueroComerHamburguer(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_hamburguer);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Hamburguer", ,);
+
     }
 
     public void euQueroComerUva(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_uva);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Uva", ,);
+
     }
 
     public void euQueroComerMacarrao(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_macarrao);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Macarrao", ,);
+
     }
 
     public void euQueroComerMelancia(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_melancia);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Melancia", ,);
+
     }
 
     public void euQueroComerOvo(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_ovo);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Ovo", ,);
+
     }
 
     public void euQueroBeberAgua(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.beber_agua);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Agua", ,);
+
     }
 
     public void euQueroBeberRefri(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.beber_refrigerante);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Refri", ,);
     }
 
     public void euQueroBeberLeite(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.beber_leite);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Leite", ,);
+
     }
     public void TelaComidaCasa(View v){
         Intent intent = new Intent(this,CasaActivity.class);

@@ -18,10 +18,12 @@ public class CasaActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_casa);
     }
-   // public void cama (View v) {
-     //   MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cama);
-       // mediaPlayer.start();
-    //}
+    public void cama (View v) {
+     MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cama);
+     mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Cama", ,);
+
+    }
     public void banheiro(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.banheiro);
         mediaPlayer.start();
@@ -30,26 +32,38 @@ public class CasaActivity extends Activity {
     public void mesa(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.mesa);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Mesa", ,);
+
     }
     public void cozinha (View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cozinha);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Cozinha", ,);
+
     }
     public void garagem(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.garagem);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Garagem", ,);
+
     }
     public void jardim(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.jardim);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Jardim", ,);
+
     }
-  //  public void minhaCasa(View v) {
-    //    MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.esta_e_a_minha_casa);
-      //  mediaPlayer.start();
-    //}
+    public void minhaCasa(View v) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.esta_e_a_minha_casa);
+        mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Minhacasa", ,);
+
+    }
     public void sala(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.sala);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Sala", ,);
+
     }
     public void TelaCasaComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);

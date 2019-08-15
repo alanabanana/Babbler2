@@ -6,7 +6,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import bancodedados.DBController;
+
 public class EscolaActivity extends AppCompatActivity {
+
+    private DBController dbController = new DBController();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,14 +20,20 @@ public class EscolaActivity extends AppCompatActivity {
     public void caderno (View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Caderno", ,);
+
     }
     public void estojo (View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estojo);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Estojo", ,);
+
     }
     public void quadroBranco (View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.quadro_branco);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Quadrobranco", ,);
+
     }
     public void TelaEscolaComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);

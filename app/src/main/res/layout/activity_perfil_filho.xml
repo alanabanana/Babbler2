@@ -182,7 +182,7 @@
           android:layout_height="119dp"
           android:background="#FF5722"
           android:gravity="center|center_horizontal"
-          android:text="Sentidos"
+          android:text="Sentimentos"
           android:textColor="#FFFFFF"
           android:textSize="50dp"
           android:textStyle="bold"

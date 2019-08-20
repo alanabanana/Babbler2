@@ -6,19 +6,36 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import bancodedados.DBController;
+
 public class ComunicaçãoActivity extends AppCompatActivity {
+    private DBController dbController = new DBController();
+    private Date data = new Date();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comunicacao);
     }
-    public void hello (View v) {
+    public void geraRelatorio(String botao) throws IOException {
+        SimpleDateFormat formataData = new SimpleDateFormat("dd-MM-yyyy");
+        String dataFormatada = formataData.format(data);
+        SimpleDateFormat formataHora = new SimpleDateFormat("hh-mm-ss");
+        String horaFormatada = formataHora.format(data);
+        dbController.insertIntoRelatorio(this, botao, horaFormatada, dataFormatada);
+    }
+    public void hello (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.oi);
         mediaPlayer.start();
+        geraRelatorio("Oi");
     }
-    public void bye (View v) {
+    public void bye (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.tchau);
         mediaPlayer.start();
+        geraRelatorio("Tchau");
     }
     public void TelaComunicacaoComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);

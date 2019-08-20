@@ -91,7 +91,6 @@ public class PerfilFilhoActivity extends Activity {
         Intent intent = new Intent(this, SentimentoActivity.class);
         startActivity(intent);
     }
-
 }
 
 

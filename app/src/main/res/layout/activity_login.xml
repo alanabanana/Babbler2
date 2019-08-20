@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#fff9bd"
+    android:background="#FCB63C"
     android:layout_height="match_parent">
 
 
@@ -18,14 +18,15 @@
         android:layout_marginBottom="8dp"
         android:text="Login"
         android:textAllCaps="false"
+        android:textColor="#fff"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.322"
+        app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.446" />
+        app:layout_constraintVertical_bias="0.444" />
 
     <TextView
         android:id="@+id/textEmail"
@@ -40,6 +41,7 @@
         android:textAllCaps="true"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:textColor="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.08"
@@ -218,10 +220,10 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.067"
+        app:layout_constraintVertical_bias="0.075"
         app:srcCompat="@drawable/logo1" />
 
 </android.support.constraint.ConstraintLayout>

@@ -7,11 +7,16 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import bancodedados.DBController;
 
 public class CasaActivity extends Activity {
 
     private DBController dbController = new DBController();
+    private Date data = new Date();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,34 +27,47 @@ public class CasaActivity extends Activity {
      //   MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cama);
        // mediaPlayer.start();
     //}
-    public void banheiro(View v) {
+    public void geraRelatorio(String botao) throws IOException {
+        SimpleDateFormat formataData = new SimpleDateFormat("dd-MM-yyyy");
+        String dataFormatada = formataData.format(data);
+        SimpleDateFormat formataHora = new SimpleDateFormat("hh-mm-ss");
+        String horaFormatada = formataHora.format(data);
+        dbController.insertIntoRelatorio(this, botao, horaFormatada, dataFormatada);
+    }
+
+    public void banheiro(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.banheiro);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Banheiro", ,);
+        geraRelatorio("Banheiro");
     }
-    public void mesa(View v) {
+    public void mesa(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.mesa);
         mediaPlayer.start();
+        geraRelatorio("Mesa");
     }
-    public void cozinha (View v) {
+    public void cozinha (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cozinha);
         mediaPlayer.start();
+        geraRelatorio("Cozinha");
     }
-    public void garagem(View v) {
+    public void garagem(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.garagem);
         mediaPlayer.start();
+        geraRelatorio("Garagem");
     }
-    public void jardim(View v) {
+    public void jardim(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.jardim);
         mediaPlayer.start();
+        geraRelatorio("Jardim");
     }
   //  public void minhaCasa(View v) {
     //    MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.esta_e_a_minha_casa);
       //  mediaPlayer.start();
     //}
-    public void sala(View v) {
+    public void sala(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.sala);
         mediaPlayer.start();
+        geraRelatorio("Sala");
     }
     public void TelaCasaComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);

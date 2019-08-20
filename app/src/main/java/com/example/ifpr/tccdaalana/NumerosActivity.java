@@ -15,7 +15,7 @@ public class NumerosActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ComidaActivity.class);
         startActivity(intent);
     }
-    public void TelaCasa(View v){
+    public void TelaNumerosCasa(View v){
         Intent intent = new Intent(this,CasaActivity.class);
         startActivity(intent);
     }

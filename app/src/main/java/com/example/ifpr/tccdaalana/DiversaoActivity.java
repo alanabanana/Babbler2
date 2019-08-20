@@ -30,22 +30,18 @@ public class DiversaoActivity extends AppCompatActivity {
     public void brincarAmigo(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_amigo);
         mediaPlayer.start();
-        geraRelatorio("Amigo");
     }
-    public void andarSkate (View v) throws IOException {
+    public void andarSkate (View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_balanco);
         mediaPlayer.start();
-        geraRelatorio("Skate");
     }
-    public void cubos(View v) throws IOException {
+    public void cubos(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_cubo);
         mediaPlayer.start();
-        geraRelatorio("Cubos");
     }
-    public void brincarCarrinho(View v) throws IOException {
+    public void brincarCarrinho(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_carrinho);
         mediaPlayer.start();
-        geraRelatorio("Carrinho");
     }
    // public void brincarBoneca(View v) {
      //   MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_boneca);
@@ -55,25 +51,21 @@ public class DiversaoActivity extends AppCompatActivity {
     //    MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_dinossauro);
       //  mediaPlayer.start();
     //}
-    public void tocarTeclado(View v) throws IOException {
+    public void tocarTeclado(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.tocar_teclado);
         mediaPlayer.start();
-        geraRelatorio("Teclado");
     }
-    public void videoGame(View v) throws IOException {
+    public void videoGame(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.jogar_videogame);
         mediaPlayer.start();
-        geraRelatorio("VideoGame");
     }
-    public void balanço(View v) throws IOException {
+    public void balanço(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_balanco);
         mediaPlayer.start();
-        geraRelatorio("Balanço");
     }
     public void TelaDiversaoComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);
         startActivity(intent);
-
     }
     public void TelaDiversaoCasa(View v){
         Intent intent = new Intent(this,CasaActivity.class);

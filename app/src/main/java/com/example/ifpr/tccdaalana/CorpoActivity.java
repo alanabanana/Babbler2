@@ -6,28 +6,41 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import bancodedados.DBController;
+
 public class CorpoActivity extends AppCompatActivity {
+
+    private DBController dbController = new DBController();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_corpo);
     }
-   // public void orelha (View v) {
-     //   MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-       // mediaPlayer.start();
-    //}
-    //public void olho (View v) {
-     //   MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-      //  mediaPlayer.start();
-    //}
-    //public void nariz (View v) {
-      //  MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        //mediaPlayer.start();
-    //}
-    //public void brain (View v) {
-      //  MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        //mediaPlayer.start();
-    //}
+    public void orelha (View v) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Orelha", ,);
+
+    }
+    public void olho (View v) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Olho", ,);
+
+    }
+    public void nariz (View v) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Nariz", ,);
+
+    }
+    public void brain (View v) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Cerebro", ,);
+
+    }
     public void TelaCorpoComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);
         startActivity(intent);

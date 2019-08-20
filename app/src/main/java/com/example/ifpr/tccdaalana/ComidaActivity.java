@@ -30,79 +30,66 @@ public class ComidaActivity extends AppCompatActivity {
     public void euQueroChocolate(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
         mediaPlayer.start();
-        geraRelatorio("Chocolate");
     }
 
-    public void euQueroComerPao(View v) throws IOException {
+    public void euQueroComerPao(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_pao);
         mediaPlayer.start();
-        geraRelatorio("Pao");
     }
 
-    public void euQueroComerBatataFrita(View v) throws IOException {
+    public void euQueroComerBatataFrita(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_batata_frita);
         mediaPlayer.start();
-        geraRelatorio("BatataFrita");
     }
 
-    public void euQueroComerQueijo(View v) throws IOException {
+    public void euQueroComerQueijo(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_queijo);
         mediaPlayer.start();
-        geraRelatorio("Queijo");
     }
 
-    public void euQueroComerCarne(View v) throws IOException {
+    public void euQueroComerCarne(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_carne);
         mediaPlayer.start();
-        geraRelatorio("Carne");
     }
 
-    public void euQueroComerHamburguer(View v) throws IOException {
+    public void euQueroComerHamburguer(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_hamburguer);
         mediaPlayer.start();
-        geraRelatorio("Hamburguer");
     }
 
-    public void euQueroComerUva(View v) throws IOException {
+    public void euQueroComerUva(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_uva);
         mediaPlayer.start();
-        geraRelatorio("Uva");
     }
 
-    public void euQueroComerMacarrao(View v) throws IOException {
+    public void euQueroComerMacarrao(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_macarrao);
         mediaPlayer.start();
-        geraRelatorio("Macarrao");
     }
 
-    public void euQueroComerMelancia(View v) throws IOException {
+    public void euQueroComerMelancia(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_melancia);
         mediaPlayer.start();
-        geraRelatorio("Melancia");
     }
 
-    public void euQueroComerOvo(View v) throws IOException {
+    public void euQueroComerOvo(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_ovo);
         mediaPlayer.start();
-        geraRelatorio("Ovo");
     }
 
-    public void euQueroBeberAgua(View v) throws IOException {
+    public void euQueroBeberAgua(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.beber_agua);
         mediaPlayer.start();
-        geraRelatorio("Agua");
     }
 
-    public void euQueroBeberRefri(View v) throws IOException {
+    public void euQueroBeberRefri(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.beber_refrigerante);
         mediaPlayer.start();
-        geraRelatorio("Refri");
     }
 
-    public void euQueroBeberLeite(View v) throws IOException {
+    public void euQueroBeberLeite(View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.beber_leite);
         mediaPlayer.start();
-        geraRelatorio("Leite");
     }
     public void TelaComidaCasa(View v){
         Intent intent = new Intent(this,CasaActivity.class);

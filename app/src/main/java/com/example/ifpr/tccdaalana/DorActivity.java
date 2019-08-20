@@ -6,28 +6,38 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import bancodedados.DBController;
+
 public class DorActivity extends AppCompatActivity {
+
+    private DBController dbController = new DBController();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dor);
     }
-    //public void dorNoPeito (View v) {
-      //  MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        //mediaPlayer.start();
-    //}
-    //public void dorNaGarganta (View v) {
-     //   MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-      //  mediaPlayer.start();
-   // }
-   // public void dorDeBarriga (View v) {
-     //   MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-      //  mediaPlayer.start();
-    //}
-    //public void dorDeCabeca (View v) {
-     //   MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-      //  mediaPlayer.start();
-    //}
+    public void dorNoPeito (View v) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Peito", ,);
+    }
+    public void dorNaGarganta (View v) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Garganta", ,);
+    }
+    public void dorDeBarriga (View v) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Barriga", ,);
+    }
+    public void dorDeCabeca (View v) {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+        mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Cabeça", ,);
+
+    }
     public void TelaDorComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);
         startActivity(intent);

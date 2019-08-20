@@ -30,12 +30,10 @@ public class ComunicaçãoActivity extends AppCompatActivity {
     public void hello (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.oi);
         mediaPlayer.start();
-        geraRelatorio("Oi");
     }
-    public void bye (View v) throws IOException {
+    public void bye (View v) {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.tchau);
         mediaPlayer.start();
-        geraRelatorio("Tchau");
     }
     public void TelaComunicacaoComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);

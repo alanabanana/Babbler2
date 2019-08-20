@@ -38,6 +38,7 @@
         <activity android:name=".CasaActivity"/>
         <activity android:name=".ComidaActivity"
             android:theme="@style/Theme.AppCompat.CompactMenu"/>
+        <activity android:name=".CorpoActivity"/>
         <activity android:name=".ComunicaçãoActivity"/>
         <activity android:name=".DorActivity"/>
         <activity android:name=".DiversaoActivity"/>

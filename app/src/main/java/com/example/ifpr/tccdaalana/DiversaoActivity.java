@@ -30,38 +30,56 @@ public class DiversaoActivity extends AppCompatActivity {
     public void brincarAmigo(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_amigo);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "BrincarAmigo", ,);
+        geraRelatorio("BrincarAmigo");
     }
-    public void andarSkate (View v) {
+    public void andarSkate (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_balanco);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Skate", ,);
+        geraRelatorio("Skate");
     }
-    public void cubos(View v) {
+    public void cubos(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_cubo);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Cubos", ,);
+        geraRelatorio("Cubos");
     }
-    public void brincarCarrinho(View v) {
+    public void brincarCarrinho(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_carrinho);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Carrinho", ,);
+        geraRelatorio("carrinho");
     }
    // public void brincarBoneca(View v) {
      //   MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_boneca);
        // mediaPlayer.start();
+        //dbController.insertIntoRelatorio(this, "Boneca", ,);
+        //geraRelatorio("Boneca");
     //}
   //  public void brincarDinossauro(View v) {
     //    MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_dinossauro);
       //  mediaPlayer.start();
+     // dbController.insertIntoRelatorio(this, "Dinossauro", ,);
+        //geraRelatorio("Dinossauro");
     //}
-    public void tocarTeclado(View v) {
+    public void tocarTeclado(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.tocar_teclado);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Teclado", ,);
+        geraRelatorio("Teclado");
     }
-    public void videoGame(View v) {
+    public void videoGame(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.jogar_videogame);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "VideoGame", ,);
+        geraRelatorio("VideoGame");
     }
-    public void balanço(View v) {
+    public void balanço(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_balanco);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Balanco", ,);
+        geraRelatorio("Balanco");
     }
     public void TelaDiversaoComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);

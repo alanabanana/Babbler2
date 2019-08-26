@@ -30,14 +30,20 @@ public class EscolaActivity extends AppCompatActivity {
     public void caderno (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Caderno",,);
+        geraRelatorio("Caderno");
     }
-    public void estojo (View v) {
+    public void estojo (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estojo);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Estojo", ,);
+        geraRelatorio("Estojo");
     }
-    public void quadroBranco (View v) {
+    public void quadroBranco (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.quadro_branco);
         mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "QuadroBranco", ,);
+        geraRelatorio("QuadroBranco");
     }
     public void TelaEscolaComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);

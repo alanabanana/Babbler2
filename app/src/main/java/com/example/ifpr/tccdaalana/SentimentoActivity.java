@@ -33,51 +33,68 @@ public class SentimentoActivity extends AppCompatActivity {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.te_amo);
         mediaPlayer.start();
         geraRelatorio("TeAmo");
+        dbController.insertIntoRelatorio(this, "TeAmo", ,);
     }
     public void euEstouFeliz (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estou_feliz);
         mediaPlayer.start();
         geraRelatorio("Feliz");
+        dbController.insertIntoRelatorio(this, "Feliz", ,);
+
     }
     public void euEstouTriste (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estou_triste);
         mediaPlayer.start();
         geraRelatorio("Triste");
+        dbController.insertIntoRelatorio(this, "Triste", ,);
     }
     public void euEstouComRaiva (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estou_com_raiva);
         mediaPlayer.start();
         geraRelatorio("Raiva");
+        dbController.insertIntoRelatorio(this, "Raiva", ,);
+
     }
     public void euEstouComMedo (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estou_com_medo);
         mediaPlayer.start();
         geraRelatorio("Medo");
+        dbController.insertIntoRelatorio(this, "Medo", ,);
+
     }
     public void euEstouDesapontado (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estou_desapontado);
         mediaPlayer.start();
         geraRelatorio("Desapontado");
+        dbController.insertIntoRelatorio(this, "Desapontado", ,);
+
     }
     public void euEstouChorando (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estou_chorando);
         mediaPlayer.start();
         geraRelatorio("Chorando");
+        dbController.insertIntoRelatorio(this, "Chorando", ,);
     }
     public void euEstouComCalor (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estou_com_calor);
         mediaPlayer.start();
         geraRelatorio("Calor");
+        dbController.insertIntoRelatorio(this, "Calor", ,);
+
     }
     public void euEstouSemPalavras (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estou_sem_palavras);
         mediaPlayer.start();
         geraRelatorio("SemPalavras");
+        dbController.insertIntoRelatorio(this, "SemPalavras", ,);
+
     }
     public void euEstouComSono (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estou_com_sono);
         mediaPlayer.start();
         geraRelatorio("Sono");
+        dbController.insertIntoRelatorio(this, "Sono", ,);
+
     }
         public void TelaSentimentosComida(View v){
             Intent intent = new Intent(this, ComidaActivity.class);

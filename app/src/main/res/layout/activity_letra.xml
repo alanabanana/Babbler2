@@ -1,6 +1,599 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#04f088"
+        android:paddingBottom="3dp">
+        <TextView
+            android:id="@+id/textLetras"
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:gravity="center_vertical|center"
+            android:text="Alfabeto"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            />
+
+        <ImageButton
+            android:id="@+id/aButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="a" />
+        <TextView
+            android:id="@+id/textA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="A"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/bButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="b" />
+        <TextView
+            android:id="@+id/textB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="B"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/cButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="c" />
+        <TextView
+            android:id="@+id/textC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="C"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/dButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="d" />
+        <TextView
+            android:id="@+id/textD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="D"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/eButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="e" />
+        <TextView
+            android:id="@+id/textE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="E"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/fButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="f" />
+        <TextView
+            android:id="@+id/textF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="F"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/gButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="g" />
+        <TextView
+            android:id="@+id/textG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="G"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/hButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="h" />
+        <TextView
+            android:id="@+id/textH"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="H"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/iButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="i" />
+        <TextView
+            android:id="@+id/textI"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="I"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/jButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="j" />
+        <TextView
+            android:id="@+id/textJ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="J"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/kButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="k" />
+        <TextView
+            android:id="@+id/textK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="K"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/lButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="l" />
+        <TextView
+            android:id="@+id/textL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="L"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/mButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="m" />
+        <TextView
+            android:id="@+id/textM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="M"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/nButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="n" />
+        <TextView
+            android:id="@+id/textN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="N"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/oButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="o" />
+        <TextView
+            android:id="@+id/textO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="O"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/pButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="p" />
+        <TextView
+            android:id="@+id/textP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="P"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/qButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="q" />
+        <TextView
+            android:id="@+id/textQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Q"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/rButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="r" />
+        <TextView
+            android:id="@+id/textR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="R"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/sButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="s" />
+        <TextView
+            android:id="@+id/textS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="S"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/tButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="t" />
+        <TextView
+            android:id="@+id/textT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="T"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/uButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="u" />
+        <TextView
+            android:id="@+id/textU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="U"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/vButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="v" />
+        <TextView
+            android:id="@+id/textV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="V"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/wButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="w" />
+        <TextView
+            android:id="@+id/textW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="W"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/xButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="x" />
+        <TextView
+            android:id="@+id/textX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="X"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/yButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="y" />
+        <TextView
+            android:id="@+id/textY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Y"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/zButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/one"
+            android:onClick="z" />
+        <TextView
+            android:id="@+id/textZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Z"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/casaLetrasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#20b2aa"
+            android:gravity="center|center_horizontal"
+            android:text="Casa"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaLetrasCasa"/>
+        <Button
+            android:id="@+id/comidaLetrasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#FE234F"
+            android:gravity="center|center_horizontal"
+            android:text="Comida"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaLetrasComida"/>
+
+        <Button
+            android:id="@+id/corpoLetrasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#ffa619"
+            android:gravity="center|center_horizontal"
+            android:onClick="TelaLetrasCorpo"
+            android:text="Corpo"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/comunicacaoLetrasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#73ff6b"
+            android:gravity="center|center_horizontal"
+            android:text="Comunicação"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaLetrasComunicacao"/>
+
+        <Button
+            android:id="@+id/diversaoLetrasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#f55c7c"
+            android:gravity="center|center_horizontal"
+            android:onClick="TelaLetrasDiversao"
+            android:text="Diversão"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/dorLetrasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#7a6ef6"
+            android:gravity="center|center_horizontal"
+            android:text="Dor"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaLetrasDor"/>
+        <Button
+            android:id="@+id/escolaLetrasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#f8c290 "
+            android:gravity="center|center_horizontal"
+            android:text="Escola"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaLetrasEscola"/>
+        <Button
+            android:id="@+id/familiaLetrasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#fce34a"
+            android:gravity="center|center_horizontal"
+            android:text="Família"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaLetrasFamilia"/>
+        <Button
+            android:id="@+id/necessidadesLetrasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#fa6691"
+            android:gravity="center|center_horizontal"
+            android:text="Necessidades"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaLetrasNecessidades"/>
+
+        <Button
+            android:id="@+id/numerosLetrasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#c872f8"
+            android:gravity="center|center_horizontal"
+            android:onClick="TelaLetrasNumeros"
+            android:text="Números"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/palavrasBasicasLetrasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#741a07"
+            android:gravity="center|center_horizontal"
+            android:text="Palavras Básicas"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaLetrasPablavrasBasicas"/>
+        <Button
+            android:id="@+id/roupasLetrasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#f7c702"
+            android:gravity="center|center_horizontal"
+            android:text="Roupas"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaLetrasRoupas"/>
+        <Button
+            android:id="@+id/sentidosLetrasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#7281c0"
+            android:gravity="center|center_horizontal"
+            android:text="Sentidos"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaLetrasSentidos"/>
+        <Button
+            android:id="@+id/sentimentosLetrasButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#FF5722"
+            android:gravity="center|center_horizontal"
+            android:text="Sentimentos"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaLetrasSentimentos"/>
+    </LinearLayout>
+</ScrollView>

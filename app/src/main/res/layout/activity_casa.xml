@@ -38,24 +38,6 @@
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/quartoButton"
-            android:layout_width="150sp"
-            android:layout_height="150sp"
-            android:layout_gravity="center"
-            android:background="@drawable/bed"
-            android:onClick="" />
-
-        <TextView
-            android:id="@+id/textQuarto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical|center"
-            android:text="QUARTO"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <ImageButton
             android:id="@+id/banheiroButton"
             android:layout_width="150sp"
             android:layout_height="150sp"
@@ -159,24 +141,6 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
             android:text="SALA"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <ImageButton
-            android:id="@+id/minhaCasaButton"
-            android:layout_width="150sp"
-            android:layout_height="150sp"
-            android:layout_gravity="center"
-            android:background="@drawable/bed"
-            android:onClick="minhaCasa" />
-
-        <TextView
-            android:id="@+id/textMinhaCasa"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical|center"
-            android:text="MINHA CASA"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />

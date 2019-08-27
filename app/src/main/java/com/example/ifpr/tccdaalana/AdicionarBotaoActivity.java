@@ -366,7 +366,12 @@ public class AdicionarBotaoActivity extends Activity {
             imagemButtonEscolhido.setBackgroundResource(R.drawable.fox);
         }else if (nomeImagem.equals("octopus")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.octopus);
+        }else if (nomeImagem.equals("mae")){
+            imagemButtonEscolhido.setBackgroundResource(R.drawable.mae);
+        }else if (nomeImagem.equals("pai")){
+            imagemButtonEscolhido.setBackgroundResource(R.drawable.pai;
         }
+
 
     }
 

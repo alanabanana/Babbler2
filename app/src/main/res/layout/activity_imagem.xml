@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:columnCount="2"
-        android:background="#ffff80">
+        android:background="#FCB63C">
 
         <TextView
             android:id="@+id/textComida"
@@ -20,6 +20,8 @@
             android:layout_columnSpan="2"
             android:gravity="center_horizontal"
             android:text="Imagens para Comida:"
+            android:layout_marginTop="30dp"
+            android:textColor="#fff"
             android:textSize="30sp"
             android:layout_column="0" />
 
@@ -95,7 +97,7 @@
             android:layout_height="205sp"
             android:layout_row="5"
             android:layout_column="0"
-            android:background="@drawable/grapes"
+            android:background="@drawable/orange"
             android:onClick="escolheuLaranja"/>
         <ImageButton
             android:id="@+id/strawberryButton"
@@ -306,7 +308,9 @@
             android:layout_column="0"
             android:layout_columnSpan="2"
             android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
             android:text="Imagens para Sentimentos:"
+            android:textColor="#fff"
             android:textSize="30sp" />
         <ImageButton
             android:id="@+id/felizButton"
@@ -501,6 +505,8 @@
             android:layout_columnSpan="2"
             android:gravity="center_horizontal"
             android:text="Imagens para Números:"
+            android:layout_marginTop="30dp"
+            android:textColor="#fff"
             android:textSize="30sp" />
         <ImageButton
             android:id="@+id/umButton"
@@ -727,6 +733,8 @@
             android:layout_columnSpan="2"
             android:gravity="center_horizontal"
             android:text="Imagens para Brinquedos:"
+            android:layout_marginTop="30dp"
+            android:textColor="#fff"
             android:textSize="30sp" />
 
         <ImageButton
@@ -882,6 +890,8 @@
             android:layout_columnSpan="2"
             android:gravity="center_horizontal"
             android:text="Imagens para Escola:"
+            android:textColor="#fff"
+            android:layout_marginTop="30dp"
             android:textSize="30sp" />
         <ImageButton
             android:id="@+id/livrosButton"
@@ -964,6 +974,8 @@
             android:layout_columnSpan="2"
             android:gravity="center_horizontal"
             android:text="Imagens para Animais:"
+            android:textColor="#fff"
+            android:layout_marginTop="30dp"
             android:textSize="30sp" />
         <ImageButton
             android:id="@+id/elefanteButton"
@@ -1152,5 +1164,38 @@
             android:layout_column="0"
             android:background="@drawable/octopus"
             android:onClick="escolheuPolvo"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Imagens para Família:"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:layout_row="75"
+            android:layout_columnSpan="2"/>
+
+        <ImageButton
+            android:id="@+id/maeEscolheuButton"
+            android:layout_width="205sp"
+            android:layout_height="205sp"
+            android:layout_row="76"
+            android:layout_column="0"
+            android:background="@drawable/mae"
+            android:onClick="escolheuMae"/>
+        <ImageButton
+            android:id="@+id/paiEscolheuButton"
+            android:layout_width="205sp"
+            android:layout_height="205sp"
+            android:layout_row="76"
+            android:layout_column="1"
+            android:background="@drawable/pai"
+            android:onClick="escolheuPai"/>
+        <ImageButton
+            android:id="@+id/maesEscolheuButton"
+            android:layout_width="205sp"
+            android:layout_height="205sp"
+            android:layout_row="78"
+            android:layout_column="0"
+            android:background="@drawable/mae"
+            android:onClick="escolheuPai"/>
     </GridLayout>
 </ScrollView>

@@ -1,16 +1,67 @@
 package com.example.ifpr.tccdaalana;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import java.io.IOException;
+import java.sql.Time;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import bancodedados.DBController;
+
 public class FamiliaActivity extends AppCompatActivity {
+    private DBController dbController = new DBController();
+    private Date data = new Date();
+    private Time horario = new Time();
+    String context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_familia);
     }
+    public void geraRelatorio(String botao) throws IOException {
+        SimpleDateFormat formataData = new SimpleDateFormat("dd-MM-yyyy");
+        String dataFormatada = formataData.format(data);
+        SimpleDateFormat formataHora = new SimpleDateFormat("hh-mm-ss");
+        String horaFormatada = formataHora.format(data);
+
+        dbController.insertIntoRelatorio(this, context, botao, horaFormatada, dataFormatada);
+    }
+    public void mae(View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
+        mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Mae",horario,data);
+        geraRelatorio("Mae");
+    }
+    public void pai(View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
+        mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Pai",horario,data);
+        geraRelatorio("Pai");
+    }
+    public void duasMaes (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
+        mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Maes",horario,data);
+        geraRelatorio("Maes");
+    }
+    public void doisPais (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
+        mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "Pais",horario,data);
+        geraRelatorio("Pais");
+    }
+    public void maeEPais (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
+        mediaPlayer.start();
+        dbController.insertIntoRelatorio(this, "MaeEPai",horario,data);
+        geraRelatorio("MaeEPai");
+    }
+
     public void TelaFamiliaComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);
         startActivity(intent);

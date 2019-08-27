@@ -9,6 +9,48 @@
         android:orientation="vertical"
         android:background="#fce34a"
         android:paddingBottom="3dp">
+        <TextView
+            android:id="@+id/textFamilia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal"
+            android:text="Família"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"/>
+        <ImageButton
+            android:id="@+id/maeButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/mae"
+            android:onClick="mae" />
+        <TextView
+            android:id="@+id/textMae"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Mãe"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/paiButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/pai"
+            android:onClick="pai" />
+        <TextView
+            android:id="@+id/textPai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Pai"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
         <Button
             android:id="@+id/casaFamiliaButton"
             android:layout_width="match_parent"

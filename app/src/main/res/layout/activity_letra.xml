@@ -26,7 +26,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/a"
             android:onClick="a" />
         <TextView
             android:id="@+id/textA"
@@ -42,7 +42,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/b"
             android:onClick="b" />
         <TextView
             android:id="@+id/textB"
@@ -58,7 +58,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/c"
             android:onClick="c" />
         <TextView
             android:id="@+id/textC"
@@ -74,7 +74,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/d"
             android:onClick="d" />
         <TextView
             android:id="@+id/textD"
@@ -90,7 +90,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/e"
             android:onClick="e" />
         <TextView
             android:id="@+id/textE"
@@ -106,7 +106,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/f"
             android:onClick="f" />
         <TextView
             android:id="@+id/textF"
@@ -122,7 +122,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/g"
             android:onClick="g" />
         <TextView
             android:id="@+id/textG"
@@ -138,7 +138,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/h"
             android:onClick="h" />
         <TextView
             android:id="@+id/textH"
@@ -154,7 +154,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/i"
             android:onClick="i" />
         <TextView
             android:id="@+id/textI"
@@ -170,7 +170,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/j"
             android:onClick="j" />
         <TextView
             android:id="@+id/textJ"
@@ -186,7 +186,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/k"
             android:onClick="k" />
         <TextView
             android:id="@+id/textK"
@@ -202,7 +202,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/l"
             android:onClick="l" />
         <TextView
             android:id="@+id/textL"
@@ -218,7 +218,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/m"
             android:onClick="m" />
         <TextView
             android:id="@+id/textM"
@@ -234,7 +234,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/n"
             android:onClick="n" />
         <TextView
             android:id="@+id/textN"
@@ -250,7 +250,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/o"
             android:onClick="o" />
         <TextView
             android:id="@+id/textO"
@@ -266,7 +266,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/p"
             android:onClick="p" />
         <TextView
             android:id="@+id/textP"
@@ -282,7 +282,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/q"
             android:onClick="q" />
         <TextView
             android:id="@+id/textQ"
@@ -298,7 +298,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/r"
             android:onClick="r" />
         <TextView
             android:id="@+id/textR"
@@ -314,7 +314,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/s"
             android:onClick="s" />
         <TextView
             android:id="@+id/textS"
@@ -330,7 +330,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/t"
             android:onClick="t" />
         <TextView
             android:id="@+id/textT"
@@ -346,7 +346,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/u"
             android:onClick="u" />
         <TextView
             android:id="@+id/textU"
@@ -362,7 +362,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/v"
             android:onClick="v" />
         <TextView
             android:id="@+id/textV"
@@ -378,7 +378,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/w"
             android:onClick="w" />
         <TextView
             android:id="@+id/textW"
@@ -394,7 +394,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/x"
             android:onClick="x" />
         <TextView
             android:id="@+id/textX"
@@ -410,7 +410,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/y"
             android:onClick="y" />
         <TextView
             android:id="@+id/textY"
@@ -426,7 +426,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/one"
+            android:background="@drawable/z"
             android:onClick="z" />
         <TextView
             android:id="@+id/textZ"

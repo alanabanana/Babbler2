@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import java.io.IOException;
+import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -16,6 +17,7 @@ public class CorpoActivity extends AppCompatActivity {
 
     private DBController dbController = new DBController();
     private Date data = new Date();
+    private Time horario = new Time();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,25 +34,25 @@ public class CorpoActivity extends AppCompatActivity {
     public void orelha (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Orelha", ,);
+        dbController.insertIntoRelatorio(this, "Orelha",horario,data);
         geraRelatorio("Orelha");
     }
     public void olho (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Olho", ,);
+        dbController.insertIntoRelatorio(this, "Olho",horario,data);
         geraRelatorio("Olho");
     }
     public void nariz (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Nariz", ,);
+        dbController.insertIntoRelatorio(this, "Nariz",horario,data);
         geraRelatorio("Nariz");
     }
     public void brain (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Cerebro", ,);
+        dbController.insertIntoRelatorio(this, "Cerebro",horario,data);
         geraRelatorio("Cerebro");
     }
     public void TelaCorpoComida(View v){

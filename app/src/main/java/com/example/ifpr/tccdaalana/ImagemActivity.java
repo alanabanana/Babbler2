@@ -945,6 +945,20 @@ public class ImagemActivity extends Activity {
         intent.putExtras(bundle);
         startActivity(intent);
     }
+    public void escolheuMae (View v) {
+        Bundle bundle = new Bundle();
+        bundle.putString("Imagem", "mae");
+        Intent intent = new Intent(this, AdicionarBotaoActivity.class);
+        intent.putExtras(bundle);
+        startActivity(intent);
+    }
+    public void escolheuPai (View v) {
+        Bundle bundle = new Bundle();
+        bundle.putString("Imagem", "pai");
+        Intent intent = new Intent(this, AdicionarBotaoActivity.class);
+        intent.putExtras(bundle);
+        startActivity(intent);
+    }
 
 
 

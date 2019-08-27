@@ -14,8 +14,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.sql.Date;
 import java.sql.Time;
+import java.util.Date;
 
 public class DBController {
 
@@ -129,7 +129,7 @@ public class DBController {
         JSONArray jsonArray = new JSONArray(sb.toString().trim());
         return jsonArray;
     }
-    public int insertIntoRelatorio (Context context, String botao, String horario, String data) throws IOException {
+    public int insertIntoRelatorio (Context context, String botao, Time horario, Date data) throws IOException {
         if (!checkNetworkConnection(context)) {
             Toast.makeText(context, "Falha na Conexão com a Internet!", Toast.LENGTH_LONG).show();
             return 0;

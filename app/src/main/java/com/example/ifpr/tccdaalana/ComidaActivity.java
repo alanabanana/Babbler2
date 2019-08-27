@@ -95,28 +95,28 @@ public class ComidaActivity extends AppCompatActivity {
     public void euQueroComerOvo(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_ovo);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Ovo",,);
+        dbController.insertIntoRelatorio(this, "Ovo",horario,data);
         geraRelatorio("Ovo");
     }
 
     public void euQueroBeberAgua(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.beber_agua);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Agua",,);
+        dbController.insertIntoRelatorio(this, "Agua",horario,data);
         geraRelatorio("Agua");
     }
 
     public void euQueroBeberRefri(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.beber_refrigerante);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Refri",,);
+        dbController.insertIntoRelatorio(this, "Refri",horario,data);
         geraRelatorio("Refri");
     }
 
     public void euQueroBeberLeite(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.beber_leite);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Leite",,);
+        dbController.insertIntoRelatorio(this, "Leite",horario,data);
         geraRelatorio("Leite");
     }
     public void TelaComidaCasa(View v){

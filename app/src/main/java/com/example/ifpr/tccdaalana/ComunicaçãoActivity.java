@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import java.io.IOException;
+import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -15,6 +16,7 @@ import bancodedados.DBController;
 public class ComunicaçãoActivity extends AppCompatActivity {
     private DBController dbController = new DBController();
     private Date data = new Date();
+    private Time horario = new Time();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,13 +32,13 @@ public class ComunicaçãoActivity extends AppCompatActivity {
     public void hello (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.oi);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Hello",,);
+        dbController.insertIntoRelatorio(this, "Hello",horario,data);
         geraRelatorio("Hello");
     }
     public void bye (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.tchau);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Bye",,);
+        dbController.insertIntoRelatorio(this, "Bye",horario,data);
         geraRelatorio("Bye");
     }
     public void TelaComunicacaoComida(View v){

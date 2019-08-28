@@ -81,6 +81,10 @@ public class CadastroDpActivity extends AppCompatActivity {
 
 
     }
+    public void voltarLogin (View v){
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
 }
 
 

@@ -48,4 +48,8 @@ public class CadastroRespActivity extends AppCompatActivity {
             }
         }
     }
+    public void voltarInicio (View v){
+        Intent intent =  new Intent(this, LoginActivity.class);
+        startActivity(intent);
+    }
 }

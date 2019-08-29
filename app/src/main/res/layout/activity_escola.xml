@@ -22,29 +22,14 @@
             android:textStyle="bold"
             />
 
-        <ImageButton
-            android:id="@+id/umButton"
-            android:layout_width="150sp"
-            android:layout_height="150sp"
-            android:layout_gravity="center"
-            android:background="@drawable/whiteboard"
-            android:onClick="QuadroBranco" />
-        <TextView
-            android:id="@+id/textUm"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical|center"
-            android:text="Quadro Branco"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp"
-            android:textStyle="bold" />
+
         <ImageButton
             android:id="@+id/cadernoButton"
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/notebook"
-            android:onClick="QuadroBranco" />
+            android:onClick="caderno" />
         <TextView
             android:id="@+id/textCaderno"
             android:layout_width="match_parent"
@@ -61,13 +46,29 @@
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/pencilcase"
-            android:onClick="QuadroBranco" />
+            android:onClick="estojo" />
         <TextView
             android:id="@+id/textPenal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
             android:text="Penal"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/quadroBrancoButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/whiteboard"
+            android:onClick="estojo" />
+        <TextView
+            android:id="@+id/textQuadroBranco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Quadro Branco"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />

@@ -9,16 +9,20 @@
         android:orientation="vertical"
         android:background="#73ff6b"
         android:paddingBottom="3dp">
+        <ImageButton
+            android:layout_width="64dp"
+            android:layout_height="66dp"
+            android:background="@drawable/back" />
+
         <TextView
             android:id="@+id/textCasa"
             android:layout_width="match_parent"
-            android:layout_height="99dp"
+            android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
             android:text="Comunicação"
             android:textColor="#FFFFFF"
             android:textSize="50sp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
         <ImageButton
             android:id="@+id/helloButton"
             android:layout_width="150sp"

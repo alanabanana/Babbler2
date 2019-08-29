@@ -1,6 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
 
-</android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fa6691">
+        <ImageButton
+            android:layout_width="64dp"
+            android:layout_height="66dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:text="Necessidades"
+            android:textStyle="bold"
+            android:textSize="50dp"
+            android:textColor="#fff"
+            android:gravity="center"/>
+        <ImageButton
+            android:id="@+id/banhoButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/shower"
+            android:onClick="tomarBanho" />
+        <TextView
+            android:id="@+id/textTomarBanho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Eu quero tomar banho"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/xixiButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/toiletpaper"
+            android:onClick="fazerXixi" />
+        <TextView
+            android:id="@+id/textXixi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Eu quero fazer xixi"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/casaNecessidadesButton"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:background="#20b2aa"
+        android:gravity="center|center_horizontal"
+        android:text="Casa"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:onClick="TelaNecessidadeCasa"/>
+    <Button
+        android:id="@+id/comidaNecessidadesButton"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:background="#FE234F"
+        android:gravity="center|center_horizontal"
+        android:text="Comida"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:onClick="TelaNecessidadeComida"/>
+
+    <Button
+        android:id="@+id/corpoNecessidadesButton"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:background="#ffa619"
+        android:gravity="center|center_horizontal"
+        android:onClick="TelaNecessidadeCorpo"
+        android:text="Corpo"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/comunicacaoNecessidadesButton"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:background="#73ff6b"
+        android:gravity="center|center_horizontal"
+        android:text="Comunicação"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:onClick="TelaNecessidadeComunicacao"/>
+
+    <Button
+        android:id="@+id/diversaoNecessidadeButton"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:background="#f55c7c"
+        android:gravity="center|center_horizontal"
+        android:onClick="TelaNecessidadeDiversao"
+        android:text="Diversão"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/dorNecessidadeButton"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:background="#7a6ef6"
+        android:gravity="center|center_horizontal"
+        android:text="Dor"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:onClick="TelaNecessidadeDor"/>
+    <Button
+        android:id="@+id/escolaNecessidadesButton"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:background="#f8c290 "
+        android:gravity="center|center_horizontal"
+        android:text="Escola"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:onClick="TelaNecessidadeEscola"/>
+    <Button
+        android:id="@+id/familiaNecessidadesButton"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:background="#fce34a"
+        android:gravity="center|center_horizontal"
+        android:text="Família"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:onClick="TelaNecessidadeFamilia"/>
+    <Button
+        android:id="@+id/letrasNecessidadesButton"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:background="#04f088"
+        android:gravity="center|center_horizontal"
+        android:text="Letras"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:onClick="TelaNecessidadeLetras"/>
+
+
+    <Button
+        android:id="@+id/numerosNecessidadesButton"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:background="#c872f8"
+        android:gravity="center|center_horizontal"
+        android:onClick="TelaNecessidadeNumeros"
+        android:text="Números"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/palavrasBasicasNecessidadesButton"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:background="#741a07"
+        android:gravity="center|center_horizontal"
+        android:text="Palavras Básicas"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:onClick="TelaNecessidadePablavrasBasicas"/>
+    <Button
+        android:id="@+id/roupasNecessidadesButton"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:background="#f7c702"
+        android:gravity="center|center_horizontal"
+        android:text="Roupas"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:onClick="TelaNecessidadeRoupas"/>
+    <Button
+        android:id="@+id/sentidosNecessidadesButton"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:background="#7281c0"
+        android:gravity="center|center_horizontal"
+        android:text="Sentidos"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:onClick="TelaNecessidadeSentidos"/>
+    <Button
+        android:id="@+id/sentimentosNecessidadesButton"
+        android:layout_width="match_parent"
+        android:layout_height="119dp"
+        android:background="#FF5722"
+        android:gravity="center|center_horizontal"
+        android:text="Sentimentos"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:onClick="TelaNecessidadeSentimentos"/>
+    </LinearLayout>
+</ScrollView>

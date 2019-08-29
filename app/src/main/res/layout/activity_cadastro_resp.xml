@@ -119,6 +119,7 @@
         android:layout_marginBottom="8dp"
         android:text="Confirmar Senha:"
         android:textColor="#fff"
+        android:textStyle="bold"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -152,8 +153,8 @@
 
     <ImageButton
         android:id="@+id/button_entra"
-        android:layout_width="70dp"
-        android:layout_height="69dp"
+        android:layout_width="71dp"
+        android:layout_height="77dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
@@ -172,13 +173,12 @@
         app:layout_constraintVertical_bias="0.917" />
 
     <ImageButton
-        android:id="@+id/imageButtonSair"
-        android:layout_width="61dp"
-        android:layout_height="56dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/voltar1"
         android:onClick="voltarInicio"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

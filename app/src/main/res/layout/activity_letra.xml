@@ -10,6 +10,10 @@
         android:orientation="vertical"
         android:background="#04f088"
         android:paddingBottom="3dp">
+        <ImageButton
+            android:layout_width="64dp"
+            android:layout_height="66dp"
+            android:background="@drawable/back" />
         <TextView
             android:id="@+id/textLetras"
             android:layout_width="match_parent"

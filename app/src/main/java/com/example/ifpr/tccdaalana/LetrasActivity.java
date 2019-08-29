@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import java.io.IOException;
+import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -15,6 +16,7 @@ import bancodedados.DBController;
 public class LetrasActivity extends AppCompatActivity {
     private DBController dbController = new DBController();
     private Date data = new Date();
+    private Time horario = new Time();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,158 +32,158 @@ public class LetrasActivity extends AppCompatActivity {
     public void a (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "A",,);
+        dbController.insertIntoRelatorio(this, "A",horario,data);
         geraRelatorio("A");
     }
     public void b (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "B",,);
+        dbController.insertIntoRelatorio(this, "B",horario,data);
         geraRelatorio("B");
     }
     public void c (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "C",,);
+        dbController.insertIntoRelatorio(this, "C",horario,data);
         geraRelatorio("C");
     }
     public void d (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "D",,);
+        dbController.insertIntoRelatorio(this, "D",horario,data);
         geraRelatorio("D");
     }
     public void e (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "E",,);
+        dbController.insertIntoRelatorio(this, "E",horario,data);
         geraRelatorio("E");
     }
     public void f (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "G",,);
+        dbController.insertIntoRelatorio(this, "G",horario,data);
         geraRelatorio("G");
     }
     public void g (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "G",,);
+        dbController.insertIntoRelatorio(this, "G",horario,data);
         geraRelatorio("G");
     }
     public void h (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "H",,);
+        dbController.insertIntoRelatorio(this, "H",horario,data);
         geraRelatorio("H");
     }
     public void i (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "I",,);
+        dbController.insertIntoRelatorio(this, "I",horario,data);
         geraRelatorio("I");
     }
     public void j (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "J",,);
+        dbController.insertIntoRelatorio(this, "J",horario,data);
         geraRelatorio("J");
     }
     public void k (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "K",,);
+        dbController.insertIntoRelatorio(this, "K",horario,data);
         geraRelatorio("K");
     }
     public void l (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "L",,);
+        dbController.insertIntoRelatorio(this, "L",horario,data);
         geraRelatorio("L");
     }
     public void m (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "M",,);
+        dbController.insertIntoRelatorio(this, "M",horario,data);
         geraRelatorio("M");
     }
     public void n (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "N",,);
+        dbController.insertIntoRelatorio(this, "N",horario,data);
         geraRelatorio("N");
     }
     public void o (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "O",,);
+        dbController.insertIntoRelatorio(this, "O",horario,data);
         geraRelatorio("O");
     }
     public void p (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "P",,);
+        dbController.insertIntoRelatorio(this, "P",horario,data);
         geraRelatorio("P");
     }
     public void q (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Q",,);
+        dbController.insertIntoRelatorio(this, "Q",horario,data);
         geraRelatorio("Q");
     }
     public void r (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "R",,);
+        dbController.insertIntoRelatorio(this, "R",horario,data);
         geraRelatorio("R");
     }
     public void s (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "S", , );
+        dbController.insertIntoRelatorio(this, "S",horario,data );
         geraRelatorio("S");
     }
     public void t (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "T", , );
+        dbController.insertIntoRelatorio(this, "T",horario,data);
         geraRelatorio("T");
     }
     public void u (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "U",,);
+        dbController.insertIntoRelatorio(this, "U",horario,data);
         geraRelatorio("U");
     }
     public void v (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "V",,);
+        dbController.insertIntoRelatorio(this, "V",horario,data);
         geraRelatorio("V");
     }
     public void w (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "W",,);
+        dbController.insertIntoRelatorio(this, "W",horario,data);
         geraRelatorio("W");
     }
     public void x (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "X",,);
+        dbController.insertIntoRelatorio(this, "X",horario,data);
         geraRelatorio("X");
     }
 
     public void y (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Y",,);
+        dbController.insertIntoRelatorio(this, "Y",horario,data);
         geraRelatorio("Y");
     }
     public void z (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Z",,);
+        dbController.insertIntoRelatorio(this, "Z",horario,data);
         geraRelatorio("Z");
     }
     public void TelaLetrasComida(View v){

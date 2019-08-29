@@ -7,179 +7,113 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#7281c0"
+        android:background="#FF5722"
         android:paddingBottom="3dp">
+        <ImageButton
+            android:layout_width="64dp"
+            android:layout_height="66dp"
+            android:background="@drawable/back" />
         <TextView
-            android:id="@+id/textCasa"
+            android:id="@+id/textSentidos"
             android:layout_width="match_parent"
             android:layout_height="99dp"
             android:gravity="center_vertical|center"
-            android:text="Casa"
+            android:text="Sentidos"
             android:textColor="#FFFFFF"
             android:textSize="50sp"
             android:textStyle="bold"
             />
 
         <ImageButton
-            android:id="@+id/camaButton"
+            android:id="@+id/tatoButton"
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/bed"
-            android:onClick="cama" />
+            android:onClick="tato" />
         <TextView
-            android:id="@+id/textCama"
+            android:id="@+id/textTato"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
-            android:text="EU QUERO DEITAR NA MINHA CAMA"
+            android:text="Tocar"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/quartoButton"
+            android:id="@+id/verButton"
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/bed"
-            android:onClick="euQueroDeitar" />
+            android:onClick="ver" />
 
         <TextView
-            android:id="@+id/textQuarto"
+            android:id="@+id/textVer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
-            android:text="QUARTO"
+            android:text="Ver"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/banheiroButton"
+            android:id="@+id/cheirarButton"
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/bed"
-            android:onClick="banheiro" />
+            android:onClick="cheirar" />
 
         <TextView
-            android:id="@+id/textBanheiro"
+            android:id="@+id/textCheirar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
-            android:text="BANHEIRO"
+            android:text="Cheirar"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/mesaJantarButton"
+            android:id="@+id/escutarButton"
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/bed"
-            android:onClick="mesa" />
+            android:onClick="escutar" />
 
         <TextView
-            android:id="@+id/textMesa"
+                android:id="@+id/textEscutar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
-            android:text="MESA"
+            android:text="Escutar"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/cozinhaButton"
+            android:id="@+id/paladarButton"
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/bed"
-            android:onClick="cozinha" />
+            android:onClick="paladar" />
 
         <TextView
-            android:id="@+id/textCozinha"
+            android:id="@+id/textPaladar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
-            android:text="COZINHA"
+            android:text="Paladar"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />
 
-        <ImageButton
-            android:id="@+id/garagemButton"
-            android:layout_width="150sp"
-            android:layout_height="150sp"
-            android:layout_gravity="center"
-            android:background="@drawable/bed"
-            android:onClick="garagem" />
 
-        <TextView
-            android:id="@+id/textGaragem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical|center"
-            android:text="GARAGEM"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <ImageButton
-            android:id="@+id/jardimButton"
-            android:layout_width="150sp"
-            android:layout_height="150sp"
-            android:layout_gravity="center"
-            android:background="@drawable/bed"
-            android:onClick="jardim" />
-
-        <TextView
-            android:id="@+id/textJardim"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical|center"
-            android:text="JARDIM"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <ImageButton
-            android:id="@+id/salaButton"
-            android:layout_width="150sp"
-            android:layout_height="150sp"
-            android:layout_gravity="center"
-            android:background="@drawable/bed"
-            android:onClick="sala" />
-
-        <TextView
-            android:id="@+id/textSala"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical|center"
-            android:text="SALA"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <ImageButton
-            android:id="@+id/minhaCasaButton"
-            android:layout_width="150sp"
-            android:layout_height="150sp"
-            android:layout_gravity="center"
-            android:background="@drawable/bed"
-            android:onClick="minhaCasa" />
-
-        <TextView
-            android:id="@+id/textMinhaCasa"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical|center"
-            android:text="MINHA CASA"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp"
-            android:textStyle="bold" />
         <Button
             android:id="@+id/casaSentidosButton"
             android:layout_width="match_parent"
@@ -327,16 +261,6 @@
             android:textSize="50dp"
             android:textStyle="bold"
             android:onClick="TelaSentidosRoupas"/>
-        <Button
-            android:id="@+id/sentimentosSentidosButton"
-            android:layout_width="match_parent"
-            android:layout_height="119dp"
-            android:background="#FF5722"
-            android:gravity="center|center_horizontal"
-            android:text="Sentidos"
-            android:textColor="#FFFFFF"
-            android:textSize="50dp"
-            android:textStyle="bold"
-            android:onClick="TelaSentidosSentimentos"/>
+
     </LinearLayout>
 </ScrollView>

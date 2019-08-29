@@ -10,6 +10,10 @@
         android:orientation="vertical"
         android:background="#c872f8"
         android:paddingBottom="3dp">
+        <ImageButton
+            android:layout_width="64dp"
+            android:layout_height="66dp"
+            android:background="@drawable/back" />
         <TextView
             android:id="@+id/textNumero"
             android:layout_width="match_parent"
@@ -62,7 +66,7 @@
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/three"
-            android:onClick="um" />
+            android:onClick="tres" />
 
         <TextView
             android:id="@+id/textTres"
@@ -80,7 +84,7 @@
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/four"
-            android:onClick="um" />
+            android:onClick="quatro" />
 
         <TextView
             android:id="@+id/textQuatro"
@@ -98,7 +102,7 @@
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/five"
-            android:onClick="um" />
+            android:onClick="cinco" />
 
         <TextView
             android:id="@+id/textCinco"
@@ -115,7 +119,7 @@
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/six"
-            android:onClick="um" />
+            android:onClick="seis" />
 
         <TextView
             android:id="@+id/textSeis"
@@ -123,6 +127,23 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
             android:text="Seis"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/seteButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/six"
+            android:onClick="sete" />
+
+        <TextView
+            android:id="@+id/textSete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Sete"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -134,7 +155,7 @@
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/eight"
-            android:onClick="um" />
+            android:onClick="oito" />
 
         <TextView
             android:id="@+id/textOito"
@@ -152,7 +173,7 @@
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/nine"
-            android:onClick="um" />
+            android:onClick="nove" />
 
         <TextView
             android:id="@+id/textNine"

@@ -9,16 +9,20 @@
         android:orientation="vertical"
         android:background="#20b2aa"
         android:paddingBottom="3dp">
+        <ImageButton
+            android:layout_width="64dp"
+            android:layout_height="66dp"
+            android:background="@drawable/back" />
+
         <TextView
             android:id="@+id/textCasa"
             android:layout_width="match_parent"
-            android:layout_height="99dp"
+            android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
             android:text="Casa"
             android:textColor="#FFFFFF"
             android:textSize="50sp"
-            android:textStyle="bold"
-            />
+            android:textStyle="bold" />
 
         <ImageButton
             android:id="@+id/camaButton"
@@ -27,6 +31,7 @@
             android:layout_gravity="center"
             android:background="@drawable/bed"
             android:onClick="cama" />
+
         <TextView
             android:id="@+id/textCama"
             android:layout_width="match_parent"

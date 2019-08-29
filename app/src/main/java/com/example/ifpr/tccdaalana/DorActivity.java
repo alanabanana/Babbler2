@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import java.io.IOException;
+import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -15,6 +16,7 @@ import bancodedados.DBController;
 public class DorActivity extends AppCompatActivity {
     private DBController dbController = new DBController();
     private Date data = new Date();
+    private Time horario = new Time();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,25 +33,25 @@ public class DorActivity extends AppCompatActivity {
     public void dorNoPeito (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Peito", ,);
+        dbController.insertIntoRelatorio(this, "Peito",horario,data);
         geraRelatorio("Peito");
     }
     public void dorNaGarganta (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Garganta", ,);
+        dbController.insertIntoRelatorio(this, "Garganta",horario,data);
         geraRelatorio("Garganta");
     }
     public void dorDeBarriga (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Barriga", ,);
+        dbController.insertIntoRelatorio(this, "Barriga",horario,data);
         geraRelatorio("Barriga");
     }
     public void dorDeCabeca (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Cabeça", ,);
+        dbController.insertIntoRelatorio(this, "Cabeça",horario,data);
         geraRelatorio("Cabeca");
     }
     public void TelaDorComida(View v){

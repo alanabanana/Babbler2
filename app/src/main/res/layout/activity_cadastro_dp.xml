@@ -42,13 +42,13 @@
         android:id="@+id/textViewApelido"
         android:layout_width="150dp"
         android:layout_height="40dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:text="Apelido:"
         android:textColor="#fff"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.088"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cadastroDpText" />
 
@@ -81,7 +81,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintHorizontal_bias="0.239"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextApelido" />
 
@@ -106,13 +106,13 @@
         android:id="@+id/textSenha"
         android:layout_width="345dp"
         android:layout_height="90dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:text=" Senha: (Lembre-se de colocar uma senha diferente da sua para este cadastro)"
         android:textColor="#fff"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.712"
+        app:layout_constraintHorizontal_bias="0.348"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextEmail" />
 
@@ -137,15 +137,47 @@
         android:id="@+id/textConfirmaSenha"
         android:layout_width="263dp"
         android:layout_height="42dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
 
         android:text="Confirmar Senha:"
         android:textColor="#fff"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.155"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextSenha" />
+
+    <ImageButton
+        android:id="@+id/okButton"
+        android:layout_width="64dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/botao_redondo"
+        android:gravity="center"
+        android:onClick="confirmaCadastroDependente"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextConfirmarSenha"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_arrow_forward_white"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSair"
+        android:onClick="voltarLogin"
+        android:layout_width="51dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/voltar1"
+         />
 
     <EditText
         android:id="@+id/TextConfirmarSenha"
@@ -163,36 +195,6 @@
         app:layout_constraintHorizontal_bias="0.606"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textConfirmaSenha" />
-
-    <ImageButton
-        android:id="@+id/okButton"
-        android:layout_width="62dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/botao_redondo"
-        android:gravity="center"
-        android:onClick="confirmaCadastroDependente"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextConfirmarSenha"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_arrow_forward_white" />
-
-    <ImageButton
-        android:id="@+id/imageButtonSair"
-        android:onClick="voltarLogin"
-        android:layout_width="51dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-
-        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
 
 </android.support.constraint.ConstraintLayout>
 

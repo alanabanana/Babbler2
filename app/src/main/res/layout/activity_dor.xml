@@ -11,6 +11,10 @@
         android:layout_height="wrap_content"
         android:background="#7a6ef6"
         android:orientation="vertical">
+        <ImageButton
+            android:layout_width="64dp"
+            android:layout_height="66dp"
+            android:background="@drawable/back" />
         <TextView
             android:id="@+id/textDor"
             android:layout_width="match_parent"

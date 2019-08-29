@@ -9,15 +9,20 @@
     android:orientation="vertical"
     android:background="#FE234F"
     android:paddingTop="3dp">
+    <ImageButton
+        android:layout_width="64dp"
+        android:layout_height="66dp"
+        android:background="@drawable/back" />
+
     <TextView
         android:id="@+id/textComida"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center_vertical|center"
-        android:layout_height="99dp"
+        android:text="Comidas"
         android:textColor="#FFFFFF"
         android:textSize="50sp"
-        android:textStyle="bold"
-        android:text="Comidas" />
+        android:textStyle="bold" />
 
     <ImageButton
         android:id="@+id/chocolateButton"

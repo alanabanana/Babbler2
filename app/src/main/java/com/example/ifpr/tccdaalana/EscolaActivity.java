@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import java.io.IOException;
+import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -15,6 +16,7 @@ import bancodedados.DBController;
 public class EscolaActivity extends AppCompatActivity {
     private DBController dbController = new DBController();
     private Date data = new Date();
+    private Time horario = new Time();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,19 +32,19 @@ public class EscolaActivity extends AppCompatActivity {
     public void caderno (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Caderno",,);
+        dbController.insertIntoRelatorio(this, "Caderno",horario,data);
         geraRelatorio("Caderno");
     }
     public void estojo (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estojo);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Estojo", ,);
+        dbController.insertIntoRelatorio(this, "Estojo",horario,data);
         geraRelatorio("Estojo");
     }
     public void quadroBranco (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.quadro_branco);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "QuadroBranco", ,);
+        dbController.insertIntoRelatorio(this, "QuadroBranco",horario,data);
         geraRelatorio("QuadroBranco");
     }
     public void TelaEscolaComida(View v){

@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#04f088"
+        android:background="#5faf50"
         android:paddingBottom="3dp">
         <ImageButton
             android:layout_width="64dp"

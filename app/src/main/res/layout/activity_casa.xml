@@ -37,7 +37,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
-            android:text="EU QUERO DEITAR NA MINHA CAMA"
+            android:text="Eu quero deitar na minha cama"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/mesaJantarButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/mesa"
+            android:onClick="mesa" />
+
+        <TextView
+            android:id="@+id/textMesa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Essa é a minha mesa"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -47,7 +64,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/bed"
+            android:background="@drawable/shower"
             android:onClick="banheiro" />
 
         <TextView
@@ -55,35 +72,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
-            android:text="BANHEIRO"
+            android:text="Eu quero ir ao banheiro"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />
 
-        <ImageButton
-            android:id="@+id/mesaJantarButton"
-            android:layout_width="150sp"
-            android:layout_height="150sp"
-            android:layout_gravity="center"
-            android:background="@drawable/bed"
-            android:onClick="mesa" />
-
-        <TextView
-            android:id="@+id/textMesa"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical|center"
-            android:text="MESA"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp"
-            android:textStyle="bold" />
 
         <ImageButton
             android:id="@+id/cozinhaButton"
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/bed"
+            android:background="@drawable/corn"
             android:onClick="cozinha" />
 
         <TextView
@@ -91,7 +91,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
-            android:text="COZINHA"
+            android:text="Cozinha"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -109,7 +109,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
-            android:text="GARAGEM"
+            android:text="Garagem"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -127,7 +127,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
-            android:text="JARDIM"
+            android:text="Jardim"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -145,7 +145,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
-            android:text="SALA"
+            android:text="Sala"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />

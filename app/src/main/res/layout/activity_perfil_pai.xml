@@ -4,29 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FCB63C">
+    >
 
-    <Button
-        android:id="@+id/editarCategoria"
-        android:layout_width="341dp"
-        android:layout_height="108dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/botao_redondo"
-        android:gravity="center"
-        android:onClick="redirecionarParaEditarBotao"
-        android:text="Editar Botões "
-        android:textColor="#fff"
-        android:textStyle="bold"
-        android:textAllCaps="true"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="487dp"
+        android:layout_height="259dp"
+        android:background="@drawable/quadrado_verde"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/sairButton"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@android:drawable/ic_menu_close_clear_cancel"
+            android:onClick="sairLogin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.047"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.045" />
+
+        <ImageButton
+            android:layout_width="54dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/menubolinha"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="151dp"
+            android:layout_height="144dp"
+            android:layout_marginStart="64dp"
+            android:background="@drawable/girassol"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView4"
+            app:layout_constraintHorizontal_bias="0.589"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sairButton"
+            app:layout_constraintVertical_bias="0.238" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="240dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="72dp"
+            android:gravity="center"
+            android:text="NOME DO MANO"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
 
     <Button
         android:id="@+id/enviarRelatorio"
@@ -40,53 +79,69 @@
         android:gravity="center"
         android:onClick="redirecionarParaRelatorio"
         android:text="Relatório"
-        android:textColor="#fff"
-        android:textStyle="bold"
         android:textAllCaps="true"
+        android:textColor="#fff"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.514" />
+        app:layout_constraintVertical_bias="0.703" />
 
-    <ImageButton
-        android:id="@+id/sairButton"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@android:drawable/ic_menu_close_clear_cancel"
-        android:onClick="sairLogin"
+    <Button
+        android:id="@+id/editarCategoria"
+        android:layout_width="341dp"
+        android:layout_height="108dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/botao_redondo"
+        android:gravity="center"
+        android:onClick="redirecionarParaEditarBotao"
+        android:text="Editar Botões "
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/enviarRelatorio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="479dp"
+        android:layout_height="104dp"
+        android:background="@drawable/quadrado_verde_baixo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.048"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.012" />
+        app:layout_constraintStart_toStartOf="parent">
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="69dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="52dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enviarRelatorio"
-        app:srcCompat="@android:drawable/ic_menu_info_details" />
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="69dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
 
-    <TextView
-        android:layout_width="242dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="64dp"
-        android:text="Saiba mais informações sobre o app"
-        android:textSize="16dp"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toBottomOf="@+id/enviarRelatorio" />
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@android:drawable/ic_menu_info_details" />
 
+        <TextView
+            android:layout_width="299dp"
+            android:layout_height="38dp"
+            android:text="Saiba mais informações sobre o app"
+            android:textColor="#fff"
+
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageButton2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>

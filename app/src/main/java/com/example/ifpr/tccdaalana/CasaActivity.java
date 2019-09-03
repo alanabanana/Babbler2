@@ -4,11 +4,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.text.format.Time;
 import android.view.View;
 
 import java.io.IOException;
-import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -34,41 +33,35 @@ public class CasaActivity extends Activity {
         dbController.insertIntoRelatorio(this, botao, horaFormatada, dataFormatada);
     }
 
-    public void cama(View v) throws IOException {
-     MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cama);
-     mediaPlayer.start();
-     dbController.insertIntoRelatorio(this, "Cama",,data);
-     geraRelatorio("Cama", horario, data);
-    }
+   /*/ public void cama(View v) throws IOException {
+         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cama);
+         mediaPlayer.start();
+         geraRelatorio("Cama");
+    }/*/
 
     public void mesa(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.mesa);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Mesa",horario, data);
         geraRelatorio("Mesa");
     }
     public void cozinha (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cozinha);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Cozinha", horario,data);
         geraRelatorio("Cozinha");
     }
     public void garagem(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.garagem);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Garagem",horario,data);
         geraRelatorio("Garagem");
     }
     public void jardim(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.jardim);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Jardim",horario,data);
         geraRelatorio("Jardim");
     }
     public void sala(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.sala);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Sala",horario,data);
         geraRelatorio("Sala");
     }
     public void TelaCasaComida(View v){

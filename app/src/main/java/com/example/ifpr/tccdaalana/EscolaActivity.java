@@ -4,10 +4,11 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.format.Time;
 import android.view.View;
 
 import java.io.IOException;
-import java.sql.Time;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -32,19 +33,16 @@ public class EscolaActivity extends AppCompatActivity {
     public void caderno (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Caderno",horario,data);
         geraRelatorio("Caderno");
     }
     public void estojo (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estojo);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Estojo",horario,data);
         geraRelatorio("Estojo");
     }
     public void quadroBranco (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.quadro_branco);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "QuadroBranco",horario,data);
         geraRelatorio("QuadroBranco");
     }
     public void TelaEscolaComida(View v){

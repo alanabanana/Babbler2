@@ -7,8 +7,8 @@
     >
 
     <android.support.constraint.ConstraintLayout
-        android:layout_width="487dp"
-        android:layout_height="259dp"
+        android:layout_width="404dp"
+        android:layout_height="254dp"
         android:background="@drawable/quadrado_verde"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,14 +44,14 @@
             android:layout_marginStart="64dp"
             android:background="@drawable/girassol"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView4"
+            app:layout_constraintEnd_toStartOf="@+id/textViewNomeDep"
             app:layout_constraintHorizontal_bias="0.589"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/sairButton"
             app:layout_constraintVertical_bias="0.238" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textViewNomeDep"
             android:layout_width="240dp"
             android:layout_height="55dp"
             android:layout_marginEnd="64dp"
@@ -85,9 +85,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.703" />
+        app:layout_constraintVertical_bias="0.757" />
 
     <Button
         android:id="@+id/editarCategoria"

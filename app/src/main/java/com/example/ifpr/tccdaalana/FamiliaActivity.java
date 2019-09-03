@@ -4,10 +4,10 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.format.Time;
 import android.view.View;
 
 import java.io.IOException;
-import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -28,37 +28,32 @@ public class FamiliaActivity extends AppCompatActivity {
         String dataFormatada = formataData.format(data);
         SimpleDateFormat formataHora = new SimpleDateFormat("hh-mm-ss");
         String horaFormatada = formataHora.format(data);
-
-        dbController.insertIntoRelatorio(this, context, botao, horaFormatada, dataFormatada);
+        dbController.insertIntoRelatorio(this, botao, horaFormatada, dataFormatada);
     }
+
     public void mae(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Mae",horario,data);
         geraRelatorio("Mae");
     }
     public void pai(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Pai",horario,data);
         geraRelatorio("Pai");
     }
     public void duasMaes (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Maes",horario,data);
         geraRelatorio("Maes");
     }
     public void doisPais (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Pais",horario,data);
         geraRelatorio("Pais");
     }
     public void maeEPais (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "MaeEPai",horario,data);
         geraRelatorio("MaeEPai");
     }
 

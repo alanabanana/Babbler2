@@ -58,6 +58,28 @@
             android:textAlignment="gravity"
             android:textSize="26dp" />
 
+        <TableLayout
+            android:id="@+id/tableLayoutFrame2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </TableLayout>
+
     </GridLayout>
 
 </ScrollView>

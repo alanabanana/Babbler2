@@ -4,10 +4,10 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.format.Time;
 import android.view.View;
 
 import java.io.IOException;
-import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -31,30 +31,27 @@ public class CorpoActivity extends AppCompatActivity {
         String horaFormatada = formataHora.format(data);
         dbController.insertIntoRelatorio(this, botao, horaFormatada, dataFormatada);
     }
-    public void orelha (View v) throws IOException {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Orelha",horario,data);
-        geraRelatorio("Orelha");
-    }
-    public void olho (View v) throws IOException {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Olho",horario,data);
-        geraRelatorio("Olho");
-    }
-    public void nariz (View v) throws IOException {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Nariz",horario,data);
-        geraRelatorio("Nariz");
-    }
-    public void brain (View v) throws IOException {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Cerebro",horario,data);
-        geraRelatorio("Cerebro");
-    }
+//
+//    public void orelha (View v) throws IOException {
+//        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+//        mediaPlayer.start();
+//        geraRelatorio("Orelha");
+//    }
+//    public void olho (View v) throws IOException {
+//        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+//        mediaPlayer.start();
+//        geraRelatorio("Olho");
+//    }
+//    public void nariz (View v) throws IOException {
+//        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+//        mediaPlayer.start();
+//        geraRelatorio("Nariz");
+//    }
+//    public void brain (View v) throws IOException {
+//        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+//        mediaPlayer.start();
+//        geraRelatorio("Cerebro");
+//    }
     public void TelaCorpoComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);
         startActivity(intent);

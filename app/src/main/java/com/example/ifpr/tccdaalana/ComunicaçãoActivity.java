@@ -4,10 +4,11 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.format.Time;
 import android.view.View;
 
 import java.io.IOException;
-import java.sql.Time;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -29,16 +30,15 @@ public class ComunicaçãoActivity extends AppCompatActivity {
         String horaFormatada = formataHora.format(data);
         dbController.insertIntoRelatorio(this, botao, horaFormatada, dataFormatada);
     }
+
     public void hello (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.oi);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Hello",horario,data);
         geraRelatorio("Hello");
     }
     public void bye (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.tchau);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Bye",horario,data);
         geraRelatorio("Bye");
     }
     public void TelaComunicacaoComida(View v){

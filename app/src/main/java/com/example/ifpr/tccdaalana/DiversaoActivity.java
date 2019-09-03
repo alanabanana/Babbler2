@@ -4,10 +4,10 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.format.Time;
 import android.view.View;
 
 import java.io.IOException;
-import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -29,58 +29,50 @@ public class DiversaoActivity extends AppCompatActivity {
         String horaFormatada = formataHora.format(data);
         dbController.insertIntoRelatorio(this, botao, horaFormatada, dataFormatada);
     }
+
     public void brincarAmigo(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_amigo);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "BrincarAmigo",horario,data);
         geraRelatorio("BrincarAmigo");
     }
     public void andarSkate (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_balanco);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Skate",horario,data);
         geraRelatorio("Skate");
     }
     public void cubos(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_cubo);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Cubos",horario,data);
         geraRelatorio("Cubos");
     }
     public void brincarCarrinho(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_carrinho);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Carrinho",horario,data);
         geraRelatorio("carrinho");
     }
    // public void brincarBoneca(View v) {
      //   MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_boneca);
        // mediaPlayer.start();
-        //dbController.insertIntoRelatorio(this, "Boneca",horario,data);
         //geraRelatorio("Boneca");
     //}
   //  public void brincarDinossauro(View v) {
     //    MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_dinossauro);
       //  mediaPlayer.start();
-     // dbController.insertIntoRelatorio(this, "Dinossauro",horario,data);
         //geraRelatorio("Dinossauro");
     //}
     public void tocarTeclado(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.tocar_teclado);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Teclado",horario,data);
         geraRelatorio("Teclado");
     }
     public void videoGame(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.jogar_videogame);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "VideoGame",horario,data);
         geraRelatorio("VideoGame");
     }
     public void balanço(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_balanco);
         mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Balanco",horario,data);
         geraRelatorio("Balanco");
     }
     public void TelaDiversaoComida(View v){

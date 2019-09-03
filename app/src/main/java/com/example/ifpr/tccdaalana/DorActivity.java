@@ -4,10 +4,10 @@ import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.format.Time;
 import android.view.View;
 
 import java.io.IOException;
-import java.sql.Time;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -30,30 +30,26 @@ public class DorActivity extends AppCompatActivity {
         String horaFormatada = formataHora.format(data);
         dbController.insertIntoRelatorio(this, botao, horaFormatada, dataFormatada);
     }
-    public void dorNoPeito (View v) throws IOException {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Peito",horario,data);
-        geraRelatorio("Peito");
-    }
-    public void dorNaGarganta (View v) throws IOException {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Garganta",horario,data);
-        geraRelatorio("Garganta");
-    }
-    public void dorDeBarriga (View v) throws IOException {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Barriga",horario,data);
-        geraRelatorio("Barriga");
-    }
-    public void dorDeCabeca (View v) throws IOException {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
-        mediaPlayer.start();
-        dbController.insertIntoRelatorio(this, "Cabeça",horario,data);
-        geraRelatorio("Cabeca");
-    }
+//    public void dorNoPeito (View v) throws IOException {
+//        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+//        mediaPlayer.start();
+//        geraRelatorio("Peito");
+//    }
+//    public void dorNaGarganta (View v) throws IOException {
+//        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+//        mediaPlayer.start();
+//        geraRelatorio("Garganta");
+//    }
+//    public void dorDeBarriga (View v) throws IOException {
+//        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+//        mediaPlayer.start();
+//        geraRelatorio("Barriga");
+//    }
+//    public void dorDeCabeca (View v) throws IOException {
+//        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
+//        mediaPlayer.start();
+//        geraRelatorio("Cabeca");
+//    }
     public void TelaDorComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);
         startActivity(intent);

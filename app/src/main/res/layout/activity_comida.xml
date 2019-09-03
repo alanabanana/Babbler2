@@ -9,10 +9,11 @@
     android:orientation="vertical"
     android:background="#FE234F"
     android:paddingTop="3dp">
+
     <ImageButton
         android:layout_width="64dp"
         android:layout_height="66dp"
-        android:background="@drawable/back" />
+        android:background="@drawable/voltar" />
 
     <TextView
         android:id="@+id/textComida"

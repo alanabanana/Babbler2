@@ -18,9 +18,13 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 
 import java.io.ByteArrayOutputStream;
+import java.io.DataOutputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 import android.app.Application;
 import android.content.Context;
@@ -60,33 +64,95 @@ public class AdicionarBotaoActivity extends Activity {
         buttonStart.setEnabled(false);
         buttonStop.setEnabled(true);
         //CODIGO PARA REALIZAR GRAVACAO
-//        mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-//        mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
-//        mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
-//        mediaRecorder.setOutputFile(outputDir + "/teste.3gpp");
-//        mediaRecorder.prepare();
-//        mediaRecorder.start();
-//        salvarAudio();
-    }
-
-    private Context MyApp(Context context) {
-        context = context;
-        return context;
+        mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+        mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+        mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
+        mediaRecorder.setOutputFile(outputDir + "/teste.3gpp");
+        mediaRecorder.prepare();
+        mediaRecorder.start();
     }
 
     private void salvarAudio() {
-        ImageButton imageButtonAudio = findViewById(R.id.imageButtonEscolhido);
-        Drawable d = imageButtonAudio.getBackground();
-        BitmapDrawable bitDw = ((BitmapDrawable) d);
-        Bitmap bitmap = bitDw.getBitmap();
-        ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream);
-        String imageInString = stream.toString();
+        //ImageButton imageButtonAudio = findViewById(R.id.imageButtonEscolhido);
+        //Drawable d = imageButtonAudio.getBackground();
+        //BitmapDrawable bitDw = ((BitmapDrawable) d);
+        //Bitmap bitmap = bitDw.getBitmap();
+        //ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        //bitmap.compress(Bitmap.CompressFormat.JPEG,100, stream);
+        //String imageInString = stream.toString();
 
-        EditText campoNomeAudio = findViewById(R.id.audioNameEditText);
-        String nome = campoNomeAudio.getText().toString();
+        //EditText campoNomeAudio = findViewById(R.id.audioNameEditText);
+        //String nome = campoNomeAudio.getText().toString();
 
         //dbController.insertIntoAtividades(getApplicationContext(), nome, imageInString, )
+
+        try {
+            String sourceFileUri = "/storage/emulated/0/DCIM/Camera/IMG_20190903_135021.jpg";
+            HttpURLConnection conn = null;
+            DataOutputStream dos = null;
+            String lineEnd = "\r\n";
+            String twoHyphens = "--";
+            String boundary = "*****";
+            int bytesRead, bytesAvailable, bufferSize;
+            byte[] buffer;
+            int maxBufferSize = 1 * 1024 * 1024;
+            File sourceFile = new File(sourceFileUri);
+            if (sourceFile.isFile()) {
+                try {
+                    String upLoadServerUri = "http://localhost/webservice_babbler/ws_audios/ws_receive_audio.php";
+                    // open a URL connection to the Servlet
+                    FileInputStream fileInputStream = new FileInputStream(sourceFile);
+                    URL url = new URL(upLoadServerUri);
+                    // Open a HTTP connection to the URL
+                    conn = (HttpURLConnection) url.openConnection();
+                    conn.setDoInput(true); // Allow Inputs
+                    conn.setDoOutput(true); // Allow Outputs
+                    conn.setUseCaches(false); // Don't use a Cached Copy
+                    conn.setRequestMethod("POST");
+                    conn.setRequestProperty("Connection", "Keep-Alive");
+                    conn.setRequestProperty("ENCTYPE", "multipart/form-data");
+                    conn.setRequestProperty("Content-Type", "multipart/form-data;boundary=" + boundary);
+                    conn.setRequestProperty("bill", sourceFileUri);
+                    dos = new DataOutputStream(conn.getOutputStream());
+                    dos.writeBytes(twoHyphens + boundary + lineEnd);
+                    dos.writeBytes("Content-Disposition: form-data; name=\"bill\";filename=\"" + sourceFileUri + "\"" + lineEnd);
+                    dos.writeBytes(lineEnd);
+
+                    // create a buffer of maximum size
+                    bytesAvailable = fileInputStream.available();
+
+                    bufferSize = Math.min(bytesAvailable, maxBufferSize);
+                    buffer = new byte[bufferSize];
+
+                    // read file and write it into form...
+                    bytesRead = fileInputStream.read(buffer, 0, bufferSize);
+
+                    while (bytesRead > 0) {
+                        dos.write(buffer, 0, bufferSize);
+                        bytesAvailable = fileInputStream.available();
+                        bufferSize = Math.min(bytesAvailable, maxBufferSize);
+                        bytesRead = fileInputStream.read(buffer, 0,bufferSize);
+                    }
+                    // send multipart form data necesssary after file
+                    // data...
+                    dos.writeBytes(lineEnd);
+                    dos.writeBytes(twoHyphens + boundary + twoHyphens + lineEnd);
+
+                    // Responses from the server (code and message)
+                    Integer serverResponseCode = conn.getResponseCode();
+                    String serverResponseMessage = conn.getResponseMessage();
+
+                    // close the streams //
+                    fileInputStream.close();
+                    dos.flush();
+                    dos.close();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 
     public void pausarGravacao(View v) {
@@ -94,6 +160,7 @@ public class AdicionarBotaoActivity extends Activity {
         buttonStop.setEnabled(false);
         //CODIGO PARA PAUSAR GRAVACAO
         mediaRecorder.stop();
+        salvarAudio();
     }
 
     private void colocarImagemAdequada(String nomeImagem) {
@@ -366,13 +433,7 @@ public class AdicionarBotaoActivity extends Activity {
             imagemButtonEscolhido.setBackgroundResource(R.drawable.fox);
         }else if (nomeImagem.equals("octopus")){
             imagemButtonEscolhido.setBackgroundResource(R.drawable.octopus);
-        }else if (nomeImagem.equals("mae")){
-            imagemButtonEscolhido.setBackgroundResource(R.drawable.mae);
-        }else if (nomeImagem.equals("pai")){
-            imagemButtonEscolhido.setBackgroundResource(R.drawable.pai;
         }
-
-
     }
 
     public void addImagem (View v ){

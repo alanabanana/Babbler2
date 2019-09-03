@@ -45,6 +45,7 @@
         <activity android:name=".EscolaActivity"/>
         <activity android:name=".FamiliaActivity"/>
         <activity android:name=".LetrasActivity"/>
+        <activity android:name=".ManualUsoActivity"/>
         <activity android:name=".NecessidadeActivity"/>
         <activity android:name=".NumerosActivity"/>
         <activity android:name=".PalavrasBasicasActivity"/>

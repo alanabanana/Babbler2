@@ -1,8 +1,10 @@
 package com.example.ifpr.tccdaalana;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.format.Time;
 import android.view.View;
 
 import java.io.IOException;
@@ -14,6 +16,7 @@ import bancodedados.DBController;
 public class SentidosActivity extends AppCompatActivity {
     private DBController dbController = new DBController();
     private Date data = new Date();
+    private Time horario = new Time();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,7 +29,31 @@ public class SentidosActivity extends AppCompatActivity {
         String horaFormatada = formataHora.format(data);
         dbController.insertIntoRelatorio(this, botao, horaFormatada, dataFormatada);
     }
-
+//    public void ver (View v) throws IOException {
+//        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.ver);
+//        mediaPlayer.start();
+//        geraRelatorio("Visao");
+//    }
+//    public void tato (View v) throws IOException {
+//        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.tato);
+//        mediaPlayer.start();
+//        geraRelatorio("Tato");
+//    }
+//    public void cheirar (View v) throws IOException {
+//        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cheirar);
+//        mediaPlayer.start();
+//        geraRelatorio("Cheirar");
+//    }
+//    public void escutar (View v) throws IOException {
+//        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.escutar);
+//        mediaPlayer.start();
+//        geraRelatorio("Escutar");
+//    }
+//    public void paladar (View v) throws IOException {
+//        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.paladar);
+//        mediaPlayer.start();
+//        geraRelatorio("Paladar");
+//    }
     public void TelaSentidosComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);
         startActivity(intent);

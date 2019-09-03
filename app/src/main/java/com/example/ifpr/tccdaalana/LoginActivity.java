@@ -24,7 +24,6 @@ public class LoginActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         SharedPreferences login = getApplicationContext().getSharedPreferences("Login", Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = login.edit();
         String email = login.getString("email", null);
         String email_dep = login.getString("email_dep", null);
         if (email != null){

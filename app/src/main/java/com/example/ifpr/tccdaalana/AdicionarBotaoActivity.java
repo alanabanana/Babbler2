@@ -1,8 +1,10 @@
 package com.example.ifpr.tccdaalana;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
@@ -10,7 +12,9 @@ import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.annotation.RequiresApi;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -57,6 +61,15 @@ public class AdicionarBotaoActivity extends Activity {
         buttonStart = (ImageButton) findViewById(R.id.StartAudio);
         buttonStop = (ImageButton) findViewById(R.id.StopAudio);
         buttonStop.setEnabled(false);
+        mediaRecorder = new MediaRecorder();
+        createNewDirectory();
+    }
+
+    private void createNewDirectory() {
+        outputDir = new File(Environment.getExternalStorageDirectory() + File.separator + "Audios/");
+        if (!outputDir.exists()) {
+            outputDir.mkdirs();
+        }
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -64,12 +77,16 @@ public class AdicionarBotaoActivity extends Activity {
         buttonStart.setEnabled(false);
         buttonStop.setEnabled(true);
         //CODIGO PARA REALIZAR GRAVACAO
-        mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-        mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
-        mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
-        mediaRecorder.setOutputFile(outputDir + "/teste.3gpp");
-        mediaRecorder.prepare();
-        mediaRecorder.start();
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECORD_AUDIO},0);
+        } else {
+            mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+            mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+            mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
+            mediaRecorder.setOutputFile(outputDir + "teste.3gpp");
+            mediaRecorder.prepare();
+            mediaRecorder.start();
+        }
     }
 
     private void salvarAudio() {

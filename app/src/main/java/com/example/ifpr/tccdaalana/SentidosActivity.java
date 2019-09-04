@@ -1,5 +1,6 @@
 package com.example.ifpr.tccdaalana;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -13,7 +14,7 @@ import java.util.Date;
 
 import bancodedados.DBController;
 
-public class SentidosActivity extends AppCompatActivity {
+public class SentidosActivity extends Activity {
     private DBController dbController = new DBController();
     private Date data = new Date();
     private Time horario = new Time();

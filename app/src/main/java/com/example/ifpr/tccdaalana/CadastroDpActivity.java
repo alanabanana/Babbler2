@@ -1,5 +1,6 @@
 package com.example.ifpr.tccdaalana;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,7 +18,7 @@ import java.util.ArrayList;
 
 import bancodedados.DBController;
 
-public class CadastroDpActivity extends AppCompatActivity {
+public class CadastroDpActivity extends Activity {
 
 
     DBController dbController = new DBController();

@@ -1,11 +1,12 @@
 package com.example.ifpr.tccdaalana;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class PalavrasBasicasActivity extends AppCompatActivity {
+public class PalavrasBasicasActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

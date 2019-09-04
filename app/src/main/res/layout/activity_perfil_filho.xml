@@ -79,6 +79,7 @@
           android:textColor="#FFFFFF"
           android:textSize="50dp"
           android:textStyle="bold" />
+
       <Button
           android:id="@+id/dorButton"
           android:layout_width="match_parent"
@@ -140,7 +141,7 @@
           android:layout_height="119dp"
           android:background="#c872f8"
           android:gravity="center|center_horizontal"
-          android:text="Palavras Básicas"
+          android:text="Números"
           android:textColor="#FFFFFF"
           android:textSize="50dp"
           android:textStyle="bold"

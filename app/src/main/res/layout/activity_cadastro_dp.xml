@@ -12,12 +12,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="69dp"
-        android:layout_height="56dp"
+    <ImageView
+        android:layout_width="68dp"
+        android:layout_height="68dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:text="B"
+        android:background="@drawable/girassol"
         android:textColor="#2aae2a"
         android:textSize="30dp"
         android:textStyle="bold"
@@ -54,21 +54,18 @@
 
     <EditText
         android:id="@+id/TextApelido"
-        android:layout_width="329dp"
+        android:layout_width="335dp"
         android:layout_height="49dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="4dp"
         android:background="@drawable/meio"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="Apelido do seu pequeno aqui"
         android:textColor="#fff"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.232"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewApelido"
-        tools:text="Apelido do seu pequeno aqui" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewApelido" />
 
     <TextView
         android:id="@+id/textEmail"
@@ -88,8 +85,7 @@
     <EditText
         android:id="@+id/TextEmail"
         android:layout_width="335dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="12dp"
+        android:layout_height="49dp"
         android:background="@drawable/meio"
         android:ems="10"
         android:hint="Seu email"
@@ -98,7 +94,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintHorizontal_bias="0.302"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textEmail" />
 
@@ -118,9 +114,8 @@
 
     <EditText
         android:id="@+id/TextSenha"
-        android:layout_width="325dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="335dp"
+        android:layout_height="49dp"
         android:background="@drawable/meio"
         android:ems="10"
         android:hint="* * *"
@@ -129,7 +124,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.623"
+        app:layout_constraintHorizontal_bias="0.302"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textSenha" />
 
@@ -169,21 +164,19 @@
 
     <ImageButton
         android:id="@+id/imageButtonSair"
-        android:onClick="voltarLogin"
-        android:layout_width="51dp"
-        android:layout_height="53dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         android:background="@drawable/voltar"
-         />
+        android:onClick="voltarLogin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/TextConfirmarSenha"
-        android:layout_width="322dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="335dp"
+        android:layout_height="49dp"
         android:background="@drawable/meio"
         android:ems="10"
         android:hint="* * *"
@@ -192,7 +185,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintHorizontal_bias="0.302"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textConfirmaSenha" />
 

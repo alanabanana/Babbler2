@@ -18,10 +18,7 @@
         android:theme="@style/Theme.AppCompat">
 
         <activity android:name=".LoginActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
 
         </activity>
         <activity android:name=".ImagemActivity"
@@ -31,7 +28,12 @@
             android:theme="@style/Theme.Design.NoActionBar"/>
         <activity android:name=".CadastroDpActivity"
             android:theme="@style/Theme.Design.NoActionBar"/>
-        <activity android:name=".PerfilPaiActivity"/>
+        <activity android:name=".PerfilPaiActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity android:name=".PerfilFilhoActivity" />
         <activity android:name=".AdicionarBotaoActivity" />
         <activity android:name=".EditarBotaoActivity"/>
@@ -53,5 +55,7 @@
         <activity android:name=".RoupasActivity"/>
         <activity android:name=".SentidosActivity"/>
         <activity android:name=".SentimentoActivity"/>
+        <activity android:name=".InfoIconesActivity"/>
+        <activity android:name=".InformacaoActivity"/>
         </application>
     </manifest>

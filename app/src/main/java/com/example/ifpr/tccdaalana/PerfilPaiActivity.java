@@ -46,5 +46,9 @@ public class PerfilPaiActivity extends Activity {
         Intent intent = new Intent(this, RelatorioActivity.class);
         startActivity(intent);
     }
+    public void redirecionarParaInformacao (View view){
+        Intent intent =  new Intent(this, InformacaoActivity.class);
+        startActivity(intent);
+    }
 
 }

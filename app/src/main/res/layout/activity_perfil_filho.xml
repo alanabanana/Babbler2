@@ -11,16 +11,30 @@
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:background="#FCB63C"
-      android:orientation="vertical">
+      android:orientation="vertical"
+      >
 
-
-      <ImageButton
-          android:id="@+id/imageButton3"
-          android:layout_width="73dp"
+      <GridLayout
+          android:layout_width="match_parent"
           android:layout_height="75dp"
-          android:onClick="sairLogin"
-          app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+          android:columnCount="0"
+          android:rowCount="4">
 
+          <ImageButton
+              android:id="@+id/imageButton3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:layout_marginBottom="10dp"
+              android:background="@drawable/voltar"
+              android:onClick="sairLogin" />
+
+          <ImageView
+              android:layout_width="82dp"
+              android:layout_height="match_parent"
+              android:layout_row="3"
+              android:background="@drawable/girassol" />
+      </GridLayout>
       <Button
           android:id="@+id/casaButton"
           android:layout_width="match_parent"
@@ -31,7 +45,8 @@
           android:textColor="#FFFFFF"
           android:textSize="50dp"
           android:textStyle="bold"
-          android:onClick="TelaCasa"/>
+          android:onClick="TelaCasa"
+          android:layout_marginBottom="10dp"/>
       <Button
           android:id="@+id/comidaButton"
           android:layout_width="match_parent"
@@ -42,7 +57,8 @@
           android:textColor="#FFFFFF"
           android:textSize="50dp"
           android:textStyle="bold"
-          android:onClick="TelaComida"/>
+          android:onClick="TelaComida"
+          android:layout_marginBottom="10dp"/>
 
       <Button
           android:id="@+id/corpoButton"
@@ -54,7 +70,8 @@
           android:text="Corpo"
           android:textColor="#FFFFFF"
           android:textSize="50dp"
-          android:textStyle="bold" />
+          android:textStyle="bold"
+          android:layout_marginBottom="10dp"/>
 
       <Button
           android:id="@+id/comunicacaoButton"
@@ -66,7 +83,8 @@
           android:textColor="#FFFFFF"
           android:textSize="50dp"
           android:textStyle="bold"
-          android:onClick="TelaComunicacao"/>
+          android:onClick="TelaComunicacao"
+          android:layout_marginBottom="10dp"/>
 
       <Button
           android:id="@+id/diversaoButton"
@@ -90,7 +108,8 @@
           android:textColor="#FFFFFF"
           android:textSize="50dp"
           android:textStyle="bold"
-          android:onClick="TelaDor"/>
+          android:onClick="TelaDor"
+          android:layout_marginBottom="10dp"/>
       <Button
           android:id="@+id/escolaButton"
           android:layout_width="match_parent"
@@ -101,7 +120,8 @@
           android:textColor="#FFFFFF"
           android:textSize="50dp"
           android:textStyle="bold"
-          android:onClick="TelaEscola"/>
+          android:onClick="TelaEscola"
+          android:layout_marginBottom="10dp"/>
       <Button
           android:id="@+id/familiaButton"
           android:layout_width="match_parent"
@@ -112,7 +132,8 @@
           android:textColor="#FFFFFF"
           android:textSize="50dp"
           android:textStyle="bold"
-          android:onClick="TelaFamilia"/>
+          android:onClick="TelaFamilia"
+          android:layout_marginBottom="10dp"/>
       <Button
           android:id="@+id/letrasButton"
           android:layout_width="match_parent"
@@ -123,7 +144,8 @@
           android:textColor="#FFFFFF"
           android:textSize="50dp"
           android:textStyle="bold"
-          android:onClick="TelaLetras"/>
+          android:onClick="TelaLetras"
+          android:layout_marginBottom="10dp"/>
       <Button
           android:id="@+id/necessidadesButton"
           android:layout_width="match_parent"
@@ -134,7 +156,8 @@
           android:textColor="#FFFFFF"
           android:textSize="50dp"
           android:textStyle="bold"
-          android:onClick="TelaNecessidades"/>
+          android:onClick="TelaNecessidades"
+          android:layout_marginBottom="10dp"/>
       <Button
           android:id="@+id/numerosButton"
           android:layout_width="match_parent"
@@ -145,7 +168,8 @@
           android:textColor="#FFFFFF"
           android:textSize="50dp"
           android:textStyle="bold"
-          android:onClick="TelaNumeros"/>
+          android:onClick="TelaNumeros"
+          android:layout_marginBottom="10dp"/>
       <Button
           android:id="@+id/palavrasBasicasButton"
           android:layout_width="match_parent"
@@ -156,7 +180,8 @@
           android:textColor="#FFFFFF"
           android:textSize="50dp"
           android:textStyle="bold"
-          android:onClick="TelaPablavrasBasicas"/>
+          android:onClick="TelaPablavrasBasicas"
+          android:layout_marginBottom="10dp"/>
       <Button
           android:id="@+id/roupasButton"
           android:layout_width="match_parent"
@@ -167,7 +192,8 @@
           android:textColor="#FFFFFF"
           android:textSize="50dp"
           android:textStyle="bold"
-          android:onClick="TelaRoupas"/>
+          android:onClick="TelaRoupas"
+          android:layout_marginBottom="10dp"/>
       <Button
           android:id="@+id/sentidosButton"
           android:layout_width="match_parent"
@@ -178,7 +204,8 @@
           android:textColor="#FFFFFF"
           android:textSize="50dp"
           android:textStyle="bold"
-          android:onClick="TelaSentidos"/>
+          android:onClick="TelaSentidos"
+          android:layout_marginBottom="10dp"/>
       <Button
           android:id="@+id/sentimentosButton"
           android:layout_width="match_parent"
@@ -189,6 +216,7 @@
           android:textColor="#FFFFFF"
           android:textSize="50dp"
           android:textStyle="bold"
-          android:onClick="TelaSentimentos"/>
+          android:onClick="TelaSentimentos"
+          android:layout_marginBottom="10dp"/>
   </LinearLayout>
 </ScrollView>

@@ -31,7 +31,12 @@
         <activity android:name=".PerfilPaiActivity">
 
         </activity>
-        <activity android:name=".PerfilFilhoActivity" />
+        <activity android:name=".PerfilFilhoActivity" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity android:name=".AdicionarBotaoActivity" />
         <activity android:name=".EditarBotaoActivity"/>
         <activity android:name=".RelatorioActivity"/>
@@ -55,10 +60,7 @@
         <activity android:name=".InfoIconesActivity"/>
         <activity android:name=".InformacaoActivity"/>
         <activity android:name=".PrimeiraTelaActivity">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+
         </activity>
         </application>
     </manifest>

@@ -24,33 +24,7 @@
             android:textSize="50sp"
             android:textStyle="bold" />
 
-        <ImageButton
-            android:id="@+id/camaButton"
-            android:layout_width="150sp"
-            android:layout_height="150sp"
-            android:layout_gravity="center"
-            android:background="@drawable/bed"
-            android:onClick="cama" />
 
-        <TextView
-            android:id="@+id/textCama"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical|center"
-            android:text="Eu quero deitar na minha cama"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textMesa"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical|center"
-            android:text="Essa é a minha mesa"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp"
-            android:textStyle="bold" />
 
         <ImageButton
             android:id="@+id/banheiroButton"
@@ -153,6 +127,7 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
+            android:layout_marginBottom="10dp"
             android:onClick="TelaCasaComida"/>
 
         <Button
@@ -164,6 +139,7 @@
             android:onClick="TelaCasaCorpo"
             android:text="Corpo"
             android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"
             android:textSize="50dp"
             android:textStyle="bold" />
 
@@ -174,6 +150,7 @@
             android:background="#73ff6b"
             android:gravity="center|center_horizontal"
             android:text="Comunicação"
+            android:layout_marginBottom="10dp"
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
@@ -184,6 +161,7 @@
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:background="#f55c7c"
+            android:layout_marginBottom="10dp"
             android:gravity="center|center_horizontal"
             android:onClick="TelaCasaDiversao"
             android:text="Diversão"
@@ -195,6 +173,7 @@
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:background="#7a6ef6"
+            android:layout_marginBottom="10dp"
             android:gravity="center|center_horizontal"
             android:text="Dor"
             android:textColor="#FFFFFF"
@@ -206,6 +185,7 @@
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:background="#f8c290 "
+            android:layout_marginBottom="10dp"
             android:gravity="center|center_horizontal"
             android:text="Escola"
             android:textColor="#FFFFFF"
@@ -216,6 +196,7 @@
             android:id="@+id/familiaCasaButton"
             android:layout_width="match_parent"
             android:layout_height="119dp"
+            android:layout_marginBottom="10dp"
             android:background="#fce34a"
             android:gravity="center|center_horizontal"
             android:text="Família"
@@ -228,6 +209,7 @@
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:background="#04f088"
+            android:layout_marginBottom="10dp"
             android:gravity="center|center_horizontal"
             android:text="Letras"
             android:textColor="#FFFFFF"
@@ -238,6 +220,7 @@
             android:id="@+id/necessidadesCasaButton"
             android:layout_width="match_parent"
             android:layout_height="119dp"
+            android:layout_marginBottom="10dp"
             android:background="#fa6691"
             android:gravity="center|center_horizontal"
             android:text="Necessidades"
@@ -250,6 +233,7 @@
             android:id="@+id/numerosCasaButton"
             android:layout_width="match_parent"
             android:layout_height="119dp"
+            android:layout_marginBottom="10dp"
             android:background="#c872f8"
             android:gravity="center|center_horizontal"
             android:onClick="TelaCasaNumeros"
@@ -261,6 +245,7 @@
             android:id="@+id/palavrasBasicasCasaButton"
             android:layout_width="match_parent"
             android:layout_height="119dp"
+            android:layout_marginBottom="10dp"
             android:background="#741a07"
             android:gravity="center|center_horizontal"
             android:text="Palavras Básicas"
@@ -273,6 +258,7 @@
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:background="#f7c702"
+            android:layout_marginBottom="10dp"
             android:gravity="center|center_horizontal"
             android:text="Roupas"
             android:textColor="#FFFFFF"
@@ -284,6 +270,7 @@
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:background="#7281c0"
+            android:layout_marginBottom="10dp"
             android:gravity="center|center_horizontal"
             android:text="Sentidos"
             android:textColor="#FFFFFF"
@@ -295,6 +282,7 @@
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:background="#FF5722"
+            android:layout_marginBottom="10dp"
             android:gravity="center|center_horizontal"
             android:text="Sentidos"
             android:textColor="#FFFFFF"

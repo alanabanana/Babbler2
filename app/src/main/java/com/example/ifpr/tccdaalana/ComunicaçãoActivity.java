@@ -54,7 +54,7 @@ public class ComunicaçãoActivity extends Activity {
         Intent intent = new Intent(this, CorpoActivity.class);
         startActivity(intent);
     }
-    public void TelaComunicacaoDiversao(View v){
+    public void TelaComunicacaoDiversao (View v){
         Intent intent = new Intent(this,DiversaoActivity.class);
         startActivity(intent);
     }

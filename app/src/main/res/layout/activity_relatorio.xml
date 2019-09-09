@@ -39,6 +39,15 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.659" />
+
+                <ImageView
+                    android:layout_width="86dp"
+                    android:layout_height="88dp"
+                    android:background="@drawable/girassol"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
         </android.support.constraint.ConstraintLayout>
 
 
@@ -83,17 +92,8 @@
             android:background="@drawable/quadrado_verde_baixo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.875"
-            app:layout_constraintStart_toStartOf="parent">]
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
 
-                <ImageView
-                    android:layout_width="133dp"
-                    android:layout_height="103dp"
-
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.571" />
         </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>

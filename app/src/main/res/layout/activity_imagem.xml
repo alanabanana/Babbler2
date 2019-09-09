@@ -22,7 +22,7 @@
             android:text="Imagens para Comida:"
             android:layout_marginTop="30dp"
             android:textColor="#fff"
-            android:textSize="30sp"
+            android:textSize="40sp"
             android:layout_column="0" />
 
         <ImageButton

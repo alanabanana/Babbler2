@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff"
+    android:background="@drawable/folhafundo"
     >
 
     <android.support.constraint.ConstraintLayout
@@ -54,6 +54,7 @@
 
         <TextView
             android:id="@+id/textViewNomeDep"
+            android:text="Nome"
             android:layout_width="224dp"
             android:layout_height="57dp"
             android:layout_marginEnd="16dp"

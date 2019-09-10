@@ -15,47 +15,37 @@ import java.util.Date;
 import bancodedados.DBController;
 
 public class FamiliaActivity extends Activity {
-    private DBController dbController = new DBController();
-    private Date data = new Date();
-    private Time horario = new Time();
-    String context;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_familia);
     }
-    public void geraRelatorio(String botao) throws IOException {
-        SimpleDateFormat formataData = new SimpleDateFormat("dd-MM-yyyy");
-        String dataFormatada = formataData.format(data);
-        SimpleDateFormat formataHora = new SimpleDateFormat("hh-mm-ss");
-        String horaFormatada = formataHora.format(data);
-        dbController.insertIntoRelatorio(this, botao, horaFormatada, dataFormatada);
-    }
 
     public void mae(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
         mediaPlayer.start();
-        geraRelatorio("Mae");
+        RelatorioHelper.geraRelatorio(this, "Mae");
     }
     public void pai(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
         mediaPlayer.start();
-        geraRelatorio("Pai");
+        RelatorioHelper.geraRelatorio(this, "Pai");
     }
     public void duasMaes (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
         mediaPlayer.start();
-        geraRelatorio("Maes");
+        RelatorioHelper.geraRelatorio(this, "Maes");
     }
     public void doisPais (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
         mediaPlayer.start();
-        geraRelatorio("Pais");
+        RelatorioHelper.geraRelatorio(this, "Pais");
     }
     public void maeEPais (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
         mediaPlayer.start();
-        geraRelatorio("MaeEPai");
+        RelatorioHelper.geraRelatorio(this, "MaeEPai");
     }
 
     public void TelaFamiliaComida(View v){
@@ -114,4 +104,9 @@ public class FamiliaActivity extends Activity {
         Intent intent = new Intent(this, SentimentoActivity.class);
         startActivity(intent);
     }
+    public void voltarFamilia (View v){
+        Intent intent = new Intent(this, PerfilFilhoActivity.class);
+        startActivity(intent);
+    }
+
 }

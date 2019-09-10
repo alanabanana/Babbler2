@@ -11,6 +11,12 @@
         android:layout_height="wrap_content"
         android:background="#f8c290 "
         android:orientation="vertical">
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/voltar"
+            android:onClick="voltarEscola" />
         <TextView
             android:id="@+id/textNumero"
             android:layout_width="match_parent"

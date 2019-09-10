@@ -12,9 +12,11 @@
         android:background="#ffa619"
         android:orientation="vertical">
         <ImageButton
-            android:layout_width="64dp"
-            android:layout_height="66dp"
-            android:background="@drawable/voltar" />
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:onClick="voltarCorpo"
+            android:background="@drawable/voltar"
+            android:layout_marginTop="10dp"/>
         <TextView
             android:id="@+id/textCorpo"
             android:layout_width="match_parent"

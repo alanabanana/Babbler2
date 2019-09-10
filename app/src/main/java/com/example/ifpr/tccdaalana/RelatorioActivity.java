@@ -2,8 +2,10 @@ package com.example.ifpr.tccdaalana;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -67,11 +69,11 @@ public class RelatorioActivity extends Activity {
     public void obterRelatorios() throws IOException, JSONException {
         DBController dbController = new DBController();
         SharedPreferences sp = getApplicationContext().getSharedPreferences("Login", Context.MODE_PRIVATE);
-        String email_resp = sp.getString("email", null);
+        String email_resp = sp.getString("email_resp", null);
         JSONArray relatoriosJSON = dbController.selectAllFromRelatorio(this, email_resp);
         for (int i = 0; i < relatoriosJSON.length(); i++) {
             JSONObject jsonObject = relatoriosJSON.getJSONObject(i);
-            String dependente = jsonObject.getString("dependente");
+            String dependente = jsonObject.getString("Dependente_apelido");
             String botao = jsonObject.getString("botao");
             String horario = jsonObject.getString("horario");
             String data = jsonObject.getString("data");
@@ -83,6 +85,7 @@ public class RelatorioActivity extends Activity {
             if (indexRelatorio == -1) {
                 Relatorio novoRelatorio = new Relatorio();
                 novoRelatorio.setApelidoDependente(dependente);
+                novoRelatorio.setAcoes(new ArrayList<Acao>());
                 novoRelatorio.getAcoes().add(novaAcao);
                 relatorios.add(novoRelatorio);
             } else {
@@ -92,5 +95,9 @@ public class RelatorioActivity extends Activity {
                 relatorios.add(relatorio);
             }
         }
+    }
+    public void backPerfilResp (View view){
+        Intent intent = new Intent(this, PerfilPaiActivity.class);
+        startActivity(intent);
     }
 }

@@ -13,6 +13,7 @@
         <ImageButton
             android:layout_width="64dp"
             android:layout_height="66dp"
+            android:onClick="voltarNecessidades"
             android:background="@drawable/voltar" />
 
         <TextView

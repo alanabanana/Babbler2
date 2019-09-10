@@ -15,41 +15,32 @@ import java.util.Date;
 import bancodedados.DBController;
 
 public class DiversaoActivity extends Activity {
-    private DBController dbController = new DBController();
-    private Date data = new Date();
-    private Time horario = new Time();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diversao);
     }
-    public void geraRelatorio(String botao) throws IOException {
-        SimpleDateFormat formataData = new SimpleDateFormat("dd-MM-yyyy");
-        String dataFormatada = formataData.format(data);
-        SimpleDateFormat formataHora = new SimpleDateFormat("hh-mm-ss");
-        String horaFormatada = formataHora.format(data);
-        dbController.insertIntoRelatorio(this, botao, horaFormatada, dataFormatada);
-    }
 
     public void brincarAmigo(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_amigo);
         mediaPlayer.start();
-        geraRelatorio("BrincarAmigo");
+        RelatorioHelper.geraRelatorio(this, "BrincarAmigo");
     }
     public void andarSkate (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_balanco);
         mediaPlayer.start();
-        geraRelatorio("Skate");
+        RelatorioHelper.geraRelatorio(this, "Skate");
     }
     public void cubos(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_cubo);
         mediaPlayer.start();
-        geraRelatorio("Cubos");
+        RelatorioHelper.geraRelatorio(this, "Cubos");
     }
     public void brincarCarrinho(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_carrinho);
         mediaPlayer.start();
-        geraRelatorio("carrinho");
+        RelatorioHelper.geraRelatorio(this, "Carrinho");
     }
    // public void brincarBoneca(View v) {
      //   MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_boneca);
@@ -64,17 +55,17 @@ public class DiversaoActivity extends Activity {
     public void tocarTeclado(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.tocar_teclado);
         mediaPlayer.start();
-        geraRelatorio("Teclado");
+        RelatorioHelper.geraRelatorio(this, "Teclado");
     }
     public void videoGame(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.jogar_videogame);
         mediaPlayer.start();
-        geraRelatorio("VideoGame");
+        RelatorioHelper.geraRelatorio(this, "VideoGame");
     }
-    public void balanço(View v) throws IOException {
+    public void balanco(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.brincar_balanco);
         mediaPlayer.start();
-        geraRelatorio("Balanco");
+        RelatorioHelper.geraRelatorio(this, "Balanço");
     }
     public void TelaDiversaoComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);
@@ -130,6 +121,10 @@ public class DiversaoActivity extends Activity {
     }
     public void TelaDiversaoSentimentos (View v){
         Intent intent = new Intent(this, SentimentoActivity.class);
+        startActivity(intent);
+    }
+    public void voltarDiversao (View view){
+        Intent intent = new Intent(this, PerfilFilhoActivity.class);
         startActivity(intent);
     }
 }

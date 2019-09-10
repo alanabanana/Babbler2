@@ -12,6 +12,7 @@
         <ImageButton
             android:layout_width="64dp"
             android:layout_height="66dp"
+            android:onClick="voltarSentidos"
             android:background="@drawable/voltar" />
         <TextView
             android:id="@+id/textSentidos"
@@ -261,6 +262,17 @@
             android:textSize="50dp"
             android:textStyle="bold"
             android:onClick="TelaSentidosRoupas"/>
+        <Button
+            android:id="@+id/sentimentosSentidosButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#f7c702"
+            android:gravity="center|center_horizontal"
+            android:text="Sentimentos"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaSentidosSentimentos"/>
 
     </LinearLayout>
 </ScrollView>

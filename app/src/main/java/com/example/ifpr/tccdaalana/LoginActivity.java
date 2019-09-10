@@ -42,27 +42,16 @@ public class LoginActivity extends Activity {
         String emailApelidoDigitado = editTextEmailApelido.getText().toString();
         EditText editTextSenha = findViewById(R.id.editTextSenha);
         String senhaDigitada = editTextSenha.getText().toString();
+        SharedPreferences login = getApplicationContext().getSharedPreferences("Login", MODE_PRIVATE);
+        SharedPreferences.Editor editor = login.edit();
 
-
-        boolean encontrouResponsavel = buscaResponsavel(emailApelidoDigitado, senhaDigitada);
+        boolean encontrouResponsavel = buscaResponsavel(editor, emailApelidoDigitado, senhaDigitada);
         if (encontrouResponsavel == true) {
-            SharedPreferences login = getApplicationContext().getSharedPreferences("Login", MODE_PRIVATE);
-            SharedPreferences.Editor editor = login.edit();
-            editor.putString("email", emailApelidoDigitado);
-            editor.putString("senha", senhaDigitada);
-            editor.commit();
-
             Intent intent = new Intent(this, PerfilPaiActivity.class);
             startActivity(intent);
         } else {
-            boolean encontrouDependente = buscaDependente(emailApelidoDigitado, senhaDigitada);
+            boolean encontrouDependente = buscaDependente(editor, emailApelidoDigitado, senhaDigitada);
             if (encontrouDependente == true) {
-                SharedPreferences login = getApplicationContext().getSharedPreferences("Login", MODE_PRIVATE);
-                SharedPreferences.Editor editor = login.edit();
-                editor.putString("email_dep", emailApelidoDigitado);
-                editor.putString("senha", senhaDigitada);
-                editor.commit();
-
                 Intent intent = new Intent(this, PerfilFilhoActivity.class);
                 startActivity(intent);
             } else {
@@ -71,26 +60,34 @@ public class LoginActivity extends Activity {
         }
     }
 
-    private boolean buscaDependente(String emailApelidoDigitado, String senhaDigitada) throws IOException, JSONException {
+    private boolean buscaDependente(SharedPreferences.Editor editor, String emailApelidoDigitado, String senhaDigitada) throws IOException, JSONException {
         DBController dbController = new DBController();
         JSONArray dependente = dbController.selectAllFromDependente(this);
         for (int i = 0; i < dependente.length(); i++) {
             JSONObject jsonObject = dependente.getJSONObject(i);
             String apelido = jsonObject.getString("Apelido");
-            String emailResponsavel = jsonObject.getString("Responsável_email");
+            String emailResponsavel = jsonObject.getString("Responsavel_email");
             String senha = jsonObject.getString("Senha");
 
             if (emailResponsavel.equals(emailApelidoDigitado) && senha.equals(senhaDigitada)) {
+                editor.putString("email_resp", emailResponsavel);
+                editor.putString("apelido", apelido);
+                editor.putString("senha", senha);
+                editor.commit();
                 return true;
             }
             if (apelido.equals(emailApelidoDigitado) && senha.equals(senhaDigitada)) {
+                editor.putString("email_resp", emailResponsavel);
+                editor.putString("apelido", apelido);
+                editor.putString("senha", senha);
+                editor.commit();
                 return true;
             }
         }
         return false;
     }
 
-    private boolean buscaResponsavel(String emailDigitado, String senhaDigitada) throws IOException, JSONException {
+    private boolean buscaResponsavel(SharedPreferences.Editor editor, String emailDigitado, String senhaDigitada) throws IOException, JSONException {
         DBController dbController = new DBController();
         JSONArray responsaveis = dbController.selectAllFromResponsavel(this);
         for (int i = 0; i < responsaveis.length(); i++) {
@@ -98,6 +95,9 @@ public class LoginActivity extends Activity {
             String email = jsonObject.getString("email");
             String senha = jsonObject.getString("senha");
             if (email.equals(emailDigitado) && senha.equals(senhaDigitada)) {
+                editor.putString("email_resp", email);
+                editor.putString("senha", senha);
+                editor.commit();
                 return true;
             }
         }

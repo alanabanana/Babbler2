@@ -3,7 +3,7 @@ package com.example.ifpr.tccdaalana;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Utils {
+public class DataUtils {
 
     public static String getDate() {
         SimpleDateFormat dataBD = new SimpleDateFormat("yyyy-MM-dd");

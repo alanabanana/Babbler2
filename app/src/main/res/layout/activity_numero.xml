@@ -13,6 +13,8 @@
         <ImageButton
             android:layout_width="64dp"
             android:layout_height="66dp"
+            android:onClick="voltarNumeros"
+            android:layout_marginTop="10dp"
             android:background="@drawable/voltar" />
         <TextView
             android:id="@+id/textNumero"

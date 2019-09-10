@@ -16,21 +16,10 @@ import bancodedados.DBController;
 
 public class CorpoActivity extends Activity {
 
-    private DBController dbController = new DBController();
-    private Date data = new Date();
-    private Time horario = new Time();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_corpo);
-    }
-    public void geraRelatorio(String botao) throws IOException {
-        SimpleDateFormat formataData = new SimpleDateFormat("dd-MM-yyyy");
-        String dataFormatada = formataData.format(data);
-        SimpleDateFormat formataHora = new SimpleDateFormat("hh-mm-ss");
-        String horaFormatada = formataHora.format(data);
-        dbController.insertIntoRelatorio(this, botao, horaFormatada, dataFormatada);
     }
 //
 //    public void orelha (View v) throws IOException {
@@ -107,6 +96,10 @@ public class CorpoActivity extends Activity {
     }
     public void TelaCorpoSentimentos (View v){
         Intent intent = new Intent(this, SentimentoActivity.class);
+        startActivity(intent);
+    }
+    public void voltarCorpo (View view){
+        Intent intent = new Intent(this, PerfilFilhoActivity.class);
         startActivity(intent);
     }
 }

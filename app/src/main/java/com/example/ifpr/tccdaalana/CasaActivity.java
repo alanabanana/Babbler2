@@ -2,6 +2,7 @@ package com.example.ifpr.tccdaalana;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.text.format.Time;
@@ -15,23 +16,12 @@ import bancodedados.DBController;
 
 public class CasaActivity extends Activity {
 
-    private DBController dbController = new DBController();
-    private Date data = new Date();
-    private Time horario = new Time();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_casa);
     }
 
-    public void geraRelatorio(String botao) throws IOException {
-        SimpleDateFormat formataData = new SimpleDateFormat("dd-MM-yyyy");
-        String dataFormatada = formataData.format(data);
-        SimpleDateFormat formataHora = new SimpleDateFormat("hh-mm-ss");
-        String horaFormatada = formataHora.format(data);
-        dbController.insertIntoRelatorio(this, botao, horaFormatada, dataFormatada);
-    }
 
    /*/ public void cama(View v) throws IOException {
          MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cama);
@@ -42,27 +32,27 @@ public class CasaActivity extends Activity {
     public void mesa(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.mesa);
         mediaPlayer.start();
-        geraRelatorio("Mesa");
+        RelatorioHelper.geraRelatorio(this, "Mesa");
     }
     public void cozinha (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cozinha);
         mediaPlayer.start();
-        geraRelatorio("Cozinha");
+        RelatorioHelper.geraRelatorio(this, "Cozinha");
     }
     public void garagem(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.garagem);
         mediaPlayer.start();
-        geraRelatorio("Garagem");
+        RelatorioHelper.geraRelatorio(this, "Garagem");
     }
     public void jardim(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.jardim);
         mediaPlayer.start();
-        geraRelatorio("Jardim");
+        RelatorioHelper.geraRelatorio(this, "Jardim");
     }
     public void sala(View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.sala);
         mediaPlayer.start();
-        geraRelatorio("Sala");
+        RelatorioHelper.geraRelatorio(this, "Sala");
     }
     public void TelaCasaComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);
@@ -118,6 +108,10 @@ public class CasaActivity extends Activity {
     }
     public void TelaCasaSentimentos (View v){
         Intent intent = new Intent(this, SentimentoActivity.class);
+        startActivity(intent);
+    }
+    public void voltarCasa (View view){
+        Intent intent = new Intent(this, PerfilFilhoActivity.class);
         startActivity(intent);
     }
 }

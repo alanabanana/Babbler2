@@ -20,9 +20,6 @@ import bancodedados.DBController;
 
 public class CadastroDpActivity extends Activity {
 
-
-    DBController dbController = new DBController();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +38,7 @@ public class CadastroDpActivity extends Activity {
     public int verificaExistencia() throws IOException, JSONException {
         int verdade = 0;
         ArrayList<String> listaAudios = new ArrayList<String>();
-        JSONArray jsonAudios = dbController.selectAllFromReadAtividadePadrao(getApplicationContext());
+        JSONArray jsonAudios = DBController.selectAllFromReadAtividadePadrao(getApplicationContext());
         for (int i = 0; i<jsonAudios.length(); i++){
             JSONObject audioObject = jsonAudios.getJSONObject(i);
             String audio = audioObject.getString("Audio");
@@ -69,7 +66,7 @@ public class CadastroDpActivity extends Activity {
             EditText editTextApelido = findViewById(R.id.TextApelido);
             String apelido = editTextApelido.getText().toString();
 
-            int deuCerto = dbController.insertIntoDependente(this, verdade, apelido, email, senha);
+            int deuCerto = DBController.insertIntoDependente(this, verdade, apelido, email, senha);
 
             if (deuCerto == 1) {
                 Intent intent = new Intent(this, PerfilFilhoActivity.class);

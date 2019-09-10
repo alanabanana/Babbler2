@@ -16,35 +16,27 @@ import java.util.Date;
 import bancodedados.DBController;
 
 public class EscolaActivity extends Activity {
-    private DBController dbController = new DBController();
-    private Date data = new Date();
-    private Time horario = new Time();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_escola);
     }
-    public void geraRelatorio(String botao) throws IOException {
-        SimpleDateFormat formataData = new SimpleDateFormat("dd-MM-yyyy");
-        String dataFormatada = formataData.format(data);
-        SimpleDateFormat formataHora = new SimpleDateFormat("hh-mm-ss");
-        String horaFormatada = formataHora.format(data);
-        dbController.insertIntoRelatorio(this, botao, horaFormatada, dataFormatada);
-    }
+
     public void caderno (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.caderno);
         mediaPlayer.start();
-        geraRelatorio("Caderno");
+        RelatorioHelper.geraRelatorio(this, "Caderno");
     }
     public void estojo (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.estojo);
         mediaPlayer.start();
-        geraRelatorio("Estojo");
+        RelatorioHelper.geraRelatorio(this, "Estojo");
     }
     public void quadroBranco (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.quadro_branco);
         mediaPlayer.start();
-        geraRelatorio("QuadroBranco");
+        RelatorioHelper.geraRelatorio(this, "QuadroBranco");
     }
     public void TelaEscolaComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);
@@ -102,5 +94,8 @@ public class EscolaActivity extends Activity {
         Intent intent = new Intent(this, SentimentoActivity.class);
         startActivity(intent);
     }
-
+    public void voltarEscola (View v){
+        Intent intent = new Intent(this, PerfilFilhoActivity.class);
+        startActivity(intent);
+    }
 }

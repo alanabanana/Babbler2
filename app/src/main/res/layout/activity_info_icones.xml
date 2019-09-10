@@ -23,6 +23,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/voltar"
+            android:onClick="voltarPerfilRp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -52,8 +53,8 @@
 
 
     <ScrollView
-        android:layout_width="349dp"
-        android:layout_height="512dp"
+        android:layout_width="352dp"
+        android:layout_height="532dp"
         android:layout_marginTop="48dp"
         android:background="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -86,14 +87,41 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="252dp"
-                android:layout_height="392dp"
+                android:layout_width="213dp"
+                android:layout_height="500dp"
                 android:layout_gravity="center"
                 android:text="O Babbler é um software de Comunicação Aumentativa e Alternativa desenvolvido para Android, com o intuito de auxiliar pessoas com necessidades especiais que possuam uma carência na habilidade de comunicação, contribuindo no desenvolvimento e na integração social do usuário.
 Promovendo a comunicação por meio da associação de imagens autoexplicativas e animadas com som, o objetivo do Babbler é atender as necessidades comunicativas das pessoas com TEA e incentivar a independência do usuário, permitindo que a pessoa com deficiência interaja sem a necessidade do uso de cartões e pranchas de comunicação.
 "
                 android:textColor="#a9a9a9"
                 android:textSize="18dp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:background="#8fb147"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Manual do usuário"
+                android:textColor="#8fb147"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#FCB63C"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Informações sobre os ícones"
+                android:textColor="#FCB63C"
+                android:textSize="20dp"
                 android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>

@@ -15,22 +15,13 @@ import java.util.Date;
 import bancodedados.DBController;
 
 public class DorActivity extends Activity {
-    private DBController dbController = new DBController();
-    private Date data = new Date();
-    private Time horario = new Time();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dor);
     }
-    public void geraRelatorio(String botao) throws IOException {
-        SimpleDateFormat formataData = new SimpleDateFormat("dd-MM-yyyy");
-        String dataFormatada = formataData.format(data);
-        SimpleDateFormat formataHora = new SimpleDateFormat("hh-mm-ss");
-        String horaFormatada = formataHora.format(data);
-        dbController.insertIntoRelatorio(this, botao, horaFormatada, dataFormatada);
-    }
+
 //    public void dorNoPeito (View v) throws IOException {
 //        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.);
 //        mediaPlayer.start();
@@ -105,6 +96,10 @@ public class DorActivity extends Activity {
     }
     public void TelaDorSentimentos (View v){
         Intent intent = new Intent(this, SentimentoActivity.class);
+        startActivity(intent);
+    }
+    public void voltarDor (View view){
+        Intent intent = new Intent(this, PerfilFilhoActivity.class);
         startActivity(intent);
     }
 }

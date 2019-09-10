@@ -40,8 +40,7 @@ public class CadastroRespActivity extends Activity {
             EditText emailTextSenha = findViewById(R.id.cEmail);
             String email = emailTextSenha.getText().toString();
 
-            DBController dbController = new DBController();
-            int deuCerto = dbController.insertIntoResponsavel(this, email, senha);
+            int deuCerto = DBController.insertIntoResponsavel(this, email, senha);
 
             if (deuCerto == 1) {
                 Intent intent = new Intent(this, PerfilPaiActivity.class);

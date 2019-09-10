@@ -12,6 +12,7 @@
         <ImageButton
             android:layout_width="64dp"
             android:layout_height="66dp"
+            android:onClick="voltarFamilia"
             android:background="@drawable/voltar" />
         <TextView
             android:id="@+id/textFamilia"

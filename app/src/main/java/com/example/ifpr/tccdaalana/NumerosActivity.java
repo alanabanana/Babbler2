@@ -15,70 +15,62 @@ import java.util.Date;
 import bancodedados.DBController;
 
 public class NumerosActivity extends Activity {
-    private DBController dbController = new DBController();
-    private Date data = new Date();
-    private Time horario = new Time();
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numero);
     }
-    public void geraRelatorio(String botao) throws IOException {
-        SimpleDateFormat formataData = new SimpleDateFormat("dd-MM-yyyy");
-        String dataFormatada = formataData.format(data);
-        SimpleDateFormat formataHora = new SimpleDateFormat("hh-mm-ss");
-        String horaFormatada = formataHora.format(data);
-        dbController.insertIntoRelatorio(this, botao, horaFormatada, dataFormatada);
-    }
+    
     public void um (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.um);
         mediaPlayer.start();
-        geraRelatorio("Um");
+        RelatorioHelper.geraRelatorio(this, "Um");
     }
     public void dois (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.dois);
         mediaPlayer.start();
-        geraRelatorio("Dois");
+        RelatorioHelper.geraRelatorio(this, "Dois");
     }
     public void tres (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.tres);
         mediaPlayer.start();
-        geraRelatorio("Tres");
+        RelatorioHelper.geraRelatorio(this, "Tres");
     }
     public void quatro (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.quatro);
         mediaPlayer.start();
-        geraRelatorio("Quatro");
+        RelatorioHelper.geraRelatorio(this, "Quatro");
     }
     public void cinco (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cinco);
         mediaPlayer.start();
-        geraRelatorio("Cinco");
+        RelatorioHelper.geraRelatorio(this, "Cinco");
     }
     public void seis (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.seis);
         mediaPlayer.start();
-        geraRelatorio("Seis");
+        RelatorioHelper.geraRelatorio(this, "Seis");
     }
     public void sete (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.sete);
         mediaPlayer.start();
-        geraRelatorio("Sete");
+        RelatorioHelper.geraRelatorio(this, "Sete");
     }
     public void oito (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.oito);
         mediaPlayer.start();
-        geraRelatorio("Oito");
+        RelatorioHelper.geraRelatorio(this, "Oito");
     }
     public void nove (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.nove);
         mediaPlayer.start();
-        geraRelatorio("Nove");
+        RelatorioHelper.geraRelatorio(this, "Nove");
     }
     public void dez (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.dez);
         mediaPlayer.start();
-        geraRelatorio("Dez");
+        RelatorioHelper.geraRelatorio(this, "Dez");
     }
     public void TelaNumerosComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);
@@ -134,6 +126,10 @@ public class NumerosActivity extends Activity {
     }
     public void TelaNumerosSentimentos (View v){
         Intent intent = new Intent(this, SentimentoActivity.class);
+        startActivity(intent);
+    }
+    public void voltarNumeros (View v){
+        Intent intent = new Intent(this, PerfilFilhoActivity.class);
         startActivity(intent);
     }
 }

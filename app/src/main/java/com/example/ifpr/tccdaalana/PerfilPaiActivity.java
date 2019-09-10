@@ -34,7 +34,7 @@ public class PerfilPaiActivity extends Activity {
     public void sairLogin(View v){
         SharedPreferences login = getApplicationContext().getSharedPreferences("Login", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = login.edit();
-        editor.remove("email");
+        editor.remove("email_resp");
         editor.remove("senha");
         editor.commit();
 
@@ -47,7 +47,7 @@ public class PerfilPaiActivity extends Activity {
         startActivity(intent);
     }
     public void redirecionarParaInformacao (View view){
-        Intent intent =  new Intent(this, InformacaoActivity.class);
+        Intent intent =  new Intent(this, InfoIconesActivity.class);
         startActivity(intent);
     }
 

@@ -24,6 +24,7 @@ public class PerfilFilhoActivity extends Activity {
         SharedPreferences login = getApplicationContext().getSharedPreferences("Login", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = login.edit();
         editor.remove("email_dep");
+        editor.remove("apelido");
         editor.remove("senha");
         editor.commit();
 

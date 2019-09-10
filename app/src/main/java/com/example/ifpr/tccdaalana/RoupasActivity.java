@@ -69,4 +69,8 @@ public class RoupasActivity extends Activity {
         Intent intent = new Intent(this, SentimentoActivity.class);
         startActivity(intent);
     }
+    public void voltarRoupas (View view){
+        Intent intent = new Intent(this, PerfilFilhoActivity.class);
+        startActivity(intent);
+    }
 }

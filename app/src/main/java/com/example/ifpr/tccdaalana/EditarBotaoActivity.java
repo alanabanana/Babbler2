@@ -74,7 +74,10 @@ public class EditarBotaoActivity extends Activity {
         Intent intent = new Intent(this, AdicionarBotaoActivity.class);
         startActivity(intent);
     }
-
+    public void voltarPerfilPai (View v ){
+        Intent intent = new Intent(this, AdicionarBotaoActivity.class);
+        startActivity(intent);
+    }
 
 }
 

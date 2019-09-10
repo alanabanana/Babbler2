@@ -16,151 +16,143 @@ import java.util.Date;
 import bancodedados.DBController;
 
 public class LetrasActivity extends Activity {
-    private DBController dbController = new DBController();
-    private Date data = new Date();
-    private Time horario = new Time();
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_letra);
     }
-    public void geraRelatorio(String botao) throws IOException {
-        SimpleDateFormat formataData = new SimpleDateFormat("dd-MM-yyyy");
-        String dataFormatada = formataData.format(data);
-        SimpleDateFormat formataHora = new SimpleDateFormat("hh-mm-ss");
-        String horaFormatada = formataHora.format(data);
-        dbController.insertIntoRelatorio(this, botao, horaFormatada, dataFormatada);
-    }
+    
     public void a (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.a);
         mediaPlayer.start();
-        geraRelatorio("A");
+        RelatorioHelper.geraRelatorio(this, "A");
     }
     public void b (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.b);
         mediaPlayer.start();
-        geraRelatorio("B");
+        RelatorioHelper.geraRelatorio(this, "B");
     }
     public void c (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.c);
         mediaPlayer.start();
-        geraRelatorio("C");
+        RelatorioHelper.geraRelatorio(this, "C");
     }
     public void d (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.d);
         mediaPlayer.start();
-        geraRelatorio("D");
+        RelatorioHelper.geraRelatorio(this, "D");
     }
     public void e (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.e);
         mediaPlayer.start();
-        geraRelatorio("E");
+        RelatorioHelper.geraRelatorio(this, "E");
     }
     public void f (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.f);
         mediaPlayer.start();
-        geraRelatorio("F");
+        RelatorioHelper.geraRelatorio(this, "F");
     }
     public void g (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.g);
         mediaPlayer.start();
-        geraRelatorio("G");
+        RelatorioHelper.geraRelatorio(this, "G");
     }
     public void h (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.h);
         mediaPlayer.start();
-        geraRelatorio("H");
+        RelatorioHelper.geraRelatorio(this, "H");
     }
     public void i (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.i);
         mediaPlayer.start();
-        geraRelatorio("I");
+        RelatorioHelper.geraRelatorio(this, "I");
     }
     public void j (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.j);
         mediaPlayer.start();
-        geraRelatorio("J");
+        RelatorioHelper.geraRelatorio(this, "J");
     }
     public void k (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.k);
         mediaPlayer.start();
-        geraRelatorio("K");
+        RelatorioHelper.geraRelatorio(this, "K");
     }
     public void l (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.l);
         mediaPlayer.start();
-        geraRelatorio("L");
+        RelatorioHelper.geraRelatorio(this, "L");
     }
     public void m (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.m);
         mediaPlayer.start();
-        geraRelatorio("M");
+        RelatorioHelper.geraRelatorio(this, "M");
     }
     public void n (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.n);
         mediaPlayer.start();
-        geraRelatorio("N");
+        RelatorioHelper.geraRelatorio(this, "N");
     }
     public void o (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.o);
         mediaPlayer.start();
-        geraRelatorio("O");
+        RelatorioHelper.geraRelatorio(this, "O");
     }
     public void p (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.p);
         mediaPlayer.start();
-        geraRelatorio("P");
+        RelatorioHelper.geraRelatorio(this, "P");
     }
     public void q (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.q);
         mediaPlayer.start();
-        geraRelatorio("Q");
+        RelatorioHelper.geraRelatorio(this, "Q");
     }
     public void r (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.r);
         mediaPlayer.start();
-        geraRelatorio("R");
+        RelatorioHelper.geraRelatorio(this, "R");
     }
     public void s (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.s);
         mediaPlayer.start();
-        geraRelatorio("S");
+        RelatorioHelper.geraRelatorio(this, "S");
     }
     public void t (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.t);
         mediaPlayer.start();
-        geraRelatorio("T");
+        RelatorioHelper.geraRelatorio(this, "T");
     }
     public void u (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.u);
         mediaPlayer.start();
-        geraRelatorio("U");
+        RelatorioHelper.geraRelatorio(this, "U");
     }
     public void v (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.v);
         mediaPlayer.start();
-        geraRelatorio("V");
+        RelatorioHelper.geraRelatorio(this, "V");
     }
     public void w (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.w);
         mediaPlayer.start();
-        geraRelatorio("W");
+        RelatorioHelper.geraRelatorio(this, "W");
     }
     public void x (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.x);
         mediaPlayer.start();
-        geraRelatorio("X");
+        RelatorioHelper.geraRelatorio(this, "X");
     }
 
     public void y (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.y);
         mediaPlayer.start();
-        geraRelatorio("Y");
+        RelatorioHelper.geraRelatorio(this, "Y");
     }
     public void z (View v) throws IOException {
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.z);
         mediaPlayer.start();
-        geraRelatorio("Z");
+        RelatorioHelper.geraRelatorio(this, "Z");
     }
     public void TelaLetrasComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);
@@ -216,6 +208,10 @@ public class LetrasActivity extends Activity {
     }
     public void TelaLetrasSentimentos (View v){
         Intent intent = new Intent(this, SentimentoActivity.class);
+        startActivity(intent);
+    }
+    public void voltarLetras (View view){
+        Intent intent = new Intent(this, PerfilFilhoActivity.class);
         startActivity(intent);
     }
 }

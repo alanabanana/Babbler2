@@ -21,7 +21,7 @@ public class DBController {
 
     private static String URL_WEB_SERVICE = "http://10.21.80.174/webservice_babbler/";
 
-    public JSONArray selectAllFromReadAtividadePadrao (Context context) throws JSONException, IOException{
+    public static JSONArray selectAllFromReadAtividadePadrao (Context context) throws JSONException, IOException{
         if (!checkNetworkConnection(context)) {
             Toast.makeText(context, "Falha na Conexão com a Internet!", Toast.LENGTH_LONG).show();
             return null;
@@ -39,7 +39,7 @@ public class DBController {
         return jsonArray;
     }
 
-    public int insertIntoResponsavel(Context context, String email, String senha) throws IOException {
+    public static int insertIntoResponsavel(Context context, String email, String senha) throws IOException {
         if (!checkNetworkConnection(context)) {
             Toast.makeText(context, "Falha na Conexão com a Internet!", Toast.LENGTH_LONG).show();
             return 0;
@@ -58,7 +58,7 @@ public class DBController {
         }
     }
 
-    public int insertIntoAtividades(Context context, String nome, String imagem, String audio, String email_resp, String resp_email) throws IOException {
+    public static int insertIntoAtividades(Context context, String nome, String imagem, String audio, String email_resp, String resp_email) throws IOException {
         if (!checkNetworkConnection(context)) {
             Toast.makeText(context, "Falha na Conexão com a Internet!", Toast.LENGTH_LONG).show();
             return 0;
@@ -77,7 +77,7 @@ public class DBController {
         }
     }
 
-    public JSONArray selectAllFromResponsavel(Context context) throws JSONException, IOException {
+    public static JSONArray selectAllFromResponsavel(Context context) throws JSONException, IOException {
         if (!checkNetworkConnection(context)) {
             return null;
         }
@@ -94,7 +94,7 @@ public class DBController {
         return jsonArray;
     }
 
-    public int insertIntoDependente (Context context, int verdade, String apelido, String email, String senha) throws IOException {
+    public static int insertIntoDependente (Context context, int verdade, String apelido, String email, String senha) throws IOException {
         if (!checkNetworkConnection(context)) {
             Toast.makeText(context, "Falha na Conexão com a Internet!", Toast.LENGTH_LONG).show();
             return 0;
@@ -113,7 +113,7 @@ public class DBController {
         }
     }
 
-    public JSONArray selectAllFromDependente(Context context) throws JSONException, IOException {
+    public static JSONArray selectAllFromDependente(Context context) throws JSONException, IOException {
         if (!checkNetworkConnection(context)) {
             return null;
         }
@@ -129,13 +129,15 @@ public class DBController {
         JSONArray jsonArray = new JSONArray(sb.toString().trim());
         return jsonArray;
     }
-    public int insertIntoRelatorio (Context context, String botao, String horario, String data) throws IOException {
+    public static int insertIntoRelatorio (Context context, String botao, String data, String horario,
+                                    String apelido, String email) throws IOException {
         if (!checkNetworkConnection(context)) {
             Toast.makeText(context, "Falha na Conexão com a Internet!", Toast.LENGTH_LONG).show();
             return 0;
         }
         checkThreadPolicy();
-        String values = "botao="+botao+"horario="+horario+"&"+"data="+data;
+        apelido = apelido.replace(" ", "%20");
+        String values = "botao="+botao+"&horario="+horario+"&data="+data+"&Dependente_apelido="+apelido+"&Dependente_Responsavel_email="+email;
         URL url = new URL(URL_WEB_SERVICE + "ws_insert/ws_insert_relatorio.php?"+values);
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(con.getInputStream()));
@@ -148,12 +150,12 @@ public class DBController {
         }
     }
 
-    public JSONArray selectAllFromRelatorio(Context context, String email_resp) throws JSONException, IOException {
+    public static JSONArray selectAllFromRelatorio(Context context, String email_resp) throws JSONException, IOException {
         if (!checkNetworkConnection(context)) {
             return null;
         }
         checkThreadPolicy();
-        URL url = new URL(URL_WEB_SERVICE + "ws_read/ws_read_relatorio.php?email_responsavel="+email_resp);
+        URL url = new URL(URL_WEB_SERVICE + "ws_read/ws_read_relatorio.php?email_resp="+email_resp);
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         StringBuilder sb = new StringBuilder();
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(con.getInputStream()));
@@ -166,13 +168,13 @@ public class DBController {
     }
 
 
-    private boolean checkNetworkConnection(Context context) {
+    private static boolean checkNetworkConnection(Context context) {
         ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo info = cm.getActiveNetworkInfo();
         return (info != null && info.isConnected());
     }
 
-    private void checkThreadPolicy(){
+    private static void checkThreadPolicy(){
         int SDK_INT = android.os.Build.VERSION.SDK_INT;
         if (SDK_INT > 8) {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();

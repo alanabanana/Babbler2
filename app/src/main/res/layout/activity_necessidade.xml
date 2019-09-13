@@ -67,7 +67,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaNecessidadeCasa"/>
+        android:onClick="TelaNecessidadeCasa"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/comidaNecessidadesButton"
         android:layout_width="match_parent"
@@ -78,7 +79,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaNecessidadeComida"/>
+        android:onClick="TelaNecessidadeComida"
+        android:layout_marginBottom="10dp"/>
 
     <Button
         android:id="@+id/corpoNecessidadesButton"
@@ -90,7 +92,8 @@
         android:text="Corpo"
         android:textColor="#FFFFFF"
         android:textSize="50dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
 
     <Button
         android:id="@+id/comunicacaoNecessidadesButton"
@@ -102,7 +105,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaNecessidadeComunicacao"/>
+        android:onClick="TelaNecessidadeComunicacao"
+        android:layout_marginBottom="10dp"/>
 
     <Button
         android:id="@+id/diversaoNecessidadeButton"
@@ -114,7 +118,8 @@
         android:text="Diversão"
         android:textColor="#FFFFFF"
         android:textSize="50dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/dorNecessidadeButton"
         android:layout_width="match_parent"
@@ -125,7 +130,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaNecessidadeDor"/>
+        android:onClick="TelaNecessidadeDor"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/escolaNecessidadesButton"
         android:layout_width="match_parent"
@@ -136,7 +142,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaNecessidadeEscola"/>
+        android:onClick="TelaNecessidadeEscola"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/familiaNecessidadesButton"
         android:layout_width="match_parent"
@@ -147,7 +154,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaNecessidadeFamilia"/>
+        android:onClick="TelaNecessidadeFamilia"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/letrasNecessidadesButton"
         android:layout_width="match_parent"
@@ -158,7 +166,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaNecessidadeLetras"/>
+        android:onClick="TelaNecessidadeLetras"
+        android:layout_marginBottom="10dp"/>
 
 
     <Button
@@ -171,7 +180,8 @@
         android:text="Números"
         android:textColor="#FFFFFF"
         android:textSize="50dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/palavrasBasicasNecessidadesButton"
         android:layout_width="match_parent"
@@ -182,7 +192,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaNecessidadePablavrasBasicas"/>
+        android:onClick="TelaNecessidadePablavrasBasicas"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/roupasNecessidadesButton"
         android:layout_width="match_parent"
@@ -193,7 +204,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaNecessidadeRoupas"/>
+        android:onClick="TelaNecessidadeRoupas"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/sentidosNecessidadesButton"
         android:layout_width="match_parent"
@@ -204,7 +216,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaNecessidadeSentidos"/>
+        android:onClick="TelaNecessidadeSentidos"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/sentimentosNecessidadesButton"
         android:layout_width="match_parent"
@@ -215,6 +228,7 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaNecessidadeSentimentos"/>
+        android:onClick="TelaNecessidadeSentimentos"
+        android:layout_marginBottom="10dp"/>
     </LinearLayout>
 </ScrollView>

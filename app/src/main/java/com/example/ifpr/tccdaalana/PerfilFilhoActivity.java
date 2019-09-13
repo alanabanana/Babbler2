@@ -12,6 +12,8 @@ import android.widget.RelativeLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 
+import java.io.IOException;
+
 public class PerfilFilhoActivity extends Activity {
 
     @Override
@@ -32,6 +34,16 @@ public class PerfilFilhoActivity extends Activity {
         startActivity(intent);
     }
 
+    public void sim (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.dois);
+        mediaPlayer.start();
+        RelatorioHelper.geraRelatorio(this, "Sim");
+    }
+    public void nao (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.dois);
+        mediaPlayer.start();
+        RelatorioHelper.geraRelatorio(this, "Nao");
+    }
    public void TelaComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);
         startActivity(intent);

@@ -28,11 +28,11 @@
 
     <ImageButton
         android:id="@+id/chocolateButton"
-        android:layout_width="150sp"
-        android:layout_height="150sp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
-        app:srcCompat="@drawable/chocolate"
-        android:onClick="euQueroChocolate"/>
+        android:onClick="euQueroChocolate"
+        app:srcCompat="@drawable/chocolate" />
 
     <TextView
         android:id="@+id/textChocolate"
@@ -252,7 +252,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaComidaCasa"/>
+        android:onClick="TelaComidaCasa"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/corpoButton"
         android:layout_width="match_parent"
@@ -263,7 +264,8 @@
         android:text="Corpo"
         android:textColor="#FFFFFF"
         android:textSize="50dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
 
     <Button
         android:id="@+id/comunicacaoButton"
@@ -275,7 +277,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaComidaComunicacao"/>
+        android:onClick="TelaComidaComunicacao"
+        android:layout_marginBottom="10dp"/>
 
     <Button
         android:id="@+id/diversaoButton"
@@ -287,7 +290,8 @@
         android:text="Diversão"
         android:textColor="#FFFFFF"
         android:textSize="50dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/dorButton"
         android:layout_width="match_parent"
@@ -298,7 +302,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaComidaDor"/>
+        android:onClick="TelaComidaDor"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/escolaButton"
         android:layout_width="match_parent"
@@ -309,7 +314,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaComidaEscola"/>
+        android:onClick="TelaComidaEscola"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/familiaButton"
         android:layout_width="match_parent"
@@ -320,7 +326,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaComidaFamilia"/>
+        android:onClick="TelaComidaFamilia"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/letrasButton"
         android:layout_width="match_parent"
@@ -331,7 +338,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaComidaLetras"/>
+        android:onClick="TelaComidaLetras"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/necessidadesButton"
         android:layout_width="match_parent"
@@ -342,7 +350,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaComidaNecessidades"/>
+        android:onClick="TelaComidaNecessidades"
+        android:layout_marginBottom="10dp"/>
 
     <Button
         android:id="@+id/numerosButton"
@@ -354,7 +363,8 @@
         android:text="Números"
         android:textColor="#FFFFFF"
         android:textSize="50dp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/palavrasBasicasButton"
         android:layout_width="match_parent"
@@ -365,7 +375,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaComidaPablavrasBasicas"/>
+        android:onClick="TelaComidaPablavrasBasicas"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/roupasButton"
         android:layout_width="match_parent"
@@ -376,7 +387,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaComidaRoupas"/>
+        android:onClick="TelaComidaRoupas"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/sentidosButton"
         android:layout_width="match_parent"
@@ -387,7 +399,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaComidaSentidos"/>
+        android:onClick="TelaComidaSentidos"
+        android:layout_marginBottom="10dp"/>
     <Button
         android:id="@+id/sentimentosComidaButton"
         android:layout_width="match_parent"
@@ -398,7 +411,8 @@
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"
-        android:onClick="TelaComidaSentimentos"/>
+        android:onClick="TelaComidaSentimentos"
+        android:layout_marginBottom="10dp"/>
 
 </LinearLayout>
 </ScrollView>

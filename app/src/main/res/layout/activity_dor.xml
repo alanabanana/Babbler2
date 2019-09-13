@@ -100,7 +100,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaDorCasa"/>
+            android:onClick="TelaDorCasa"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:id="@+id/comidaButton"
             android:layout_width="match_parent"
@@ -111,7 +112,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaDorComida"/>
+            android:onClick="TelaDorComida"
+            android:layout_marginBottom="10dp"/>
 
         <Button
             android:id="@+id/corpoButton"
@@ -123,7 +125,8 @@
             android:text="Corpo"
             android:textColor="#FFFFFF"
             android:textSize="50dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
 
         <Button
             android:id="@+id/comunicacaoButton"
@@ -135,7 +138,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaDorComunicacao"/>
+            android:onClick="TelaDorComunicacao"
+            android:layout_marginBottom="10dp"/>
 
         <Button
             android:id="@+id/diversaoButton"
@@ -147,7 +151,8 @@
             android:text="Diversão"
             android:textColor="#FFFFFF"
             android:textSize="50dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:id="@+id/escolaButton"
             android:layout_width="match_parent"
@@ -158,7 +163,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaDorEscola"/>
+            android:onClick="TelaDorEscola"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:id="@+id/familiaButton"
             android:layout_width="match_parent"
@@ -169,7 +175,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaDorFamilia"/>
+            android:onClick="TelaDorFamilia"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:id="@+id/letrasButton"
             android:layout_width="match_parent"
@@ -180,7 +187,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaDorLetras"/>
+            android:onClick="TelaDorLetras"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:id="@+id/necessidadesButton"
             android:layout_width="match_parent"
@@ -191,7 +199,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaDorNecessidades"/>
+            android:onClick="TelaDorNecessidades"
+            android:layout_marginBottom="10dp"/>
 
         <Button
             android:id="@+id/numerosButton"
@@ -203,7 +212,8 @@
             android:text="Números"
             android:textColor="#FFFFFF"
             android:textSize="50dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:id="@+id/palavrasBasicasButton"
             android:layout_width="match_parent"
@@ -214,7 +224,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaDorPablavrasBasicas"/>
+            android:onClick="TelaDorPablavrasBasicas"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:id="@+id/roupasButton"
             android:layout_width="match_parent"
@@ -225,7 +236,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaDorRoupas"/>
+            android:onClick="TelaDorRoupas"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:id="@+id/sentidosButton"
             android:layout_width="match_parent"
@@ -236,7 +248,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaDorSentidos"/>
+            android:onClick="TelaDorSentidos"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:id="@+id/sentimentosButton"
             android:layout_width="match_parent"
@@ -247,6 +260,7 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaDorSentimentos"/>
+            android:onClick="TelaDorSentimentos"
+            android:layout_marginBottom="10dp"/>
     </LinearLayout>
 </ScrollView>

@@ -27,31 +27,29 @@
         android:textStyle="bold" />
 
     <ImageButton
-        android:id="@+id/chocolateButton"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:background="@drawable/chocolate"
         android:onClick="euQueroChocolate"
-        app:srcCompat="@drawable/chocolate" />
+        android:layout_gravity="center"/>
+
 
     <TextView
         android:id="@+id/textChocolate"
         android:layout_width="match_parent"
-        android:layout_height="25dp"
+        android:layout_height="47dp"
         android:gravity="center_vertical|center"
         android:text="EU QUERO COMER CHOCOLATE"
         android:textColor="#FFFFFF"
         android:textSize="25sp"
         android:textStyle="bold" />
 
-    <ImageButton
-        android:id="@+id/paoButton"
-        android:layout_width="150sp"
-        android:layout_height="150sp"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/bread"
-        android:onClick="euQueroComerPao"/>
-
+<ImageButton
+    android:layout_width="270dp"
+    android:layout_height="270dp"
+    android:background="@drawable/bread"
+    android:onClick="euQueroComerPao"
+    android:layout_gravity="center"/>
     <TextView
         android:id="@+id/textPao"
         android:layout_width="match_parent"
@@ -62,13 +60,12 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
-    <ImageButton
-        android:id="@+id/batataFritaButton"
-        android:layout_width="150sp"
-        android:layout_height="150sp"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/fries"
-        android:onClick="euQueroComerBatataFrita"/>
+ <ImageButton
+     android:layout_width="270dp"
+     android:layout_height="270dp"
+     android:background="@drawable/fries"
+     android:onClick="euQueroComerBatataFrita"
+     android:layout_gravity="center"/>
 
     <TextView
         android:id="@+id/textBatataFrita"
@@ -79,14 +76,14 @@
         android:textColor="#FFFFFF"
         android:textSize="25sp"
         android:textStyle="bold" />
+<ImageButton
+    android:layout_width="270dp"
+    android:layout_height="270dp"
+    android:background="@drawable/cheese"
+    android:onClick="euQueroComerQueijo"
+    android:layout_gravity="center"/>
 
-    <ImageButton
-        android:id="@+id/queijoButton"
-        android:layout_width="150sp"
-        android:layout_height="150sp"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/cheese"
-        android:onClick="euQueroComerQueijo"/>
+
 
     <TextView
         android:id="@+id/textQueijo"
@@ -98,14 +95,12 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
-    <ImageButton
-        android:id="@+id/carneButton"
-        android:layout_width="150sp"
-        android:layout_height="150sp"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/steak"
-        android:onClick="euQueroComerCarne"/>
-
+  <ImageButton
+      android:layout_width="270dp"
+      android:layout_height="270dp"
+      android:background="@drawable/steak"
+      android:onClick="euQueroComerCarne"
+      android:layout_gravity="center"/>
     <TextView
         android:id="@+id/textCarne"
         android:layout_width="match_parent"
@@ -116,13 +111,12 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
-    <ImageButton
-        android:id="@+id/hambButton"
-        android:layout_width="150sp"
-        android:layout_height="150sp"
-        android:layout_gravity="center"
-        android:onClick="euQueroComerHamburguer"
-        app:srcCompat="@drawable/hamburguer" />
+   <ImageButton
+       android:layout_width="270dp"
+       android:layout_height="270dp"
+       android:background="@drawable/hamburguer"
+       android:onClick="euQueroComerHamburguer"
+       android:layout_gravity="center"/>
 
     <TextView
         android:id="@+id/textHamburguer"

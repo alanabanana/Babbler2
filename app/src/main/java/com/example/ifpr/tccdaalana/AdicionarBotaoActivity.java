@@ -21,10 +21,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.MalformedURLException;
+import java.util.UUID;
 
 import android.widget.Toast;
 
 import net.gotev.uploadservice.MultipartUploadRequest;
+import net.gotev.uploadservice.UploadNotificationConfig;
 
 import bancodedados.DBController;
 
@@ -100,13 +102,16 @@ public class AdicionarBotaoActivity extends Activity {
     private void salvarAudio() throws MalformedURLException, FileNotFoundException {
         SharedPreferences sp = getApplicationContext().getSharedPreferences("Login", Context.MODE_PRIVATE);
         String email_resp = sp.getString("email_resp", null);
-        new MultipartUploadRequest(getApplicationContext(), DBController.URL_WEB_SERVICE + "/ws_insert/ws_insert_atividade.php")
+        final String uploadID = UUID.randomUUID().toString();
+        MultipartUploadRequest request = new MultipartUploadRequest(getApplicationContext(), uploadID,DBController.URL_WEB_SERVICE + "/ws_insert/ws_insert_atividade.php")
                 .addFileToUpload(fileDestination, "audio")
                 .addParameter("name", nomeAudio)
                 .addParameter("imagem", nomeImagem)
                 .addParameter("email_responsavel", email_resp)
-                .setMaxRetries(2)
-                .startUpload();
+                .setNotificationConfig(new UploadNotificationConfig())
+                .setMaxRetries(2);
+        String resposta = request.startUpload();
+        System.out.println("A resposta é: " + resposta);
     }
 
     public void pausarGravacao(View v) throws MalformedURLException, FileNotFoundException {

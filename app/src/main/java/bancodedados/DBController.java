@@ -19,7 +19,7 @@ import java.util.Date;
 
 public class DBController {
 
-    private static String URL_WEB_SERVICE = "http://10.21.80.174/webservice_babbler/";
+    public static String URL_WEB_SERVICE = "http://10.21.80.174/webservice_babbler/";
 
     public static JSONArray selectAllFromReadAtividadePadrao (Context context) throws JSONException, IOException{
         if (!checkNetworkConnection(context)) {

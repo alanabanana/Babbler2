@@ -2,62 +2,55 @@ package com.example.ifpr.tccdaalana;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.RequiresApi;
 import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
-import java.io.ByteArrayOutputStream;
-import java.io.DataOutputStream;
 import java.io.File;
-import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
+import java.net.MalformedURLException;
 
-import android.app.Application;
-import android.content.Context;
+import android.widget.Toast;
+
+import net.gotev.uploadservice.MultipartUploadRequest;
+
 import bancodedados.DBController;
 
 public class AdicionarBotaoActivity extends Activity {
-//    private Context context;
-//    private MyApp my_instance;
 
     ImageButton buttonStart;
     ImageButton buttonStop;
     MediaRecorder mediaRecorder;
-    DBController dbController = new DBController();
     File outputDir;
+    String fileDestination;
+    String nomeAudio;
+    String nomeImagem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adicionar_botao);
-        File outputDir = getApplicationContext().getCacheDir();
 
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
-            String nomeImagem = bundle.getString("Imagem");
+            nomeImagem = bundle.getString("Imagem");
             if (nomeImagem != null) {
                 colocarImagemAdequada(nomeImagem);
             }
         }
-        AdicionarBotaoActivity.this.setContentView(R.layout.activity_adicionar_botao);
+
         buttonStart = (ImageButton) findViewById(R.id.StartAudio);
         buttonStop = (ImageButton) findViewById(R.id.StopAudio);
         buttonStop.setEnabled(false);
@@ -66,6 +59,9 @@ public class AdicionarBotaoActivity extends Activity {
     }
 
     private void createNewDirectory() {
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},0);
+        }
         outputDir = new File(Environment.getExternalStorageDirectory() + File.separator + "Audios/");
         if (!outputDir.exists()) {
             outputDir.mkdirs();
@@ -74,110 +70,54 @@ public class AdicionarBotaoActivity extends Activity {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void comecarGravacao(View v) throws IOException {
-        buttonStart.setEnabled(false);
-        buttonStop.setEnabled(true);
         //CODIGO PARA REALIZAR GRAVACAO
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECORD_AUDIO},0);
+        }
+        EditText editText = findViewById(R.id.audioNameEditText);
+        nomeAudio = editText.getText().toString();
+        if (nomeAudio.equals("")) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setMessage("Você deve escrever o nome do audio!");
+            builder.setTitle("Nome inválido!");
+            builder.setPositiveButton("OK", null);
+            builder.show();
         } else {
+            buttonStart.setEnabled(false);
+            buttonStop.setEnabled(true);
+            Toast.makeText(this, "Gravando audio...", Toast.LENGTH_LONG).show();
+            nomeAudio = nomeAudio.replace(" ", "_");
             mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
             mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
-            mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AAC);
-            mediaRecorder.setOutputFile(outputDir + "teste.3gpp");
+            mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.DEFAULT);
+            fileDestination = outputDir + "/" + nomeAudio + ".3gp";
+            mediaRecorder.setOutputFile(fileDestination);
             mediaRecorder.prepare();
             mediaRecorder.start();
         }
     }
 
-    private void salvarAudio() {
-        //ImageButton imageButtonAudio = findViewById(R.id.imageButtonEscolhido);
-        //Drawable d = imageButtonAudio.getBackground();
-        //BitmapDrawable bitDw = ((BitmapDrawable) d);
-        //Bitmap bitmap = bitDw.getBitmap();
-        //ByteArrayOutputStream stream = new ByteArrayOutputStream();
-        //bitmap.compress(Bitmap.CompressFormat.JPEG,100, stream);
-        //String imageInString = stream.toString();
-
-        //EditText campoNomeAudio = findViewById(R.id.audioNameEditText);
-        //String nome = campoNomeAudio.getText().toString();
-
-        //dbController.insertIntoAtividades(getApplicationContext(), nome, imageInString, )
-
-        try {
-            String sourceFileUri = "/storage/emulated/0/DCIM/Camera/IMG_20190903_135021.jpg";
-            HttpURLConnection conn = null;
-            DataOutputStream dos = null;
-            String lineEnd = "\r\n";
-            String twoHyphens = "--";
-            String boundary = "*****";
-            int bytesRead, bytesAvailable, bufferSize;
-            byte[] buffer;
-            int maxBufferSize = 1 * 1024 * 1024;
-            File sourceFile = new File(sourceFileUri);
-            if (sourceFile.isFile()) {
-                try {
-                    String upLoadServerUri = "http://localhost/webservice_babbler/ws_audios/ws_receive_audio.php";
-                    // open a URL connection to the Servlet
-                    FileInputStream fileInputStream = new FileInputStream(sourceFile);
-                    URL url = new URL(upLoadServerUri);
-                    // Open a HTTP connection to the URL
-                    conn = (HttpURLConnection) url.openConnection();
-                    conn.setDoInput(true); // Allow Inputs
-                    conn.setDoOutput(true); // Allow Outputs
-                    conn.setUseCaches(false); // Don't use a Cached Copy
-                    conn.setRequestMethod("POST");
-                    conn.setRequestProperty("Connection", "Keep-Alive");
-                    conn.setRequestProperty("ENCTYPE", "multipart/form-data");
-                    conn.setRequestProperty("Content-Type", "multipart/form-data;boundary=" + boundary);
-                    conn.setRequestProperty("bill", sourceFileUri);
-                    dos = new DataOutputStream(conn.getOutputStream());
-                    dos.writeBytes(twoHyphens + boundary + lineEnd);
-                    dos.writeBytes("Content-Disposition: form-data; name=\"bill\";filename=\"" + sourceFileUri + "\"" + lineEnd);
-                    dos.writeBytes(lineEnd);
-
-                    // create a buffer of maximum size
-                    bytesAvailable = fileInputStream.available();
-
-                    bufferSize = Math.min(bytesAvailable, maxBufferSize);
-                    buffer = new byte[bufferSize];
-
-                    // read file and write it into form...
-                    bytesRead = fileInputStream.read(buffer, 0, bufferSize);
-
-                    while (bytesRead > 0) {
-                        dos.write(buffer, 0, bufferSize);
-                        bytesAvailable = fileInputStream.available();
-                        bufferSize = Math.min(bytesAvailable, maxBufferSize);
-                        bytesRead = fileInputStream.read(buffer, 0,bufferSize);
-                    }
-                    // send multipart form data necesssary after file
-                    // data...
-                    dos.writeBytes(lineEnd);
-                    dos.writeBytes(twoHyphens + boundary + twoHyphens + lineEnd);
-
-                    // Responses from the server (code and message)
-                    Integer serverResponseCode = conn.getResponseCode();
-                    String serverResponseMessage = conn.getResponseMessage();
-
-                    // close the streams //
-                    fileInputStream.close();
-                    dos.flush();
-                    dos.close();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
+    private void salvarAudio() throws MalformedURLException, FileNotFoundException {
+        SharedPreferences sp = getApplicationContext().getSharedPreferences("Login", Context.MODE_PRIVATE);
+        String email_resp = sp.getString("email_resp", null);
+        new MultipartUploadRequest(getApplicationContext(), DBController.URL_WEB_SERVICE + "/ws_insert/ws_insert_atividade.php")
+                .addFileToUpload(fileDestination, "audio")
+                .addParameter("name", nomeAudio)
+                .addParameter("imagem", nomeImagem)
+                .addParameter("email_responsavel", email_resp)
+                .setMaxRetries(2)
+                .startUpload();
     }
 
-    public void pausarGravacao(View v) {
-        buttonStart.setEnabled(true);
-        buttonStop.setEnabled(false);
-        //CODIGO PARA PAUSAR GRAVACAO
-        mediaRecorder.stop();
-        salvarAudio();
+    public void pausarGravacao(View v) throws MalformedURLException, FileNotFoundException {
+        if (buttonStop.isEnabled()) {
+            buttonStart.setEnabled(true);
+            buttonStop.setEnabled(false);
+            //CODIGO PARA PAUSAR GRAVACAO
+            mediaRecorder.stop();
+            Toast.makeText(this, "Audio gravado!", Toast.LENGTH_LONG).show();
+            salvarAudio();
+        }
     }
 
     private void colocarImagemAdequada(String nomeImagem) {

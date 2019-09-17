@@ -128,13 +128,12 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
-    <ImageButton
-        android:id="@+id/macarraoButton"
-        android:layout_width="150sp"
-        android:layout_height="150sp"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/spaguetti"
-        android:onClick="euQueroComerMacarrao"/>
+ <ImageButton
+     android:layout_width="270dp"
+     android:layout_height="270dp"
+     android:background="@drawable/spaguetti"
+     android:onClick="euQueroComerMacarrao"
+     android:layout_gravity="center"/>
 
     <TextView
         android:id="@+id/textMacarrao"
@@ -146,13 +145,12 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
-    <ImageButton
-        android:id="@+id/uvaButton"
-        android:layout_width="150sp"
-        android:layout_height="150sp"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/grapes"
-        android:onClick="euQueroComerUva"/>
+   <ImageButton
+       android:layout_width="270dp"
+       android:layout_height="270dp"
+       android:background="@drawable/grapes"
+       android:onClick="euQueroComerUva"
+       android:layout_gravity="center"/>
 
     <TextView
         android:id="@+id/textUva"
@@ -164,14 +162,12 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
-    <ImageButton
-        android:id="@+id/melanciaButton"
-        android:layout_width="150sp"
-        android:layout_height="150sp"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/watermelon"
-        android:onClick="euQueroComerMelancia"/>
-
+  <ImageButton
+      android:layout_width="270dp"
+      android:layout_height="270dp"
+      android:background="@drawable/watermelon"
+      android:onClick="euQueroComerMelancia"
+      android:layout_gravity="center"/>
     <TextView
         android:id="@+id/textMelancia"
         android:layout_width="match_parent"
@@ -182,14 +178,12 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
-    <ImageButton
-        android:id="@+id/aguaButton"
-        android:layout_width="150sp"
-        android:layout_height="150sp"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/water"
-        android:onClick="euQueroBeberAgua"/>
-
+<ImageButton
+    android:layout_width="270dp"
+    android:layout_height="270dp"
+    android:background="@drawable/water"
+    android:onClick="euQueroBeberAgua"
+    android:layout_gravity="center"/>
     <TextView
         android:id="@+id/textAgua"
         android:layout_width="match_parent"
@@ -200,13 +194,13 @@
         android:textSize="25sp"
         android:textStyle="bold" />
 
-    <ImageButton
-        android:id="@+id/refriButton"
-        android:layout_width="150sp"
-        android:layout_height="150sp"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/can"
-        android:onClick="euQueroBeberRefri"/>
+   <ImageButton
+       android:layout_width="270dp"
+       android:layout_height="270dp"
+       android:background="@drawable/can"
+       android:onClick="euQueroBeberRefri"
+       android:layout_gravity="center"/>
+
 
     <TextView
         android:id="@+id/textRefri"
@@ -217,14 +211,12 @@
         android:textColor="#FFFFFF"
         android:textSize="25sp"
         android:textStyle="bold" />
-
-    <ImageButton
-        android:id="@+id/leiteButton"
-        android:layout_width="150sp"
-        android:layout_height="150sp"
-        android:layout_gravity="center"
-        app:srcCompat="@drawable/milk"
-        android:onClick="euQueroBeberLeite"/>
+<ImageButton
+    android:layout_width="270dp"
+    android:layout_height="270dp"
+    android:background="@drawable/milk"
+    android:onClick="euQueroBeberLeite"
+    android:layout_gravity="center"/>
 
     <TextView
         android:id="@+id/textLeite"
@@ -401,7 +393,7 @@
         android:layout_height="119dp"
         android:background="#FF5722"
         android:gravity="center|center_horizontal"
-        android:text="Sentidos"
+        android:text="Sentimentos"
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         android:textStyle="bold"

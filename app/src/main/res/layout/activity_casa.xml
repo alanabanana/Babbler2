@@ -13,7 +13,8 @@
             android:layout_width="64dp"
             android:layout_height="66dp"
             android:onClick="voltarCasa"
-            android:background="@drawable/voltar" />
+            android:background="@drawable/voltar"
+            android:layout_marginTop="5dp"/>
 
         <TextView
             android:id="@+id/textCasa"
@@ -23,7 +24,8 @@
             android:text="Casa"
             android:textColor="#FFFFFF"
             android:textSize="50sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
 
 
 
@@ -32,8 +34,9 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/shower"
+            android:background="@drawable/toilet"
             android:onClick="banheiro" />
+
 
         <TextView
             android:id="@+id/textBanheiro"
@@ -43,8 +46,9 @@
             android:text="Eu quero ir ao banheiro"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
-            android:textStyle="bold" />
-
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            />
 
         <ImageButton
             android:id="@+id/cozinhaButton"
@@ -52,7 +56,8 @@
             android:layout_height="150sp"
             android:layout_gravity="center"
             android:background="@drawable/cozinha"
-            android:onClick="cozinha" />
+            android:onClick="cozinha"
+            android:layout_marginBottom="10dp"/>
 
         <TextView
             android:id="@+id/textCozinha"
@@ -62,14 +67,15 @@
             android:text="Cozinha"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
 
         <ImageButton
             android:id="@+id/garagemButton"
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/bed"
+            android:background="@drawable/garagem"
             android:onClick="garagem" />
 
         <TextView
@@ -80,14 +86,15 @@
             android:text="Garagem"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
 
         <ImageButton
             android:id="@+id/jardimButton"
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/bed"
+            android:background="@drawable/girassol"
             android:onClick="jardim" />
 
         <TextView
@@ -98,14 +105,15 @@
             android:text="Jardim"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
 
         <ImageButton
             android:id="@+id/salaButton"
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/bed"
+            android:background="@drawable/sala"
             android:onClick="sala" />
 
         <TextView
@@ -116,7 +124,8 @@
             android:text="Sala"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
 
         <Button
             android:id="@+id/comidaCasaButton"
@@ -285,7 +294,7 @@
             android:background="#FF5722"
             android:layout_marginBottom="10dp"
             android:gravity="center|center_horizontal"
-            android:text="Sentidos"
+            android:text="Sentimentos"
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"

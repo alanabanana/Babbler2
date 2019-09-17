@@ -51,6 +51,8 @@ public class AdicionarBotaoActivity extends Activity {
             if (nomeImagem != null) {
                 colocarImagemAdequada(nomeImagem);
             }
+        } else {
+            nomeImagem = "default";
         }
 
         buttonStart = (ImageButton) findViewById(R.id.StartAudio);
@@ -99,19 +101,22 @@ public class AdicionarBotaoActivity extends Activity {
         }
     }
 
+    public void salvarBotao(View v) throws MalformedURLException, FileNotFoundException {
+        salvarAudio();
+        Intent intent = new Intent(this, EditarBotaoActivity.class);
+        startActivity(intent);
+    }
+
     private void salvarAudio() throws MalformedURLException, FileNotFoundException {
         SharedPreferences sp = getApplicationContext().getSharedPreferences("Login", Context.MODE_PRIVATE);
         String email_resp = sp.getString("email_resp", null);
-        final String uploadID = UUID.randomUUID().toString();
-        MultipartUploadRequest request = new MultipartUploadRequest(getApplicationContext(), uploadID,DBController.URL_WEB_SERVICE + "/ws_insert/ws_insert_atividade.php")
+        new MultipartUploadRequest(getApplicationContext(), DBController.URL_WEB_SERVICE + "ws_insert/ws_insert_atividade.php")
                 .addFileToUpload(fileDestination, "audio")
                 .addParameter("name", nomeAudio)
                 .addParameter("imagem", nomeImagem)
                 .addParameter("email_responsavel", email_resp)
-                .setNotificationConfig(new UploadNotificationConfig())
-                .setMaxRetries(2);
-        String resposta = request.startUpload();
-        System.out.println("A resposta é: " + resposta);
+                .setMaxRetries(2)
+                .startUpload();
     }
 
     public void pausarGravacao(View v) throws MalformedURLException, FileNotFoundException {
@@ -120,8 +125,7 @@ public class AdicionarBotaoActivity extends Activity {
             buttonStop.setEnabled(false);
             //CODIGO PARA PAUSAR GRAVACAO
             mediaRecorder.stop();
-            Toast.makeText(this, "Audio gravado!", Toast.LENGTH_LONG).show();
-            salvarAudio();
+            Toast.makeText(this, "Audio salvo!", Toast.LENGTH_LONG).show();
         }
     }
 

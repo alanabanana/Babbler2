@@ -56,6 +56,22 @@
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/lavarMaoButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/higienico"
+            android:onClick="lavarMao" />
+        <TextView
+            android:id="@+id/textLavarMao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Eu quero lavar a minha mão"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
     <Button
         android:id="@+id/casaNecessidadesButton"

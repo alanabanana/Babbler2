@@ -30,7 +30,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/bed"
+            android:background="@drawable/pare"
             android:onClick="tato" />
         <TextView
             android:id="@+id/textTato"
@@ -47,7 +47,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/bed"
+            android:background="@drawable/eye"
             android:onClick="ver" />
 
         <TextView
@@ -65,7 +65,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/bed"
+            android:background="@drawable/nose"
             android:onClick="cheirar" />
 
         <TextView

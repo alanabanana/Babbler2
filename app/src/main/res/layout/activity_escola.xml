@@ -88,7 +88,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaEscolaCasa"/>
+            android:onClick="TelaEscolaCasa"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:id="@+id/comidaEscolaButton"
             android:layout_width="match_parent"
@@ -99,7 +100,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaEscolaComida"/>
+            android:onClick="TelaEscolaComida"
+            android:layout_marginBottom="10dp"/>
 
         <Button
             android:id="@+id/corpoEscolaButton"
@@ -111,7 +113,8 @@
             android:text="Corpo"
             android:textColor="#FFFFFF"
             android:textSize="50dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
 
         <Button
             android:id="@+id/comunicacaoEscolaButton"
@@ -123,7 +126,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaEscolaComunicacao"/>
+            android:onClick="TelaEscolaComunicacao"
+            android:layout_marginBottom="10dp"/>
 
         <Button
             android:id="@+id/diversaoEscolaButton"
@@ -135,7 +139,8 @@
             android:text="Diversão"
             android:textColor="#FFFFFF"
             android:textSize="50dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:id="@+id/dorEscolaButton"
             android:layout_width="match_parent"
@@ -146,7 +151,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaEscolaDor"/>
+            android:onClick="TelaEscolaDor"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:id="@+id/familiaEscolaButton"
             android:layout_width="match_parent"
@@ -157,7 +163,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaEscolaFamilia"/>
+            android:onClick="TelaEscolaFamilia"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:id="@+id/letrasEscolaButton"
             android:layout_width="match_parent"
@@ -168,7 +175,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaEscolaLetras"/>
+            android:onClick="TelaEscolaLetras"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:id="@+id/necessidadesEscolaButton"
             android:layout_width="match_parent"
@@ -179,7 +187,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaEscolaNecessidades"/>
+            android:onClick="TelaEscolaNecessidades"
+            android:layout_marginBottom="10dp"/>
 
         <Button
             android:id="@+id/numerosEscolaButton"
@@ -191,7 +200,8 @@
             android:text="Números"
             android:textColor="#FFFFFF"
             android:textSize="50dp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:id="@+id/palavrasBasicasEscolaButton"
             android:layout_width="match_parent"
@@ -202,7 +212,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaEscolaPablavrasBasicas"/>
+            android:onClick="TelaEscolaPablavrasBasicas"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:id="@+id/roupasEscolaButton"
             android:layout_width="match_parent"
@@ -213,7 +224,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaEscolaRoupas"/>
+            android:onClick="TelaEscolaRoupas"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:id="@+id/sentidosEscolaButton"
             android:layout_width="match_parent"
@@ -224,7 +236,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaEscolaSentidos"/>
+            android:onClick="TelaEscolaSentidos"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:id="@+id/sentimentosEscolaButton"
             android:layout_width="match_parent"
@@ -235,7 +248,8 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaEscolaSentimentos"/>
+            android:onClick="TelaEscolaSentimentos"
+            android:layout_marginBottom="10dp"/>
 
     </LinearLayout>
 </ScrollView>

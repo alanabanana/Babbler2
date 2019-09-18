@@ -64,10 +64,12 @@ public class EditarBotaoActivity extends Activity {
 
     }
 
-
-    public void editarBotaoEmOutraTela (View v ){
-        Intent intent = new Intent(this, AdicionarBotaoActivity.class);
-        startActivity(intent);
+    public void editarBotao (View v ){
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Em construção...");
+        builder.setMessage("Esta funcionalidade estará disponível em breve...");
+        builder.setPositiveButton("OK", null);
+        builder.create().show();
     }
 
     public void adicionarBotaoEmOutraTela (View v ){

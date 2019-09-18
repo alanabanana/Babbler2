@@ -2,9 +2,12 @@ package com.example.ifpr.tccdaalana;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+
+import java.io.IOException;
 
 public class RoupasActivity extends Activity {
     @Override
@@ -12,11 +15,52 @@ public class RoupasActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_roupas);
     }
-    
+    public void camiseta (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.camiseta);
+        mediaPlayer.start();
+        RelatorioHelper.geraRelatorio(this, "Camiseta");
+    }
+    public void calca (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.calca);
+        mediaPlayer.start();
+        RelatorioHelper.geraRelatorio(this, "Calça");
+    }
+    public void meiaCalca (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.meiacalca);
+        mediaPlayer.start();
+        RelatorioHelper.geraRelatorio(this, "MeiaCalça");
+    }
+    public void cachecol (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cachecol);
+        mediaPlayer.start();
+        RelatorioHelper.geraRelatorio(this, "Cachecol");
+    }
+    public void oculos (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.oculos);
+        mediaPlayer.start();
+        RelatorioHelper.geraRelatorio(this, "Oculos");
+    }
+    public void casacoDeFrio (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.casacodefrio);
+        mediaPlayer.start();
+        RelatorioHelper.geraRelatorio(this, "CasacoDeFrio");
+    }
+    public void meia (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.meiacalca);
+        mediaPlayer.start();
+        RelatorioHelper.geraRelatorio(this, "Meia");
+    }
+
+    /*/    public void biquini (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.biquini);
+        mediaPlayer.start();
+        RelatorioHelper.geraRelatorio(this, "Biquini");
+    }/*/
     public void TelaRoupasComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);
         startActivity(intent);
     }
+
     public void TelaRoupasCasa(View v){
         Intent intent = new Intent(this,CasaActivity.class);
         startActivity(intent);

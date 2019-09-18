@@ -32,21 +32,27 @@ public class FamiliaActivity extends Activity {
         mediaPlayer.start();
         RelatorioHelper.geraRelatorio(this, "Pai");
     }
-    public void duasMaes (View v) throws IOException {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
+    public void avoHomem (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.avoh);
         mediaPlayer.start();
-        RelatorioHelper.geraRelatorio(this, "Maes");
+        RelatorioHelper.geraRelatorio(this, "avoHomem");
     }
-    public void doisPais (View v) throws IOException {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
+    public void avoMulher (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.avoh);
         mediaPlayer.start();
-        RelatorioHelper.geraRelatorio(this, "Pais");
+        RelatorioHelper.geraRelatorio(this, "avoMulher");
     }
-    public void maeEPais (View v) throws IOException {
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.comer_chocolate);
+    public void irmao (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.irmao);
         mediaPlayer.start();
-        RelatorioHelper.geraRelatorio(this, "MaeEPai");
+        RelatorioHelper.geraRelatorio(this, "Irmao");
     }
+    public void irma (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.irma);
+        mediaPlayer.start();
+        RelatorioHelper.geraRelatorio(this, "Irma");
+    }
+
 
     public void TelaFamiliaComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);

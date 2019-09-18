@@ -31,9 +31,9 @@
 
             <ImageView
                 android:id="@+id/imageView11"
-                android:layout_width="77dp"
-                android:layout_height="81dp"
-                android:background="@drawable/girassol"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/babble"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -51,6 +51,26 @@
                 app:layout_constraintStart_toEndOf="@+id/imageButton3"
                 app:layout_constraintTop_toTopOf="parent" />
         </android.support.constraint.ConstraintLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#8fb147"
+            android:text="SIM"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="sim"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#F00"
+            android:text="NÃO"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="nao"
+            android:layout_marginBottom="10dp"/>
 
         <Button
             android:id="@+id/casaButton"

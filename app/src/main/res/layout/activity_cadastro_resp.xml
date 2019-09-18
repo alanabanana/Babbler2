@@ -183,11 +183,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="68dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="100dp"
+        android:layout_height="90dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/girassol"
+        android:background="@drawable/babble"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

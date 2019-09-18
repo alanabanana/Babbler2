@@ -38,6 +38,26 @@ public class EscolaActivity extends Activity {
         mediaPlayer.start();
         RelatorioHelper.geraRelatorio(this, "QuadroBranco");
     }
+    public void irAoBanheiro (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.iraobanheiro);
+        mediaPlayer.start();
+        RelatorioHelper.geraRelatorio(this, "IrAoBanheiro");
+    }
+    public void recreio (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.recreio);
+        mediaPlayer.start();
+        RelatorioHelper.geraRelatorio(this, "Recreio");
+    }
+    public void professor (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.professor);
+        mediaPlayer.start();
+        RelatorioHelper.geraRelatorio(this, "Professor");
+    }
+    public void professora (View v) throws IOException {
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.professora);
+        mediaPlayer.start();
+        RelatorioHelper.geraRelatorio(this, "Professora");
+    }
     public void TelaEscolaComida(View v){
         Intent intent = new Intent(this, ComidaActivity.class);
         startActivity(intent);

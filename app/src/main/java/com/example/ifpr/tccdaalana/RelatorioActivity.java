@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -40,19 +42,27 @@ public class RelatorioActivity extends Activity {
     public void construirRelatoriosNaTela() {
         LinearLayout linearLayout = findViewById(R.id.linearLayoutRelatorio);
         for (Relatorio relatorio : relatorios) {
-            TextView textView = new TextView(this);
-            String frase = "Dependente: "+ relatorio.getApelidoDependente() + "\n";
+            String nomeDep = "Dependente: "+ relatorio.getApelidoDependente() + "\n";
+            TextView textViewNomeDep = new TextView(RelatorioActivity.this);
+            textViewNomeDep.setText(nomeDep);
+            textViewNomeDep.setTextSize(18);
+            textViewNomeDep.setGravity(Gravity.CENTER_HORIZONTAL);
+            textViewNomeDep.setTextColor(Color.parseColor("#000000"));
+            linearLayout.addView(textViewNomeDep);
+            TextView textViewAcoes = new TextView(RelatorioActivity.this);
+            String acoesDep = "";
             for (Acao acao : relatorio.getAcoes()) {
                 String data = acao.getData();
-                frase = frase + "Data: " + data + "\n";
+                acoesDep = acoesDep + "Data: " + data + "\n";
                 String horario = acao.getHorario();
-                frase = frase + "Horário: " + horario + "\n";
+                acoesDep = acoesDep + "Horário: " + horario + "\n";
                 String botao = acao.getBotao();
-                frase = frase + "Botão Apertado: " + botao + "\n\n";
+                acoesDep = acoesDep + "Botão Apertado: " + botao + "\n\n";
             }
-            textView.setText(frase);
-            textView.setTextSize(18);
-            linearLayout.addView(textView);
+            textViewAcoes.setText(acoesDep);
+            textViewAcoes.setTextSize(18);
+            textViewAcoes.setTextColor(Color.parseColor("#a9a9a9"));
+            linearLayout.addView(textViewAcoes);
         }
     }
 

@@ -218,21 +218,12 @@
 
     <ImageView
 
-        android:layout_width="198dp"
-        android:layout_height="155dp"
+        android:layout_width="224dp"
+        android:layout_height="213dp"
+        android:background="@drawable/babble"
         app:layout_constraintBottom_toTopOf="@+id/textLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/girassol" />
-
-    <ImageView
-        android:layout_width="73dp"
-        android:layout_height="73dp"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/folhacima"
-        app:layout_constraintBottom_toTopOf="@+id/textLogin"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

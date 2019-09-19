@@ -61,7 +61,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/higienico"
+            android:background="@drawable/sol"
             android:onClick="lavarMao" />
         <TextView
             android:id="@+id/textLavarMao"

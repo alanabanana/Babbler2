@@ -77,27 +77,28 @@ public class AdicionarBotaoActivity extends Activity {
         //CODIGO PARA REALIZAR GRAVACAO
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.RECORD_AUDIO},0);
-        }
-        EditText editText = findViewById(R.id.audioNameEditText);
-        nomeAudio = editText.getText().toString();
-        if (nomeAudio.equals("")) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setMessage("Você deve escrever o nome do audio!");
-            builder.setTitle("Nome inválido!");
-            builder.setPositiveButton("OK", null);
-            builder.show();
         } else {
-            buttonStart.setEnabled(false);
-            buttonStop.setEnabled(true);
-            Toast.makeText(this, "Gravando audio...", Toast.LENGTH_LONG).show();
-            nomeAudio = nomeAudio.replace(" ", "_");
-            mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-            mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
-            mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.DEFAULT);
-            fileDestination = outputDir + "/" + nomeAudio + ".3gp";
-            mediaRecorder.setOutputFile(fileDestination);
-            mediaRecorder.prepare();
-            mediaRecorder.start();
+            EditText editText = findViewById(R.id.audioNameEditText);
+            nomeAudio = editText.getText().toString();
+            if (nomeAudio.equals("")) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setMessage("Você deve escrever o nome do audio!");
+                builder.setTitle("Nome inválido!");
+                builder.setPositiveButton("OK", null);
+                builder.show();
+            } else {
+                buttonStart.setEnabled(false);
+                buttonStop.setEnabled(true);
+                Toast.makeText(this, "Gravando audio...", Toast.LENGTH_LONG).show();
+                nomeAudio = nomeAudio.replace(" ", "_");
+                mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+                mediaRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+                mediaRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.DEFAULT);
+                fileDestination = outputDir + "/" + nomeAudio + ".3gp";
+                mediaRecorder.setOutputFile(fileDestination);
+                mediaRecorder.prepare();
+                mediaRecorder.start();
+            }
         }
     }
 

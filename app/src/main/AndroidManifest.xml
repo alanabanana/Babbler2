@@ -55,7 +55,8 @@
         <activity android:name=".InfoIconesActivity"/>
         <activity android:name=".PrimeiraTelaActivity">
 
-        </activity>
 
+        </activity>
+        <activity android:name=".BotaoCustomizadosActivity"/>
     </application>
     </manifest>

@@ -19,7 +19,7 @@ import java.util.Date;
 
 public class DBController {
 
-    public static String URL_WEB_SERVICE = "http://10.21.80.174/webservice_babbler/";
+    public static String URL_WEB_SERVICE = "http://192.168.43.143/webservice_babbler/";
 
     public static JSONArray selectAllFromReadAtividadePadrao (Context context) throws JSONException, IOException{
         if (!checkNetworkConnection(context)) {
@@ -58,23 +58,22 @@ public class DBController {
         }
     }
 
-    public static int insertIntoAtividades(Context context, String nome, String imagem, String audio, String email_resp, String resp_email) throws IOException {
+    public static JSONArray selectAllFromAtividadeByEmail(Context context, String email_resp) throws IOException, JSONException {
         if (!checkNetworkConnection(context)) {
-            Toast.makeText(context, "Falha na Conexão com a Internet!", Toast.LENGTH_LONG).show();
-            return 0;
+            return null;
         }
         checkThreadPolicy();
-        String values = "nome="+nome+"&"+"imagem="+imagem+"&"+"audio="+audio+"&"+"email_resp="+email_resp+"&"+"resp_email="+resp_email;
-        URL url = new URL(URL_WEB_SERVICE + "ws_insert/ws_insert_atividades.php?"+values);
+        String values = "email_resp="+email_resp;
+        URL url = new URL(URL_WEB_SERVICE + "ws_read/ws_read_atividade.php?"+values);
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
+        StringBuilder sb = new StringBuilder();
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(con.getInputStream()));
-        String response = bufferedReader.readLine();
-        if (response.equals("false")) {
-            Toast.makeText(context, "Erro no Banco de Dados!", Toast.LENGTH_LONG).show();
-            return 0;
-        } else {
-            return 1;
+        String json;
+        while ((json = bufferedReader.readLine()) != null) {
+            sb.append(json + "\n");
         }
+        JSONArray jsonArray = new JSONArray(sb.toString().trim());
+        return jsonArray;
     }
 
     public static JSONArray selectAllFromResponsavel(Context context) throws JSONException, IOException {

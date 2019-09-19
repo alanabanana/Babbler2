@@ -30,7 +30,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/pare"
+            android:background="@drawable/n"
             android:onClick="tato" />
         <TextView
             android:id="@+id/textTato"

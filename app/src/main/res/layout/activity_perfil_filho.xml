@@ -61,7 +61,7 @@
             <ImageView
                 android:layout_width="128dp"
                 android:layout_height="94dp"
-                android:background="@drawable/gostar"
+                android:background="@drawable/s"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/textView10"
                 app:layout_constraintStart_toStartOf="parent"
@@ -90,7 +90,7 @@
             <ImageView
                 android:layout_width="115dp"
                 android:layout_height="88dp"
-                android:background="@drawable/antipatia"
+                android:background="@drawable/n"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/textView11"
                 app:layout_constraintStart_toStartOf="parent"
@@ -110,6 +110,16 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.627" />
         </android.support.constraint.ConstraintLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#9acd32"
+            android:text="Botões Customizados"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaBotoesCustomizados"
+            android:layout_marginBottom="10dp"/>
 
         <Button
             android:id="@+id/casaButton"

@@ -7,10 +7,6 @@ import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.RelativeLayout;
-import android.widget.TableLayout;
-import android.widget.TableRow;
 
 import java.io.IOException;
 
@@ -102,6 +98,10 @@ public class PerfilFilhoActivity extends Activity {
     }
     public void TelaSentimentos (View v){
         Intent intent = new Intent(this, SentimentoActivity.class);
+        startActivity(intent);
+    }
+    public void TelaBotoesCustomizados (View v){
+        Intent intent = new Intent(this, BotaoCustomizadosActivity.class);
         startActivity(intent);
     }
 }

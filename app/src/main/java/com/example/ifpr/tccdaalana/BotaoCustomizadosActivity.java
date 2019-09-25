@@ -7,12 +7,14 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.media.Image;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.ActivityCompat;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -21,6 +23,7 @@ import android.widget.TextView;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.w3c.dom.Text;
 
 import java.io.File;
 import java.io.IOException;
@@ -66,6 +69,9 @@ public class BotaoCustomizadosActivity extends Activity {
                     }
                 });
                 TextView textView = new TextView(BotaoCustomizadosActivity.this);
+                textView.setTextColor(Color.rgb(255,255,255));
+                textView.setGravity(Gravity.CENTER);
+                textView.setTextSize(18);
                 textView.setText(fileNames.get(index).replace("_", " "));
                 linearLayout.addView(imageButton);
                 linearLayout.addView(textView);

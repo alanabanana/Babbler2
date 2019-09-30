@@ -299,7 +299,7 @@
             android:layout_height="119dp"
             android:background="#741a07"
             android:gravity="center|center_horizontal"
-            android:text="Palavras Básicas"
+            android:text="Ambiente"
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"

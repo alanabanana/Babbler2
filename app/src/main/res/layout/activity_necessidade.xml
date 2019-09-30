@@ -61,7 +61,7 @@
             android:layout_width="150sp"
             android:layout_height="150sp"
             android:layout_gravity="center"
-            android:background="@drawable/sol"
+            android:background="@drawable/hands"
             android:onClick="lavarMao" />
         <TextView
             android:id="@+id/textLavarMao"
@@ -69,6 +69,22 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
             android:text="Eu quero lavar a minha mão"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/escovarDenteButton"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_gravity="center"
+            android:background="@drawable/toothbrush"
+            android:onClick="escovarDentes" />
+        <TextView
+            android:id="@+id/textEscovarDentes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Eu quero escovar meus dentes"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />

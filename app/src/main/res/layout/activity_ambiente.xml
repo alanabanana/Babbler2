@@ -7,116 +7,95 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#FF5722"
+        android:background="#741a07"
         android:paddingBottom="3dp">
         <ImageButton
             android:layout_width="64dp"
             android:layout_height="66dp"
-            android:onClick="voltarSentidos"
-            android:background="@drawable/voltar" />
+            android:onClick="voltarCasa"
+            android:background="@drawable/voltar"
+            android:layout_marginTop="5dp"/>
+
         <TextView
-            android:id="@+id/textSentidos"
+            android:id="@+id/textAmbiente"
             android:layout_width="match_parent"
-            android:layout_height="99dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:gravity="center_vertical|center"
-            android:text="Sentidos"
+            android:text="Ambiente"
             android:textColor="#FFFFFF"
             android:textSize="50sp"
-            android:textStyle="bold"
-            />
-
-        <ImageButton
-            android:id="@+id/tatoButton"
-            android:layout_width="150sp"
-            android:layout_height="150sp"
-            android:layout_gravity="center"
-            android:background="@drawable/n"
-            android:onClick="tato" />
-        <TextView
-            android:id="@+id/textTato"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical|center"
-            android:text="Tocar"
-            android:textColor="#FFFFFF"
-            android:textSize="25sp"
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/verButton"
-            android:layout_width="150sp"
-            android:layout_height="150sp"
+            android:id="@+id/casaAmbienteButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:onClick="casaAmbiente"
             android:layout_gravity="center"
-            android:background="@drawable/eye"
-            android:onClick="ver" />
+            android:background="@drawable/home" />
 
         <TextView
-            android:id="@+id/textVer"
+            android:id="@+id/textCasaAmbiente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
-            android:text="Ver"
+            android:text="Eu quero ir para a minha casa"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />
-
         <ImageButton
-            android:id="@+id/cheirarButton"
-            android:layout_width="150sp"
-            android:layout_height="150sp"
+            android:id="@+id/praiaAmbienteButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:onClick="praiaAmbiente"
             android:layout_gravity="center"
-            android:background="@drawable/nose"
-            android:onClick="cheirar" />
+            android:background="@drawable/beach" />
 
         <TextView
-            android:id="@+id/textCheirar"
+            android:id="@+id/textPraiaAmbiente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
-            android:text="Cheirar"
+            android:text="Eu quero ir para a praia"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />
-
         <ImageButton
-            android:id="@+id/escutarButton"
-            android:layout_width="150sp"
-            android:layout_height="150sp"
+            android:id="@+id/parqueAmbienteButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:onClick="parqueAmbiente"
             android:layout_gravity="center"
-            android:background="@drawable/bed"
-            android:onClick="escutar" />
-
+            android:background="@drawable/forest" />
         <TextView
-                android:id="@+id/textEscutar"
+            android:id="@+id/textParqueAmbiente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
-            android:text="Escutar"
+            android:text="Eu quero ir para o parque"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />
-
         <ImageButton
-            android:id="@+id/paladarButton"
-            android:layout_width="150sp"
-            android:layout_height="150sp"
+            android:id="@+id/cidadeAmbienteButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:onClick="cidadeAmbiente"
             android:layout_gravity="center"
-            android:background="@drawable/bed"
-            android:onClick="paladar" />
+            android:background="@drawable/cityscape" />
 
         <TextView
-            android:id="@+id/textPaladar"
+            android:id="@+id/textCidadeAmbiente"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
-            android:text="Paladar"
+            android:text="Eu quero ir para a cidade"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />
-
-
         <Button
-            android:id="@+id/casaSentidosButton"
+            android:id="@+id/casaFamiliaButton"
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:background="#20b2aa"
@@ -125,10 +104,10 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaSentidosCasa"
+            android:onClick="TelaPBCasa"
             android:layout_marginBottom="10dp"/>
         <Button
-            android:id="@+id/comidaSentidosButton"
+            android:id="@+id/comidaFamiliaButton"
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:background="#FE234F"
@@ -137,16 +116,16 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaSentidosComida"
+            android:onClick="TelaPBComida"
             android:layout_marginBottom="10dp"/>
 
         <Button
-            android:id="@+id/corpoSentidosButton"
+            android:id="@+id/corpoFamiliaButton"
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:background="#ffa619"
             android:gravity="center|center_horizontal"
-            android:onClick="TelaSentidosCorpo"
+            android:onClick="TelaPBCorpo"
             android:text="Corpo"
             android:textColor="#FFFFFF"
             android:textSize="50dp"
@@ -154,7 +133,7 @@
             android:layout_marginBottom="10dp"/>
 
         <Button
-            android:id="@+id/comunicacaoSentidosButton"
+            android:id="@+id/comunicacaoFamiliaButton"
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:background="#73ff6b"
@@ -163,23 +142,23 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaSentidosComunicacao"
+            android:onClick="TelaPBComunicacao"
             android:layout_marginBottom="10dp"/>
 
         <Button
-            android:id="@+id/diversaoSentidosButton"
+            android:id="@+id/diversaoFamiliaButton"
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:background="#f55c7c"
             android:gravity="center|center_horizontal"
-            android:onClick="TelaSentidosDiversao"
+            android:onClick="TelaPBDiversao"
             android:text="Diversão"
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
             android:layout_marginBottom="10dp"/>
         <Button
-            android:id="@+id/dorSentidosButton"
+            android:id="@+id/dorFamiliaButton"
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:background="#7a6ef6"
@@ -188,10 +167,10 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaSentidosDor"
+            android:onClick="TelaPBDor"
             android:layout_marginBottom="10dp"/>
         <Button
-            android:id="@+id/escolaSentidosButton"
+            android:id="@+id/escolaFamiliaButton"
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:background="#f8c290 "
@@ -200,10 +179,10 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaSentidosEscola"
+            android:onClick="TelaPBEscola"
             android:layout_marginBottom="10dp"/>
         <Button
-            android:id="@+id/familiaSentidosButton"
+            android:id="@+id/familiaButton"
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:background="#fce34a"
@@ -212,10 +191,10 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaSentidosFamilia"
+            android:onClick="TelaPBFamilia"
             android:layout_marginBottom="10dp"/>
         <Button
-            android:id="@+id/letrasSentidosButton"
+            android:id="@+id/letrasFamiliaButton"
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:background="#04f088"
@@ -224,10 +203,10 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaSentidosLetras"
+            android:onClick="TelaPBLetras"
             android:layout_marginBottom="10dp"/>
         <Button
-            android:id="@+id/necessidadesSentidosButton"
+            android:id="@+id/necessidadesFamiliaButton"
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:background="#fa6691"
@@ -236,35 +215,24 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaSentidosNecessidades"
+            android:onClick="TelaPBNecessidades"
             android:layout_marginBottom="10dp"/>
 
         <Button
-            android:id="@+id/numerosSentidosButton"
+            android:id="@+id/numerosFamiliaButton"
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:background="#c872f8"
             android:gravity="center|center_horizontal"
-            android:onClick="TelaSentidosNumeros"
+            android:onClick="TelaPBNumeros"
             android:text="Números"
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
             android:layout_marginBottom="10dp"/>
+
         <Button
-            android:id="@+id/palavrasBasicasSentidosButton"
-            android:layout_width="match_parent"
-            android:layout_height="119dp"
-            android:background="#741a07"
-            android:gravity="center|center_horizontal"
-            android:text="Ambiente"
-            android:textColor="#FFFFFF"
-            android:textSize="50dp"
-            android:textStyle="bold"
-            android:onClick="TelaSentidosPablavrasBasicas"
-            android:layout_marginBottom="10dp"/>
-        <Button
-            android:id="@+id/roupasSentidosButton"
+            android:id="@+id/roupasFamiliaButton"
             android:layout_width="match_parent"
             android:layout_height="119dp"
             android:background="#f7c702"
@@ -273,19 +241,31 @@
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaSentidosRoupas"
+            android:onClick="TelaPBRoupas"
             android:layout_marginBottom="10dp"/>
         <Button
-            android:id="@+id/sentimentosSentidosButton"
+            android:id="@+id/sentidosFamiliaButton"
             android:layout_width="match_parent"
             android:layout_height="119dp"
-            android:background="#f7c702"
+            android:background="#7281c0"
             android:gravity="center|center_horizontal"
-            android:text="Sentimentos"
+            android:text="Sentidos"
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"
-            android:onClick="TelaSentidosSentimentos"
+            android:onClick="TelaPBSentidos"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/sentimentosPBButton"
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:background="#FF5722"
+            android:gravity="center|center_horizontal"
+            android:text="Sentidos"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:onClick="TelaPBSentimentos"
             android:layout_marginBottom="10dp"/>
 
     </LinearLayout>

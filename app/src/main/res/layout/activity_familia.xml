@@ -61,7 +61,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:onClick="irma"
-            android:background="@drawable/woman"
+            android:background="@drawable/girl"
             android:layout_gravity="center"/>
         <TextView
             android:id="@+id/textIrma"
@@ -77,14 +77,46 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:onClick="irmao"
-            android:background="@drawable/man"
+            android:background="@drawable/boy"
             android:layout_gravity="center"/>
         <TextView
             android:id="@+id/textIrmao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical|center"
-            android:text="Pai"
+            android:text="Irmão"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/avohButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:onClick="avoHomem"
+            android:background="@drawable/avohomem"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/textAvoHomem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Avô"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/avomButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:onClick="avoMulher"
+            android:background="@drawable/avomulher"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/textAvoMulher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center"
+            android:text="Avó"
             android:textColor="#FFFFFF"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -220,7 +252,7 @@
             android:layout_height="119dp"
             android:background="#741a07"
             android:gravity="center|center_horizontal"
-            android:text="Palavras Básicas"
+            android:text="Ambiente"
             android:textColor="#FFFFFF"
             android:textSize="50dp"
             android:textStyle="bold"

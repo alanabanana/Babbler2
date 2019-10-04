@@ -52,7 +52,11 @@
         <activity android:name=".RoupasActivity"/>
         <activity android:name=".SentidosActivity"/>
         <activity android:name=".SentimentoActivity"/>
-        <activity android:name=".InfoIconesActivity"/>
+        <activity android:name=".WebSiteActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".PrimeiraTelaActivity">
 
 

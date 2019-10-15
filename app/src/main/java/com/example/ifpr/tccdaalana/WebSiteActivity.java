@@ -12,12 +12,14 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class WebSiteActivity extends Activity {
+    WebView telaWebView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_info_icones);
-        setContentView(R.layout.activity_info_icones);
-        WebView telaWebView = (WebView) findViewById(R.id.telaWebView);
+
+        WebView telaWebView = findViewById(R.id.telaWebView);
 
         WebSiteActivity.WebViewClientImpl webViewClient = new WebSiteActivity.WebViewClientImpl(this);
         telaWebView.setWebViewClient(webViewClient);
@@ -27,13 +29,6 @@ public class WebSiteActivity extends Activity {
         WebSettings webSettings = telaWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-    }
-
-    WebView telaWebView;
-
-    public void voltarPerfilRp (View view){
-        Intent intent = new Intent(this, PerfilPaiActivity.class);
-        startActivity(intent);
     }
 
     public static class WebViewClientImpl extends WebViewClient {
@@ -51,16 +46,18 @@ public class WebSiteActivity extends Activity {
                 return true;
             }
         }
-        @Override
-        public boolean onKeyDown(int keyCode, KeyEvent event) {
-            if ((keyCode == KeyEvent.KEYCODE_BACK) && telaWebView.canGoBack()) {
-                telaWebView.goBack();
-                return true;
-            }
-            return super.onKeyDown(keyCode, event);
-
+    public void onBackPressed() {
+        if (this.telaWebView.canGoBack()) {
+            this.telaWebView.goBack();
+        } else {
+            finish();
         }
-
     }
+}
+
+
+
+
+
 
 
